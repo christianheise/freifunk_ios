@@ -3,6 +3,7 @@ $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/ios'
 require 'bundler'
 Bundler.require :default
+require 'bubble-wrap/location'
 
 Motion::Project::App.setup do |app|
   app.name              = 'freifunk'
