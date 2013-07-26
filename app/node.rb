@@ -12,11 +12,27 @@ class Node
   end
 
   def title
-    name
+    "#{online? ? '💚' : '❤'} #{name}"
+  end
+
+  def subtitle
+    node_id
   end
 
   def coordinate
     LocationCoordinate.new(geo.first, geo.last).api
+  end
+
+  def online?
+    flags["online"]
+  end
+
+  def gateway?
+    flags["gateway"]
+  end
+
+  def client?
+    flags["client"]
   end
 
   def valid?
