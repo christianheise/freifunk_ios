@@ -1,9 +1,14 @@
 class Node
   include CoreLocation::DataTypes
 
-  def initialize(title, lat, long)
-    @title    = title
-    @location = LocationCoordinate.new(lat, long)
+  attr_reader :node_id, :name, :geo, :flags, :macs
+
+  def initialize(node_id, name, geo, flags, macs)
+    @node_id    = node_id
+    @name       = name
+    @geo        = geo
+    @flags      = flags
+    @macs       = macs
   end
 
   def title
@@ -11,12 +16,29 @@ class Node
   end
 
   def coordinate
-    @location.api
+    LocationCoordinate.new(geo.first, geo.last).api
   end
 
-  DATA = [
-    Node.new('Lagavulin', 55.6355209350586, -6.12622451782227),
-    Node.new('Laphroaig', 55.6298294067383, -6.15358829498291),
-    Node.new('Ardbeg',    55.6420860290527, -6.11207962036133),
-  ]
+  def valid?
+    !node_id.nil? && !name.nil? && !geo.nil?
+  end
+
+  def in_valid?
+    !valid?
+  end
+
+  def self.all
+    @nodes ||= begin
+      file_path = "#{App.resources_path}/data/nodes.json"
+      content = File.open(file_path) { |file| file.read }
+      BW::JSON.parse(content)[:nodes].map do |it|
+        node_id = it[:id]
+        name    = it[:name]
+        geo     = it[:geo]
+        flags   = it[:flags]
+        macs    = it[:macs]
+        self.new(node_id, name, geo, flags, macs)
+      end.reject(&:in_valid?)
+    end
+  end
 end

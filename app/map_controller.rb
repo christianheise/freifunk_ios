@@ -7,7 +7,7 @@ class MapController < UIViewController
     map.delegate = self
     map.region = CoordinateRegion.new([53.5, 10.0], [3.1, 3.1])
     map.shows_user_location = true
-    Node::DATA.each { |annotation| map.addAnnotation(annotation) }
+    Node.all.each { |annotation| map.addAnnotation(annotation) }
 
     view.addSubview(map)
   end
