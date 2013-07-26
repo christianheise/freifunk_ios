@@ -12,7 +12,7 @@ class Node
   end
 
   def title
-    @name
+    name
   end
 
   def coordinate
