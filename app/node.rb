@@ -27,6 +27,10 @@ class Node
     flags["online"]
   end
 
+  def offline?
+    !online?
+  end
+
   def gateway?
     flags["gateway"]
   end
