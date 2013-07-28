@@ -32,13 +32,13 @@ class MapController < UIViewController
     return if annotation.is_a? MKUserLocation
 
     if view = mapView.dequeueReusableAnnotationViewWithIdentifier(:node_annotation)
-      view.annotation = annotation
+      view.annotation   = annotation
+      view.animatesDrop = mapView.zoom_level >= NEAR_IN
       view
     else
       MKPinAnnotationView.alloc.tap do |annotation_view|
         annotation_view.initWithAnnotation(annotation, reuseIdentifier: :node_annotation)
-        annotation_view.canShowCallout = true
-        annotation_view.animatesDrop = false # TODO animate local drops
+        annotation_view.canShowCallout  = true
         button = UIButton.buttonWithType(UIButtonTypeDetailDisclosure)
         button.addTarget(self, action: 'show_details:', forControlEvents: UIControlEventTouchUpInside)
         annotation_view.rightCalloutAccessoryView = button
