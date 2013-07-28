@@ -7,13 +7,16 @@ class MapController < UIViewController
   FAR_OUT = 7
   NEAR_IN = 14
 
+  PADDING = 10
+
   FILTER_ITEMS = ["Alle", "💚 Online", "❤ Offline"]
 
   def loadView
     self.view = MapView.new
     view.delegate = self
     view.frame    = navigationController.view.bounds
-    add_filters
+
+    add_controls
   end
 
   def viewDidLoad
@@ -36,12 +39,12 @@ class MapController < UIViewController
       view.animatesDrop = mapView.zoom_level >= NEAR_IN
       view
     else
-      MKPinAnnotationView.alloc.tap do |annotation_view|
-        annotation_view.initWithAnnotation(annotation, reuseIdentifier: :node_annotation)
-        annotation_view.canShowCallout  = true
+      MKPinAnnotationView.alloc.tap do |it|
+        it.initWithAnnotation(annotation, reuseIdentifier: :node_annotation)
+        it.canShowCallout  = true
         button = UIButton.buttonWithType(UIButtonTypeDetailDisclosure)
         button.addTarget(self, action: 'show_details:', forControlEvents: UIControlEventTouchUpInside)
-        annotation_view.rightCalloutAccessoryView = button
+        it.rightCalloutAccessoryView = button
       end
     end
   end
@@ -67,25 +70,36 @@ class MapController < UIViewController
       end
     end
 
-    def add_filters
-      @control = UISegmentedControl.alloc.tap do |control|
-        control.initWithItems(FILTER_ITEMS)
-        control.frame                 = CGRectMake(10, 10, view.bounds.size.width - 20, control.frame.size.height)
-        control.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
-        control.segmentedControlStyle = UISegmentedControlStyleBar
-        control.selectedSegmentIndex  = 0
-        control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
-        view.addSubview(control)
+    def add_controls
+      @button = UIButton.buttonWithType(UIButtonTypeContactAdd).tap do |it|
+        image = UIImage.imageNamed("location.png")
+        it.setImage(image, forState: UIControlStateNormal)
+        it.setImage(image, forState: UIControlStateHighlighted)
+        it.setImage(image, forState: UIControlStateSelected)
+        it.frame            = CGRectMake(view.bounds.size.width - (PADDING + it.frame.size.width), PADDING, it.frame.size.width, it.frame.size.height)
+        it.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin
+        it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
       end
+      view.addSubview(@button)
+
+      @control = UISegmentedControl.alloc.tap do |it|
+        it.initWithItems(FILTER_ITEMS)
+        it.frame                 = CGRectMake(PADDING, PADDING, it.frame.size.width - (@button.frame.size.width + PADDING), @button.frame.size.height)
+        it.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
+        it.segmentedControlStyle = UISegmentedControlStyleBar
+        it.selectedSegmentIndex  = 0
+        it.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
+      end
+      view.addSubview(@control)
     end
 
-    def switch_to_user_location
+    def switch_to_user_location(sender = nil)
       return unless BW::Location.enabled?
       BW::Location.get_once do |result|
         coordinate = LocationCoordinate.new(result)
         view.region = CoordinateRegion.new(coordinate, SPAN)
         view.shows_user_location = true
-        view.set_zoom_level(NEAR_IN, true)
+        view.set_zoom_level(NEAR_IN)
       end
     end
 end
