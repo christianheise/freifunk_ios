@@ -52,7 +52,22 @@ class DetailsController < UITableViewController
       case indexPath.row
       when 0
         cell.textLabel.text = node.name
+      when 1
+        cell.textLabel.text = node.node_id
+      when 2
+        cell.textLabel.text = node.geo.join(", ")
       end
+    when 1
+      case indexPath.row
+      when 0
+        cell.textLabel.text = "Online: #{node.online? ? 'Ja' : 'Nein'}"
+      when 1
+        cell.textLabel.text = "Client: #{node.client? ? 'Ja' : 'Nein'}"
+      when 2
+        cell.textLabel.text = "Gateway: #{node.gateway? ? 'Ja' : 'Nein'}"
+      end
+    when 2
+      cell.textLabel.text = node.macs[indexPath.row]
     end
   end
 
