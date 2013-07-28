@@ -11,8 +11,9 @@ class MapController < UIViewController
 
   def viewDidLoad
     @map = MapView.new.tap do |map_view|
-      map_view.frame    = self.view.frame
+      map_view.frame    = self.view.bounds
       map_view.delegate = self
+      map_view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth
       map_view.region   = CoordinateRegion.new(CENTER, SPAN)
       map_view.set_zoom_level(FAR_OUT)
       map_view.addAnnotations(Node.all)
@@ -41,8 +42,11 @@ class MapController < UIViewController
     def add_filters
       UISegmentedControl.alloc.tap do |control|
         control.initWithItems(FILTER_ITEMS)
+        control.frame                 = CGRectMake(10, 10, @map.bounds.size.width - 20, control.frame.size.height)
+        control.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
         control.segmentedControlStyle = UISegmentedControlStyleBar
-        control.selectedSegmentIndex = 0
+        control.selectedSegmentIndex  = 0
+        control.tintColor             = UIColor.blackColor
         control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
         @map.addSubview(control)
       end

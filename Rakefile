@@ -10,5 +10,4 @@ Motion::Project::App.setup do |app|
   app.device_family           = [:iphone, :ipad]
   app.deployment_target       = '5.0'
   app.icons                   = Dir['resources/Icon*'].map { |file| File.basename(file) }
-  app.interface_orientations  = [:portrait]
 end
