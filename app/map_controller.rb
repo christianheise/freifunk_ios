@@ -9,46 +9,74 @@ class MapController < UIViewController
 
   FILTER_ITEMS = ["alle", "💚 online", "❤ offline"]
 
+  def loadView
+    self.view = MapView.new
+    view.delegate = self
+    view.frame    = navigationController.view.bounds
+    add_filters
+  end
+
   def viewDidLoad
-    @map = MapView.new.tap do |map_view|
-      map_view.frame    = self.view.bounds
-      map_view.delegate = self
-      map_view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth
-      map_view.region   = CoordinateRegion.new(CENTER, SPAN)
-      map_view.set_zoom_level(FAR_OUT)
-      map_view.addAnnotations(Node.all)
-    end
+    view.region = CoordinateRegion.new(CENTER, SPAN)
+    view.set_zoom_level(FAR_OUT)
+    view.addAnnotations(Node.all)
 
     switch_to_user_location
-    add_filters
+  end
 
-    view.addSubview(@map)
+  def viewWillAppear(animated)
+    navigationController.setNavigationBarHidden(true, animated: true)
+  end
+
+  def mapView(mapView, viewForAnnotation: annotation)
+    return if annotation.is_a? MKUserLocation
+
+    if view = mapView.dequeueReusableAnnotationViewWithIdentifier(:node_annotation)
+      view.annotation = annotation
+      view
+    else
+      MKPinAnnotationView.alloc.tap do |annotation_view|
+        annotation_view.initWithAnnotation(annotation, reuseIdentifier: :node_annotation)
+        annotation_view.canShowCallout = true
+        annotation_view.animatesDrop = false # TODO animate local drops
+        button = UIButton.buttonWithType(UIButtonTypeDetailDisclosure)
+        button.addTarget(self, action: 'show_details:', forControlEvents: UIControlEventTouchUpInside)
+        annotation_view.rightCalloutAccessoryView = button
+      end
+    end
   end
 
   private
 
+    def show_details(sender)
+      controller = DetailsController.new
+      controller.node = view.selectedAnnotations[0]
+      navigationController.pushViewController(controller, animated: true)
+    end
+
+
     def filter_map(sender)
-      @map.removeAnnotations(@map.annotations)
+      view.removeAnnotations(view.annotations.reject { |a| a.is_a? MKUserLocation })
       case sender.selectedSegmentIndex
       when 0
-        @map.addAnnotations(Node.all)
+        view.addAnnotations(Node.all)
       when 1
-        @map.addAnnotations(Node.all.select(&:online?))
+        view.addAnnotations(Node.all.select(&:online?))
       when 2
-        @map.addAnnotations(Node.all.select(&:offline?))
+        view.addAnnotations(Node.all.select(&:offline?))
       end
     end
 
     def add_filters
-      UISegmentedControl.alloc.tap do |control|
+      @control = UISegmentedControl.alloc.tap do |control|
         control.initWithItems(FILTER_ITEMS)
-        control.frame                 = CGRectMake(10, 10, @map.bounds.size.width - 20, control.frame.size.height)
+        control.frame                 = CGRectMake(10, 10, view.bounds.size.width - 20, control.frame.size.height)
         control.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
         control.segmentedControlStyle = UISegmentedControlStyleBar
         control.selectedSegmentIndex  = 0
         control.tintColor             = UIColor.blackColor
         control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
-        @map.addSubview(control)
+        view.addSubview(control)
       end
     end
 
@@ -56,9 +84,9 @@ class MapController < UIViewController
       return unless BW::Location.enabled?
       BW::Location.get_once do |result|
         coordinate = LocationCoordinate.new(result)
-        @map.region = CoordinateRegion.new(coordinate, SPAN)
-        @map.shows_user_location = true
-        @map.set_zoom_level(NEAR_IN)
+        view.region = CoordinateRegion.new(coordinate, SPAN)
+        view.shows_user_location = true
+        view.set_zoom_level(NEAR_IN, true)
       end
     end
 end
