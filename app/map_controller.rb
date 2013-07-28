@@ -7,7 +7,7 @@ class MapController < UIViewController
   FAR_OUT = 7
   NEAR_IN = 14
 
-  FILTER_ITEMS = ["alle", "💚 online", "❤ offline"]
+  FILTER_ITEMS = ["Alle", "💚 Online", "❤ Offline"]
 
   def loadView
     self.view = MapView.new
@@ -74,7 +74,6 @@ class MapController < UIViewController
         control.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
         control.segmentedControlStyle = UISegmentedControlStyleBar
         control.selectedSegmentIndex  = 0
-        control.tintColor             = UIColor.blackColor
         control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
         view.addSubview(control)
       end
