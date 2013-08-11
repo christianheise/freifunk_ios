@@ -2,9 +2,11 @@
 build
 tags
 app/pixate_code.rb
+app/testflight_launcher.rb
 resources/*.nib
 resources/*.momd
 resources/*.storyboardc
+ib.xcodeproj
 .DS_Store
 nbproject
 .redcar
@@ -14,3 +16,4 @@ nbproject
 .eprj
 .sass-cache
 .idea
+.dat*
