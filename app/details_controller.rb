@@ -71,15 +71,7 @@ class DetailsController < UITableViewController
     end
   end
 
-  def tableView(tableView, canEditRowAtIndexPath: indexPath)
-    false
-  end
-
-  def tableView(tableView, canMoveRowAtIndexPath: indexPath)
-    false
-  end
-
-  def tableView(tableView, didSelectRowAtIndexPath: indexPath)
-    false
+  def tableView(tableView, willSelectRowAtIndexPath: indexPath)
+    nil
   end
 end

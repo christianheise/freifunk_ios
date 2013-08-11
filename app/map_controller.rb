@@ -13,8 +13,9 @@ class MapController < UIViewController
 
   def loadView
     self.view = MapView.new
-    view.delegate = self
-    view.frame    = navigationController.view.bounds
+    view.delegate   = self
+    view.frame      = tabBarController.view.bounds
+    self.tabBarItem = UITabBarItem.alloc.initWithTitle('Karte', image: UIImage.imageNamed('map.png'), tag: 0)
 
     add_controls
   end
@@ -49,57 +50,56 @@ class MapController < UIViewController
     end
   end
 
-  private
+  protected
 
-    def show_details(sender)
-      controller = DetailsController.new
-      controller.node = view.selectedAnnotations[0]
-      navigationController.pushViewController(controller, animated: true)
+  def show_details(sender)
+    controller = DetailsController.new
+    controller.node = view.selectedAnnotations[0]
+    navigationController.pushViewController(controller, animated: true)
+  end
+
+  def filter_map(sender)
+    view.removeAnnotations(view.annotations.reject { |a| a.is_a? MKUserLocation })
+    case sender.selectedSegmentIndex
+    when 0
+      view.addAnnotations(Node.all)
+    when 1
+      view.addAnnotations(Node.all.select(&:online?))
+    when 2
+      view.addAnnotations(Node.all.select(&:offline?))
     end
+  end
 
-
-    def filter_map(sender)
-      view.removeAnnotations(view.annotations.reject { |a| a.is_a? MKUserLocation })
-      case sender.selectedSegmentIndex
-      when 0
-        view.addAnnotations(Node.all)
-      when 1
-        view.addAnnotations(Node.all.select(&:online?))
-      when 2
-        view.addAnnotations(Node.all.select(&:offline?))
-      end
+  def add_controls
+    @button = UIButton.buttonWithType(UIButtonTypeContactAdd).tap do |it|
+      image = UIImage.imageNamed("location.png")
+      it.setImage(image, forState: UIControlStateNormal)
+      it.setImage(image, forState: UIControlStateHighlighted)
+      it.setImage(image, forState: UIControlStateSelected)
+      it.frame            = CGRectMake(view.bounds.size.width - (PADDING + it.frame.size.width), PADDING, it.frame.size.width, it.frame.size.height)
+      it.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin
+      it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
     end
+    view.addSubview(@button)
 
-    def add_controls
-      @button = UIButton.buttonWithType(UIButtonTypeContactAdd).tap do |it|
-        image = UIImage.imageNamed("location.png")
-        it.setImage(image, forState: UIControlStateNormal)
-        it.setImage(image, forState: UIControlStateHighlighted)
-        it.setImage(image, forState: UIControlStateSelected)
-        it.frame            = CGRectMake(view.bounds.size.width - (PADDING + it.frame.size.width), PADDING, it.frame.size.width, it.frame.size.height)
-        it.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin
-        it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
-      end
-      view.addSubview(@button)
-
-      @control = UISegmentedControl.alloc.tap do |it|
-        it.initWithItems(FILTER_ITEMS)
-        it.frame                 = CGRectMake(PADDING, PADDING, it.frame.size.width - (@button.frame.size.width + PADDING), @button.frame.size.height)
-        it.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
-        it.segmentedControlStyle = UISegmentedControlStyleBar
-        it.selectedSegmentIndex  = 0
-        it.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
-      end
-      view.addSubview(@control)
+    @control = UISegmentedControl.alloc.tap do |it|
+      it.initWithItems(FILTER_ITEMS)
+      it.frame                 = CGRectMake(PADDING, PADDING, it.frame.size.width - (@button.frame.size.width + PADDING), @button.frame.size.height)
+      it.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
+      it.segmentedControlStyle = UISegmentedControlStyleBar
+      it.selectedSegmentIndex  = 0
+      it.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
+    view.addSubview(@control)
+  end
 
-    def switch_to_user_location(sender = nil)
-      return unless BW::Location.enabled?
-      BW::Location.get_once do |result|
-        coordinate = LocationCoordinate.new(result)
-        view.region = CoordinateRegion.new(coordinate, SPAN)
-        view.shows_user_location = true
-        view.set_zoom_level(NEAR_IN)
-      end
+  def switch_to_user_location(sender = nil)
+    return unless BW::Location.enabled?
+    BW::Location.get_once do |result|
+      coordinate = LocationCoordinate.new(result)
+      view.region = CoordinateRegion.new(coordinate, SPAN)
+      view.shows_user_location = true
+      view.set_zoom_level(NEAR_IN)
     end
+  end
 end
