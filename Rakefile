@@ -23,8 +23,9 @@ Motion::Project::App.setup do |app|
     app.testflight.sdk                = 'vendor/TestFlightSDK'
     app.testflight.api_token          = ENV['TESTFLIGHT_API_TOKEN']
     app.testflight.team_token         = ENV['TESTFLIGHT_TEAM_TOKEN_FREIFUNK']
+    app.testflight.app_token          = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
     app.testflight.notify             = true
-    app.testflight.distribution_lists = ['Freifunk']
+    app.testflight.identify_testers   = true
 
     # REM (ps) this needs to be set for testflight
     # TODO (ps) open an issue at https://github.com/HipByte/motion-testflight/

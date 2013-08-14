@@ -6,7 +6,7 @@ GEM
     map-kit-wrapper (0.0.5)
       codependency (= 2.0.0)
       rake
-    motion-testflight (1.4)
+    motion-testflight (1.5)
     rake (10.1.0)
 
 PLATFORMS
@@ -15,5 +15,5 @@ PLATFORMS
 DEPENDENCIES
   bubble-wrap (= 1.3.0)
   map-kit-wrapper (= 0.0.5)
-  motion-testflight (= 1.4)
+  motion-testflight (= 1.5)
   rake (= 10.1.0)
