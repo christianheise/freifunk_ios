@@ -37,3 +37,8 @@ Motion::Project::App.setup do |app|
     app.provisioning_profile                      = "#{ENV['HOME']}/Dropbox/ios_certs/app_store_distribution_freifunk.mobileprovision"
   end
 end
+
+desc "download latest node json"
+task :update_json do
+  system('wget "http://graph.hamburg.freifunk.net/nodes.json" && mv nodes.json resources/data/nodes.json')
+end
