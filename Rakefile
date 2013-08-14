@@ -26,6 +26,7 @@ Motion::Project::App.setup do |app|
     app.testflight.app_token          = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
     app.testflight.notify             = true
     app.testflight.identify_testers   = true
+    app.testflight.distribution_lists = ['freifunk']
 
     # REM (ps) this needs to be set for testflight
     # TODO (ps) open an issue at https://github.com/HipByte/motion-testflight/
