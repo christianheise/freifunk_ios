@@ -4,8 +4,13 @@ class ListController < UITableViewController
   def init
     (super || self).tap do |it|
       it.tabBarItem = UITabBarItem.alloc.initWithTitle('Liste', image:UIImage.imageNamed('list.png'), tag:1)
-      it.nodes = Node.all
+      it.nodes = Node.sorted
     end
+  end
+
+  def reload
+    self.nodes = Node.sorted
+    tableView.reloadData
   end
 
   def loadView

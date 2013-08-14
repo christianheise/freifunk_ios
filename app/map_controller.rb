@@ -11,11 +11,20 @@ class MapController < UIViewController
 
   FILTER_ITEMS = ["Alle", "💚 Online", "❤ Offline"]
 
+  def init
+    (super || self).tap do |it|
+      it.tabBarItem = UITabBarItem.alloc.initWithTitle('Karte', image: UIImage.imageNamed('map.png'), tag: 0)
+    end
+  end
+
+  def reload
+    filter_map(self)
+  end
+
   def loadView
     self.view = MapView.new
     view.delegate   = self
     view.frame      = tabBarController.view.bounds
-    self.tabBarItem = UITabBarItem.alloc.initWithTitle('Karte', image: UIImage.imageNamed('map.png'), tag: 0)
 
     add_controls
   end
@@ -60,7 +69,7 @@ class MapController < UIViewController
 
   def filter_map(sender)
     view.removeAnnotations(view.annotations.reject { |a| a.is_a? MKUserLocation })
-    case sender.selectedSegmentIndex
+    case @control.selectedSegmentIndex
     when 0
       view.addAnnotations(Node.all)
     when 1
@@ -71,7 +80,7 @@ class MapController < UIViewController
   end
 
   def add_controls
-    @button = UIButton.buttonWithType(UIButtonTypeContactAdd).tap do |it|
+    button = UIButton.buttonWithType(UIButtonTypeContactAdd).tap do |it|
       image = UIImage.imageNamed("location.png")
       it.setImage(image, forState: UIControlStateNormal)
       it.setImage(image, forState: UIControlStateHighlighted)
@@ -80,11 +89,11 @@ class MapController < UIViewController
       it.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin
       it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
     end
-    view.addSubview(@button)
+    view.addSubview(button)
 
     @control = UISegmentedControl.alloc.tap do |it|
       it.initWithItems(FILTER_ITEMS)
-      it.frame                 = CGRectMake(PADDING, PADDING, it.frame.size.width - (@button.frame.size.width + PADDING), @button.frame.size.height)
+      it.frame                 = CGRectMake(PADDING, PADDING, it.frame.size.width - (button.frame.size.width + PADDING), button.frame.size.height)
       it.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
       it.segmentedControlStyle = UISegmentedControlStyleBar
       it.selectedSegmentIndex  = 0
