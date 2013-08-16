@@ -52,12 +52,18 @@ class MapController < UIViewController
       MKPinAnnotationView.alloc.tap do |it|
         it.initWithAnnotation(annotation, reuseIdentifier: :node_annotation)
         it.canShowCallout  = true
-        button = UIButton.buttonWithType(UIButtonTypeDetailDisclosure)
+        button = UIButton.buttonWithType(UIButtonTypeInfoLight)
         button.addTarget(self, action: 'show_details:', forControlEvents: UIControlEventTouchUpInside)
         it.rightCalloutAccessoryView = button
         it.pinColor = annotation.online? ? MKPinAnnotationColorGreen : MKPinAnnotationColorRed
       end
     end
+  end
+
+  def center(node)
+    view.region = CoordinateRegion.new(node.coordinate, SPAN)
+    view.set_zoom_level(NEAR_IN)
+    view.selectAnnotation(node, animated: true)
   end
 
   protected
@@ -106,7 +112,7 @@ class MapController < UIViewController
   def switch_to_user_location(sender = nil)
     return unless BW::Location.enabled?
     BW::Location.get_once do |result|
-      coordinate = LocationCoordinate.new(result)
+      coordinate  = LocationCoordinate.new(result)
       view.region = CoordinateRegion.new(coordinate, SPAN)
       view.shows_user_location = true
       view.set_zoom_level(NEAR_IN)

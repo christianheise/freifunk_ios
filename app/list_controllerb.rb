@@ -31,7 +31,7 @@ class ListController < UITableViewController
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
     tableView.dequeueReusableCellWithIdentifier(:list_cell) || UITableViewCell.alloc.tap do |cell|
       cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :list_cell)
-      cell.accessoryType  = UITableViewCellAccessoryDetailDisclosureButton
+      cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator
     end
   end
 
@@ -40,13 +40,11 @@ class ListController < UITableViewController
     cell.textLabel.text = node.name
   end
 
-  def tableView(tableView, accessoryButtonTappedForRowWithIndexPath:indexPath)
+  def tableView(tableView, didSelectRowAtIndexPath: indexPath)
+    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
     controller = DetailsController.new
     controller.node = nodes[indexPath.row]
     navigationController.pushViewController(controller, animated: true)
-  end
-
-  def tableView(tableView, willSelectRowAtIndexPath: indexPath)
-    nil
   end
 end
