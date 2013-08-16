@@ -1,7 +1,10 @@
 class SettingsController < UITableViewController
+  attr_accessor :regions
+
   def init
     (super || self).tap do |it|
       it.tabBarItem = UITabBarItem.alloc.initWithTitle('Einstellungen', image:UIImage.imageNamed('settings.png'), tag:2)
+      self.regions = %w(Hamburg Berlin)
     end
   end
 
@@ -17,7 +20,7 @@ class SettingsController < UITableViewController
   end
 
   def numberOfSectionsInTableView(tableView)
-    3
+    4
   end
 
   def tableView(tableView, titleForHeaderInSection: section)
@@ -34,8 +37,10 @@ class SettingsController < UITableViewController
       1
     elsif section == 1
       3
-    else
+    elsif section == 2
       2
+    else
+      regions.size
     end
   end
 
@@ -43,8 +48,20 @@ class SettingsController < UITableViewController
     if indexPath.section == 2 && indexPath.row == 1
       tableView.dequeueReusableCellWithIdentifier(:text_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :text_cell)
-        cell.accessoryType            = UITableViewCellAccessoryNone
-        cell.selectionStyle           = UITableViewCellSelectionStyleNone
+        cell.accessoryType  = UITableViewCellAccessoryNone
+        cell.selectionStyle = UITableViewCellSelectionStyleNone
+      end
+    elsif indexPath.section == 3
+      tableView.dequeueReusableCellWithIdentifier(:region_cell) || UITableViewCell.alloc.tap do |cell|
+        cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :region_cell)
+        if indexPath.row == 1
+          cell.accessoryType          = UITableViewCellAccessoryNone
+          cell.selectionStyle         = UITableViewCellSelectionStyleNone
+          cell.userInteractionEnabled = false
+        else
+          cell.accessoryType  = UITableViewCellAccessoryCheckmark
+          cell.selectionStyle = UITableViewCellSelectionStyleBlue
+        end
       end
     else
       tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
@@ -66,12 +83,14 @@ class SettingsController < UITableViewController
       else
         cell.textLabel.text = "Freifunk Hamburg"
       end
-    else
+    elsif indexPath.section == 2
       if indexPath.row == 0
         cell.textLabel.text = "Knoten aktualisieren"
       else
         cell.textLabel.text = "Version: #{App.version}"
       end
+    else
+      cell.textLabel.text = regions[indexPath.row]
     end
   end
 
@@ -88,7 +107,7 @@ class SettingsController < UITableViewController
       else
         open_url("http://hamburg.freifunk.net/")
       end
-    else
+    elsif indexPath.section == 2
       if indexPath.row == 0
         current_cell = tableView.cellForRowAtIndexPath(indexPath)
         current_cell.accessoryView = spinner
@@ -106,6 +125,8 @@ class SettingsController < UITableViewController
           end
         end
       end
+    else
+      puts "reeeeegion selected #{indexPath.row}"
     end
   end
 
