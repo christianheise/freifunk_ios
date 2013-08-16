@@ -11,4 +11,3 @@ The App will be available through the AppStore soon.
 * support for other freifunk communities
 * link detail view to map location
 * adapt to freifunk color schema
-* use red and green needles for online and offline nodes

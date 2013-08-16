@@ -55,6 +55,7 @@ class MapController < UIViewController
         button = UIButton.buttonWithType(UIButtonTypeDetailDisclosure)
         button.addTarget(self, action: 'show_details:', forControlEvents: UIControlEventTouchUpInside)
         it.rightCalloutAccessoryView = button
+        it.pinColor = annotation.online? ? MKPinAnnotationColorGreen : MKPinAnnotationColorRed
       end
     end
   end
