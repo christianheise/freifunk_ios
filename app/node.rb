@@ -76,7 +76,7 @@ class Node
   end
 
   def self.sorted
-    all.sort_by { |node| node.name }
+    all.sort_by { |node| node.name.downcase }
   end
 
   def self.reset

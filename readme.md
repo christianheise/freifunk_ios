@@ -9,5 +9,5 @@ The App will be available through the AppStore soon.
 # TODOs
 
 * support for other freifunk communities (already sketched)
-* link detail view to map location
+* search in list
 * adapt to freifunk color schema
