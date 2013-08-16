@@ -52,7 +52,7 @@ class SettingsController < UITableViewController
         cell.selectionStyle = UITableViewCellSelectionStyleNone
       end
     elsif indexPath.section == 3
-      tableView.dequeueReusableCellWithIdentifier(:region_cell) || UITableViewCell.alloc.tap do |cell|
+      (tableView.dequeueReusableCellWithIdentifier(:region_cell) || UITableViewCell.alloc).tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :region_cell)
         if indexPath.row == 1
           cell.accessoryType          = UITableViewCellAccessoryNone

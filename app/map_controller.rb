@@ -46,18 +46,19 @@ class MapController < UIViewController
 
     if view = mapView.dequeueReusableAnnotationViewWithIdentifier(:node_annotation)
       view.annotation   = annotation
-      view.animatesDrop = mapView.zoom_level >= NEAR_IN
       view
     else
-      MKPinAnnotationView.alloc.tap do |it|
+      view = MKPinAnnotationView.alloc.tap do |it|
         it.initWithAnnotation(annotation, reuseIdentifier: :node_annotation)
         it.canShowCallout  = true
         button = UIButton.buttonWithType(UIButtonTypeInfoLight)
         button.addTarget(self, action: 'show_details:', forControlEvents: UIControlEventTouchUpInside)
         it.rightCalloutAccessoryView = button
-        it.pinColor = annotation.online? ? MKPinAnnotationColorGreen : MKPinAnnotationColorRed
       end
     end
+    view.animatesDrop = mapView.zoom_level >= NEAR_IN
+    view.pinColor     = annotation.online? ? MKPinAnnotationColorGreen : MKPinAnnotationColorRed
+    view
   end
 
   def center(node)
