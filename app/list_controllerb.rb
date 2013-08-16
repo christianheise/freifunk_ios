@@ -85,7 +85,8 @@ class ListController < UITableViewController
   private
 
   def search_and_reload(bar)
-    if text = bar.text && text.size > 1
+    text = bar.text
+    if text && text.size > 1
       self.nodes = Node.find(text)
     else
       self.nodes = Node.sorted
