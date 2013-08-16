@@ -18,6 +18,11 @@ class ListController < UITableViewController
       tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
     end
+    self.tableView.tableHeaderView = UISearchBar.alloc.tap do |search_bar|
+      search_bar.initWithFrame(CGRectMake(0, 0, tableView.frame.size.width, 0))
+      search_bar.delegate = self
+      search_bar.sizeToFit
+    end
   end
 
   def viewWillAppear(animated)
@@ -46,5 +51,45 @@ class ListController < UITableViewController
     controller = DetailsController.new
     controller.node = nodes[indexPath.row]
     navigationController.pushViewController(controller, animated: true)
+  end
+
+  def searchBarTextDidBeginEditing(searchBar)
+    searchBar.setShowsCancelButton(true, animated: true)
+  end
+
+  def searchBarTextDidEndEditing(searchBar)
+    searchBar.setShowsCancelButton(false, animated: true)
+  end
+
+  def searchBar(searchBar, textDidChange: searchText)
+    search_and_reload(searchBar)
+  end
+
+  def searchBar(searchBar, selectedScopeButtonIndexDidChange: selectedScope)
+    search_and_reload(searchBar)
+  end
+
+  def searchBarSearchButtonClicked(searchBar)
+    self.nodes = Node.find(searchBar.text)
+    tableView.reloadData
+    searchBar.resignFirstResponder
+  end
+
+  def searchBarCancelButtonClicked(searchBar)
+    self.nodes = Node.sorted
+    tableView.reloadData
+    tableView.scrollToRowAtIndexPath(NSIndexPath.indexPathForRow(0, inSection:0), atScrollPosition: UITableViewScrollPositionTop, animated: true)
+    searchBar.resignFirstResponder
+  end
+
+  private
+
+  def search_and_reload(bar)
+    if text = bar.text && text.size > 1
+      self.nodes = Node.find(text)
+    else
+      self.nodes = Node.sorted
+    end
+    tableView.reloadData
   end
 end

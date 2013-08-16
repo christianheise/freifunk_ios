@@ -107,4 +107,20 @@ class Node
       block.call(state)
     end
   end
+
+  def self.tokenize(string)
+    string.split.map { |token| normalize(token) }.reject(&:empty?)
+  end
+
+  def self.normalize(string)
+    string.gsub(/[^\w]/, '').downcase
+  end
+
+  def self.find(query)
+    sorted.select do |node|
+      tokenize(query).any? do |token|
+        normalize(node.name) =~ /#{token}/
+      end
+    end
+  end
 end
