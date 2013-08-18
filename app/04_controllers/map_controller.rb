@@ -81,9 +81,9 @@ class MapController < UIViewController
     when 0
       view.addAnnotations(Node.all)
     when 1
-      view.addAnnotations(Node.all.select(&:online?))
+      view.addAnnotations(Node.online)
     when 2
-      view.addAnnotations(Node.all.select(&:offline?))
+      view.addAnnotations(Node.offline)
     end
   end
 

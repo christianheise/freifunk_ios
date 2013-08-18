@@ -17,6 +17,8 @@ class ListController < UITableViewController
     self.tableView = UITableView.alloc.tap do |tableView|
       tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
+      tableView.backgroundColor = Color::MAIN
+      tableView.setBackgroundView nil
     end
     self.tableView.tableHeaderView = UISearchBar.alloc.tap do |search_bar|
       search_bar.initWithFrame(CGRectMake(0, 0, tableView.frame.size.width, 0))

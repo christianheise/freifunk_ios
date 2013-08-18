@@ -79,6 +79,14 @@ class Node
     all.sort_by { |node| node.name.downcase }
   end
 
+  def self.online
+    all.select(&:online?)
+  end
+
+  def self.offline
+    all.select(&:offline?)
+  end
+
   def self.reset
     @nodes = nil
   end
