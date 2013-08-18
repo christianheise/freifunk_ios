@@ -14,7 +14,7 @@ class Node
   end
 
   def title
-    "#{online? ? '💚' : '❤'} #{name}"
+    name
   end
 
   def subtitle

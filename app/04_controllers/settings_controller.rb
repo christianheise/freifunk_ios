@@ -3,15 +3,15 @@ class SettingsController < UITableViewController
 
   def init
     (super || self).tap do |it|
-      it.tabBarItem = UITabBarItem.alloc.initWithTitle('Einstellungen', image:UIImage.imageNamed('settings.png'), tag:2)
+      it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image:UIImage.imageNamed('settings.png'), tag:2)
       self.regions = %w(Hamburg Berlin)
     end
   end
 
   def loadView
     self.tableView = UITableView.alloc.tap do |tableView|
-      tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
+      tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
     end
   end
 

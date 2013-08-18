@@ -8,7 +8,7 @@ describe Node do
     Node.all.first.tap do |it|
       it.node_id.should.eql         "66:70:02:b5:d9:26"
       it.name.should.eql            "brachvogel05"
-      it.title.should.eql           "💚 brachvogel05"
+      it.title.should.eql           "brachvogel05"
       it.subtitle.should.eql        "66:70:02:b5:d9:26"
       it.geo.map(&:to_i).should.eql [53, 9]
       it.flags.should.eql           "client" => false, "gateway" => false, "online" => true

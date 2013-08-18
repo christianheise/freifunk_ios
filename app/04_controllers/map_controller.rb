@@ -7,13 +7,11 @@ class MapController < UIViewController
   FAR_OUT = 7
   NEAR_IN = 14
 
-  PADDING = 10
-
-  FILTER_ITEMS = ["Alle", "💚 Online", "❤ Offline"]
+  FILTER_ITEMS = ["Alle", "Online", "Offline"]
 
   def init
     (super || self).tap do |it|
-      it.tabBarItem = UITabBarItem.alloc.initWithTitle('Karte', image: UIImage.imageNamed('map.png'), tag: 0)
+      it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image: UIImage.imageNamed('map.png'), tag: 0)
     end
   end
 
@@ -22,17 +20,21 @@ class MapController < UIViewController
   end
 
   def loadView
-    self.view = MapView.new
-    view.delegate   = self
-    view.frame      = tabBarController.view.bounds
+    @map = MapView.new
+    @map.delegate = self
+    @map.frame    = tabBarController.view.bounds
+    @map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
 
+    self.view = UIView.alloc.initWithFrame(tabBarController.view.bounds)
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
+    self.view.addSubview @map
     add_controls
   end
 
   def viewDidLoad
-    view.region = CoordinateRegion.new(CENTER, SPAN)
-    view.set_zoom_level(FAR_OUT)
-    view.addAnnotations(Node.all)
+    @map.region = CoordinateRegion.new(CENTER, SPAN)
+    @map.set_zoom_level(FAR_OUT)
+    @map.addAnnotations(Node.all)
 
     switch_to_user_location
   end
@@ -62,61 +64,65 @@ class MapController < UIViewController
   end
 
   def center(node)
-    view.region = CoordinateRegion.new(node.coordinate, SPAN)
-    view.set_zoom_level(NEAR_IN)
-    view.selectAnnotation(node, animated: true)
+    @map.region = CoordinateRegion.new(node.coordinate, SPAN)
+    @map.set_zoom_level(NEAR_IN)
+    @map.selectAnnotation(node, animated: true)
   end
 
   protected
 
   def show_details(sender)
     controller = DetailsController.new
-    controller.node = view.selectedAnnotations[0]
+    controller.node = @map.selectedAnnotations[0]
     navigationController.pushViewController(controller, animated: true)
   end
 
   def filter_map(sender)
-    view.removeAnnotations(view.annotations.reject { |a| a.is_a? MKUserLocation })
+    @map.removeAnnotations(@map.annotations.reject { |a| a.is_a? MKUserLocation })
     case @control.selectedSegmentIndex
     when 0
-      view.addAnnotations(Node.all)
+      @map.addAnnotations(Node.all)
     when 1
-      view.addAnnotations(Node.online)
+      @map.addAnnotations(Node.online)
     when 2
-      view.addAnnotations(Node.offline)
+      @map.addAnnotations(Node.offline)
     end
   end
 
   def add_controls
-    button = UIButton.buttonWithType(UIButtonTypeContactAdd).tap do |it|
-      image = UIImage.imageNamed("location.png")
-      it.setImage(image, forState: UIControlStateNormal)
-      it.setImage(image, forState: UIControlStateHighlighted)
-      it.setImage(image, forState: UIControlStateSelected)
-      it.frame            = CGRectMake(view.bounds.size.width - (PADDING + it.frame.size.width), PADDING, it.frame.size.width, it.frame.size.height)
-      it.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin
-      it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
-    end
-    view.addSubview(button)
-
     @control = UISegmentedControl.alloc.tap do |it|
       it.initWithItems(FILTER_ITEMS)
-      it.frame                 = CGRectMake(PADDING, PADDING, it.frame.size.width - (button.frame.size.width + PADDING), button.frame.size.height)
-      it.autoresizingMask      = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin
       it.segmentedControlStyle = UISegmentedControlStyleBar
       it.selectedSegmentIndex  = 0
       it.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
-    view.addSubview(@control)
+
+    @button = UIButton.buttonWithType(UIButtonTypeCustom).tap do |it|
+      image = UIImage.imageNamed("location.png")
+      it.setImage(image, forState: UIControlStateNormal)
+      it.setImage(image, forState: UIControlStateHighlighted)
+      it.setImage(image, forState: UIControlStateSelected)
+      it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
+      it.nuiClass = 'Button:LocateButton'
+    end
+
+    Motion::Layout.new do |layout|
+      layout.view self.view
+      layout.subviews 'state' => @control, 'action' => @button
+      layout.metrics    "margin" => 10, "height" => 30
+      layout.horizontal "|-margin-[action(==height)]-[state]-margin-|"
+      layout.vertical   "|-margin-[state(==height)]"
+      layout.vertical   "|-margin-[action(==height)]"
+    end
   end
 
   def switch_to_user_location(sender = nil)
     return unless BW::Location.enabled?
     BW::Location.get_once do |result|
       coordinate  = LocationCoordinate.new(result)
-      view.region = CoordinateRegion.new(coordinate, SPAN)
-      view.shows_user_location = true
-      view.set_zoom_level(NEAR_IN)
+      @map.region = CoordinateRegion.new(coordinate, SPAN)
+      @map.shows_user_location = true
+      @map.set_zoom_level(NEAR_IN)
     end
   end
 end
