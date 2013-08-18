@@ -5,8 +5,6 @@ class DetailsController < UITableViewController
     self.tableView = UITableView.alloc.tap do |tableView|
       tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
-      tableView.backgroundColor = Color::MAIN
-      tableView.setBackgroundView nil
     end
   end
 

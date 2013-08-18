@@ -10,11 +10,16 @@ VERSION = "0.0.1"
 Motion::Project::App.setup do |app|
   app.name                    = 'freifunk'
   app.device_family           = [:iphone, :ipad]
-  app.deployment_target       = '5.0'
+  app.deployment_target       = '5.1'
   app.icons                   = Dir['resources/Icon*'].map { |file| File.basename(file) }
 
   app.codesign_certificate    = 'iPhone Distribution: Peter Schroeder'
   app.identifier              = 'de.nofail.freifunk'
+ 
+  app.pods do
+    pod 'NUI'
+  end
+  app.frameworks += ['CoreImage', 'QuartzCore']
 
   app.development do
     app.version               = "#{VERSION} (build #{%x(git describe --tags).chomp})"
@@ -31,6 +36,8 @@ Motion::Project::App.setup do |app|
     # REM (ps) this needs to be set for testflight
     # TODO (ps) open an issue at https://github.com/HipByte/motion-testflight/
     app.entitlements['get-task-allow'] = false
+
+    app.info_plist['nui_style_path'] = "#{Dir.pwd}/resources/style.nss"
   end
 
   app.release do

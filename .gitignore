@@ -1,6 +1,7 @@
 .repl_history
 build
 tags
+vendor/pods
 app/pixate_code.rb
 app/testflight_launcher.rb
 resources/*.nib
