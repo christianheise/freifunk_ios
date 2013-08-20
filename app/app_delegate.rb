@@ -1,14 +1,8 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions: launchOptions)
-    NUISettings.initWithStylesheet("style")
-    NUISettings.setAutoUpdatePath NSBundle.mainBundle.objectForInfoDictionaryKey('nui_style_path') if App.development?
-    NUIAppearance.init
+    init_testflight
+    init_nui
 
-    tabs = [
-      MapController.new,
-      ListController.new,
-      SettingsController.new,
-    ]
     @tabbar_controller = UITabBarController.alloc.init
     @tabbar_controller.viewControllers = tabs
 
@@ -20,5 +14,25 @@ class AppDelegate
       window.makeKeyAndVisible
     end
     true
+  end
+
+  private
+
+  def tabs
+    [
+      MapController.new,
+      ListController.new,
+      SettingsController.new,
+    ]
+  end
+
+  def init_testflight
+    TestFlight.takeOff(NSBundle.mainBundle.objectForInfoDictionaryKey('testflight_apitoken'))
+  end
+
+  def init_nui
+    NUISettings.initWithStylesheet("style")
+    NUISettings.setAutoUpdatePath NSBundle.mainBundle.objectForInfoDictionaryKey('nui_style_path') if App.development?
+    NUIAppearance.init
   end
 end

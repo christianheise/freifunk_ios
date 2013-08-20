@@ -19,7 +19,8 @@ Motion::Project::App.setup do |app|
   app.pods do
     pod 'NUI'
   end
-  app.frameworks += ['CoreImage', 'QuartzCore']
+
+  app.info_plist['testflight_apitoken'] = ENV['TESTFLIGHT_API_TOKEN']
 
   app.development do
     app.version               = "#{VERSION} (build #{%x(git describe --tags).chomp})"
