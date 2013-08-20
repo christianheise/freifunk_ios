@@ -21,7 +21,7 @@ class SettingsController < UITableViewController
   end
 
   def numberOfSectionsInTableView(tableView)
-    4
+    5
   end
 
   def tableView(tableView, titleForHeaderInSection: section)
@@ -34,57 +34,43 @@ class SettingsController < UITableViewController
   end
 
   def tableView(tableView, numberOfRowsInSection: section)
-    if section == 0
+    case section
+    when 0, 2, 4
+      1
+    when 1
       2
-    elsif section == 1
-      2
-    elsif section == 2
-      2
-    else
+    when 3
       Region.all.size
     end
   end
 
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
-    if indexPath.section == 2 && indexPath.row == 1
+    case indexPath.section
+    when 0, 1, 2, 4
+      tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
+        cell.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: :link_cell)
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
+      end
+    when 3
       tableView.dequeueReusableCellWithIdentifier(:text_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :text_cell)
         cell.accessoryType  = UITableViewCellAccessoryNone
         cell.selectionStyle = UITableViewCellSelectionStyleNone
       end
-    elsif indexPath.section == 3
-      tableView.dequeueReusableCellWithIdentifier(:region_cell) || UITableViewCell.alloc.tap do |cell|
-        cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :region_cell)
-        cell.accessoryType  = UITableViewCellAccessoryNone
-        cell.selectionStyle = UITableViewCellSelectionStyleNone
-      end
-    else
-      tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
-        cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :link_cell)
-      end
     end
   end
 
   def tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
-    if indexPath.section == 0
-      if indexPath.row == 0
-        cell.textLabel.text = "Coding: @phoet"
-      else
-        cell.textLabel.text = "Fork on GitHub"
-      end
-    elsif indexPath.section == 1
-      if indexPath.row == 0
-        cell.textLabel.text = "Freifunk #{Region.current.name} auf Twitter"
-      else
-        cell.textLabel.text = "Freifunk #{Region.current.name} Seite"
-      end
-    elsif indexPath.section == 2
-      if indexPath.row == 0
-        cell.textLabel.text = "Knoten aktualisieren"
-      else
-        cell.textLabel.text = "Version: #{App.version}"
-      end
-    else
+    case indexPath.section
+    when 0
+      cell.textLabel.text = "Coding: @phoet"
+    when 1
+      text = "Freifunk #{Region.current.name} #{indexPath.row == 0 ? 'auf Twitter' : 'Seite'}" 
+      cell.textLabel.text = text
+    when 2
+      cell.textLabel.text       = "Knoten aktualisieren"
+      cell.detailTextLabel.text = "zuletzt aktualisiert #{Node.last_update}"
+    when 3
       region = Region.all[indexPath.row]
       cell.textLabel.text = region.name
       if region == Region.current
@@ -94,25 +80,24 @@ class SettingsController < UITableViewController
         cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator
         cell.selectionStyle = UITableViewCellSelectionStyleGray
       end
+    when 4
+      cell.textLabel.text = "Version: #{App.version}"
     end
   end
 
   def tableView(tableView, didSelectRowAtIndexPath: indexPath)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
-    if indexPath.section == 0
-      if indexPath.row == 0
-        open_url("http://twitter.com/phoet")
-      else
-        open_url("https://www.github.com/phoet/freifunk_ios/")
-      end
-    elsif indexPath.section == 1
+    case indexPath.section
+    when 0
+      open_url("http://twitter.com/phoet")
+    when 1
       if indexPath.row == 0
         open_url("http://twitter.com/#{Region.current.twitter}")
       else
         open_url(Region.current.homepage)
       end
-    elsif indexPath.section == 2
+    when 2
       if indexPath.row == 0
         current_cell = tableView.cellForRowAtIndexPath(indexPath)
         current_cell.accessoryView = spinner
@@ -122,15 +107,16 @@ class SettingsController < UITableViewController
           spinner.stopAnimating
           if state
             reload_controllers
-            current_cell.textLabel.text = "Aktualisiert: #{Node.last_update}"
           else
             App.alert("Fehler beim laden...")
           end
         end
       end
-    else
+    when 3
       Region.current = Region.all[indexPath.row]
       reload_controllers
+    when 4
+      open_url("https://www.github.com/phoet/freifunk_ios/")
     end
   end
 
