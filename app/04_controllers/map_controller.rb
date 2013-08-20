@@ -2,9 +2,8 @@ class MapController < UIViewController
   include MapKit
 
   SPAN    = [3.1, 3.1]
-  CENTER  = [53.5, 10.0]
 
-  FAR_OUT = 7
+  FAR_OUT = 8
   NEAR_IN = 14
 
   FILTER_ITEMS = ["Alle", "Online", "Offline"]

@@ -1,11 +1,12 @@
 class SettingsController < UITableViewController
-  attr_accessor :regions
-
   def init
     (super || self).tap do |it|
       it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image:UIImage.imageNamed('settings.png'), tag:2)
-      self.regions = %w(Hamburg Berlin)
     end
+  end
+
+  def reload
+    tableView.reloadData
   end
 
   def loadView
@@ -34,13 +35,13 @@ class SettingsController < UITableViewController
 
   def tableView(tableView, numberOfRowsInSection: section)
     if section == 0
-      1
+      2
     elsif section == 1
-      3
+      2
     elsif section == 2
       2
     else
-      regions.size
+      Region.all.size
     end
   end
 
@@ -52,36 +53,30 @@ class SettingsController < UITableViewController
         cell.selectionStyle = UITableViewCellSelectionStyleNone
       end
     elsif indexPath.section == 3
-      (tableView.dequeueReusableCellWithIdentifier(:region_cell) || UITableViewCell.alloc).tap do |cell|
+      tableView.dequeueReusableCellWithIdentifier(:region_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :region_cell)
-        if indexPath.row == 1
-          cell.accessoryType          = UITableViewCellAccessoryNone
-          cell.selectionStyle         = UITableViewCellSelectionStyleNone
-          cell.userInteractionEnabled = false
-        else
-          cell.accessoryType  = UITableViewCellAccessoryCheckmark
-          cell.selectionStyle = UITableViewCellSelectionStyleBlue
-        end
+        cell.accessoryType  = UITableViewCellAccessoryNone
+        cell.selectionStyle = UITableViewCellSelectionStyleNone
       end
     else
       tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :link_cell)
-        cell.accessoryType   = UITableViewCellAccessoryDisclosureIndicator
-        cell.selectionStyle  = UITableViewCellSelectionStyleGray
       end
     end
   end
 
   def tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
     if indexPath.section == 0
-      cell.textLabel.text = "Coding: @phoet"
+      if indexPath.row == 0
+        cell.textLabel.text = "Coding: @phoet"
+      else
+        cell.textLabel.text = "Fork on GitHub"
+      end
     elsif indexPath.section == 1
       if indexPath.row == 0
-        cell.textLabel.text = "Follow on Twitter"
-      elsif indexPath.row == 1
-        cell.textLabel.text = "Fork on GitHub"
+        cell.textLabel.text = "Freifunk #{Region.current.name} auf Twitter"
       else
-        cell.textLabel.text = "Freifunk Hamburg"
+        cell.textLabel.text = "Freifunk #{Region.current.name} Seite"
       end
     elsif indexPath.section == 2
       if indexPath.row == 0
@@ -90,7 +85,15 @@ class SettingsController < UITableViewController
         cell.textLabel.text = "Version: #{App.version}"
       end
     else
-      cell.textLabel.text = regions[indexPath.row]
+      region = Region.all[indexPath.row]
+      cell.textLabel.text = region.name
+      if region == Region.current
+        cell.accessoryType  = UITableViewCellAccessoryCheckmark
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue
+      else
+        cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator
+        cell.selectionStyle = UITableViewCellSelectionStyleGray
+      end
     end
   end
 
@@ -98,14 +101,16 @@ class SettingsController < UITableViewController
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
     if indexPath.section == 0
-      open_url("http://twitter.com/phoet")
+      if indexPath.row == 0
+        open_url("http://twitter.com/phoet")
+      else
+        open_url("https://www.github.com/phoet/freifunk_ios/")
+      end
     elsif indexPath.section == 1
       if indexPath.row == 0
-        open_url("http://twitter.com/FreifunkHH")
-      elsif indexPath.row == 1
-        open_url("https://www.github.com/phoet/freifunk_ios/")
+        open_url("http://twitter.com/#{Region.current.twitter}")
       else
-        open_url("http://hamburg.freifunk.net/")
+        open_url(Region.current.homepage)
       end
     elsif indexPath.section == 2
       if indexPath.row == 0
@@ -116,9 +121,7 @@ class SettingsController < UITableViewController
         Node.download do |state|
           spinner.stopAnimating
           if state
-            tabBarController.viewControllers.each do |controller|
-              controller.reload if controller.respond_to? :reload
-            end
+            reload_controllers
             current_cell.textLabel.text = "Aktualisiert: #{Node.last_update}"
           else
             App.alert("Fehler beim laden...")
@@ -126,11 +129,19 @@ class SettingsController < UITableViewController
         end
       end
     else
-      puts "reeeeegion selected #{indexPath.row}"
+      Region.current = Region.all[indexPath.row]
+      reload_controllers
     end
   end
 
-  private
+  protected
+
+  def reload_controllers
+    Node.reset
+    tabBarController.viewControllers.each do |controller|
+      controller.reload if controller.respond_to? :reload
+    end
+  end
 
   def spinner
     @spinner ||= UIActivityIndicatorView.alloc.tap do |spinner|

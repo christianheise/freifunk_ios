@@ -1,8 +1,6 @@
 class Node
   include CoreLocation::DataTypes
 
-  REMOTE_JSON = "http://graph.hamburg.freifunk.net/nodes.json"
-
   attr_reader :node_id, :name, :geo, :flags, :macs
 
   def initialize(node_id, name, geo, flags, macs)
@@ -50,11 +48,11 @@ class Node
   end
 
   def self.download_path
-    "#{App.documents_path}/nodes.json"
+    "#{App.documents_path}/#{Region.current.key}.json"
   end
 
   def self.local_path
-    "#{App.resources_path}/data/nodes.json"
+    "#{App.resources_path}/data/#{Region.current.key}.json"
   end
 
   def self.file_path
@@ -92,7 +90,7 @@ class Node
   end
 
   def self.download(&block)
-    BW::HTTP.get(REMOTE_JSON) do |response|
+    BW::HTTP.get(Region.current.data_url) do |response|
       if state = response.ok?
         response.body.writeToFile(download_path, atomically: true)
         reset
@@ -102,11 +100,11 @@ class Node
   end
 
   def self.last_update
-    File.mtime(file_path).strftime('%d.%m.%Y')
+    File.mtime(file_path).strftime('%d.%m.%Y %H:%M')
   end
 
   def self.check_state(&block)
-    BubbleWrap::HTTP.head(REMOTE_JSON) do |response|
+    BubbleWrap::HTTP.head(Region.current.data_url) do |response|
       if state = !!response.headers
         remote  = NSDate.dateWithNaturalLanguageString(response.headers["Last-Modified"])
         local   = File.mtime(file_path)
