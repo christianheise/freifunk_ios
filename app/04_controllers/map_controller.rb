@@ -17,6 +17,7 @@ class MapController < UIViewController
 
   def reload
     filter_map(self)
+    init_map
   end
 
   def loadView
@@ -32,11 +33,7 @@ class MapController < UIViewController
   end
 
   def viewDidLoad
-    @map.region = CoordinateRegion.new(CENTER, SPAN)
-    @map.set_zoom_level(FAR_OUT)
-    @map.addAnnotations(Node.all)
-
-    switch_to_user_location
+    init_map
   end
 
   def viewWillAppear(animated)
@@ -89,6 +86,12 @@ class MapController < UIViewController
     end
   end
 
+  def init_map
+    @map.region = CoordinateRegion.new(Region.current.location, SPAN)
+    @map.set_zoom_level(FAR_OUT)
+    @map.addAnnotations(Node.all)
+  end
+
   def add_controls
     @control = UISegmentedControl.alloc.tap do |it|
       it.initWithItems(FILTER_ITEMS)
@@ -109,7 +112,7 @@ class MapController < UIViewController
     Motion::Layout.new do |layout|
       layout.view self.view
       layout.subviews 'state' => @control, 'action' => @button
-      layout.metrics    "margin" => 10, "height" => 30
+      layout.metrics    "margin" => 10, "height" => 32
       layout.horizontal "|-margin-[action(==height)]-[state]-margin-|"
       layout.vertical   "|-margin-[state(==height)]"
       layout.vertical   "|-margin-[action(==height)]"
@@ -118,11 +121,24 @@ class MapController < UIViewController
 
   def switch_to_user_location(sender = nil)
     return unless BW::Location.enabled?
+    @button.enabled = false
+    @button.addSubview(spinner)
+    spinner.startAnimating
+
     BW::Location.get_once do |result|
       coordinate  = LocationCoordinate.new(result)
       @map.region = CoordinateRegion.new(coordinate, SPAN)
       @map.shows_user_location = true
       @map.set_zoom_level(NEAR_IN)
+      spinner.stopAnimating
+      @button.enabled = true
+    end
+  end
+
+  def spinner
+    @spinner ||= UIActivityIndicatorView.alloc.tap do |spinner|
+      spinner.initWithActivityIndicatorStyle(UIActivityIndicatorViewStyleGray)
+      spinner.frame = CGRectMake(1, 1, 30, 30)
     end
   end
 end

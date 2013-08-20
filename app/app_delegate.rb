@@ -4,7 +4,8 @@ class AppDelegate
     init_nui
 
     @tabbar_controller = UITabBarController.alloc.init
-    @tabbar_controller.viewControllers = tabs
+    @tabbar_controller.viewControllers  = tabs
+    @tabbar_controller.selectedIndex    = 0
 
     @navigation_controller  = UINavigationController.alloc.initWithRootViewController(@tabbar_controller)
     @window = UIWindow.alloc.tap do |window|
