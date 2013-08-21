@@ -2,8 +2,6 @@ class MapController < UIViewController
   include MapKit
 
   SPAN    = [3.1, 3.1]
-
-  FAR_OUT = 8
   NEAR_IN = 14
 
   FILTER_ITEMS = ["Alle", "Online", "Offline"]
@@ -87,7 +85,7 @@ class MapController < UIViewController
 
   def init_map
     @map.region = CoordinateRegion.new(Region.current.location, SPAN)
-    @map.set_zoom_level(FAR_OUT)
+    @map.set_zoom_level(Region.current.zoom)
     @map.addAnnotations(Node.all)
   end
 

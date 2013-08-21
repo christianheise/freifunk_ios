@@ -1,6 +1,6 @@
 # Freifunk iOS App
 
-The Support is currently limited to [Freifunk Hamburg]().
+The Support is currently limited to Freifunk Hamburg, Jena, Kiel, Lübeck.
 
 Add yourself as a [Beta-Tester](http://tflig.ht/18tV89i).
 

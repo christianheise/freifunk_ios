@@ -1,0 +1,639 @@
+{
+  "nodes": [
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "02:ba:14:8c:7a:01, 02:ba:1e:8c:7a:01",
+      "name": "",
+      "id": "02:ba:14:8c:7a:01"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "02:ba:14:0c:2a:01, 02:ba:1e:0c:2a:01",
+      "name": "",
+      "id": "02:ba:14:0c:2a:01"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": [
+        52.51747,
+        11.161873
+      ],
+      "macs": "02:ba:1e:bc:79:01, 02:ba:14:bc:79:01",
+      "name": "kicker",
+      "id": "02:ba:14:bc:79:01"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:22:8c, 64:70:02:d3:22:8b",
+      "name": "",
+      "id": "64:70:02:d3:22:8b"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": [
+        52.518088,
+        11.1617875
+      ],
+      "macs": "02:ba:1e:46:8a:01, 02:ba:14:46:8a:01",
+      "name": "street",
+      "id": "02:ba:14:46:8a:01"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:e2:97:d0",
+      "name": "",
+      "id": "64:70:02:e2:97:d0"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "02:ff:3b:69:12:11",
+      "name": "",
+      "id": "02:ff:3b:69:12:11"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": [
+        52.5192,
+        11.156541
+      ],
+      "macs": "02:ba:14:04:4f:01",
+      "name": "jane",
+      "id": "02:ba:14:04:4f:01"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:24:18",
+      "name": "",
+      "id": "64:70:02:d3:24:18"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "76:19:3c:0e:4e:4c",
+      "name": "",
+      "id": "76:19:3c:0e:4e:4c"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "02:ba:14:46:f2:01",
+      "name": "",
+      "id": "02:ba:14:46:f2:01"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:19:ca",
+      "name": "",
+      "id": "64:70:02:d3:19:ca"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "ca:91:64:00:65:3f",
+      "name": "",
+      "id": "ca:91:64:00:65:3f"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:23:fc",
+      "name": "",
+      "id": "64:70:02:d3:23:fc"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "fe:9c:59:0b:0e:28",
+      "name": "",
+      "id": "fe:9c:59:0b:0e:28"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:23:6a",
+      "name": "",
+      "id": "64:70:02:d3:23:6a"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "36:9f:bc:7c:48:ca",
+      "name": "",
+      "id": "36:9f:bc:7c:48:ca"
+    },
+    {
+      "flags": {
+        "client": false,
+        "gateway": false,
+        "online": true
+      },
+      "geo": [
+        52.5163,
+        11.1626243
+      ],
+      "macs": "02:ba:14:ae:83:01",
+      "name": "8-kitchen",
+      "id": "02:ba:14:ae:83:01"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "00:03:0d:1c:a6:5f",
+      "name": "",
+      "id": "00:03:0d:1c:a6:5f"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:23:16",
+      "name": "",
+      "id": "64:70:02:d3:23:16"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "5e:12:0c:a8:3b:59",
+      "name": "",
+      "id": "5e:12:0c:a8:3b:59"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "56:93:22:8a:b5:90",
+      "name": "",
+      "id": "56:93:22:8a:b5:90"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "0a:50:e7:c9:80:34",
+      "name": "",
+      "id": "0a:50:e7:c9:80:34"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "00:0b:6a:37:11:4e",
+      "name": "",
+      "id": "00:0b:6a:37:11:4e"
+    },
+    {
+      "flags": {
+        "client": true,
+        "gateway": false,
+        "online": true
+      },
+      "geo": null,
+      "macs": "64:70:02:d3:24:60",
+      "name": "",
+      "id": "64:70:02:d3:24:60"
+    }
+  ],
+  "meta": {
+    "timestamp": "2013-08-21T16:45:30"
+  },
+  "links": [
+    {
+      "id": "02:ba:14:04:4f:01-02:ba:14:46:f2:01",
+      "source": 10,
+      "quality": "1.000, 1.015",
+      "target": 7,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:8a:01-02:ba:14:8c:7a:01",
+      "source": 4,
+      "quality": "1.015, 1.000",
+      "target": 0,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:8c:7a:01-64:70:02:d3:22:8b",
+      "source": 3,
+      "quality": "1.000",
+      "target": 0,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:04:4f:01-02:ba:14:0c:2a:01",
+      "source": 1,
+      "quality": "1.007, 1.020",
+      "target": 7,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-fe:9c:59:0b:0e:28",
+      "source": 1,
+      "quality": "TT",
+      "target": 14,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:1e:8c:7a:01-02:ba:1e:bc:79:01",
+      "source": 2,
+      "quality": "1.036, 1.214",
+      "target": 0,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-64:70:02:d3:23:fc",
+      "source": 1,
+      "quality": "TT",
+      "target": 13,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:46:8a:01-64:70:02:d3:22:8c",
+      "source": 4,
+      "quality": "1.000, 1.007",
+      "target": 3,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:8a:01-0a:50:e7:c9:80:34",
+      "source": 4,
+      "quality": "TT",
+      "target": 22,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:04:4f:01-76:19:3c:0e:4e:4c",
+      "source": 7,
+      "quality": "TT",
+      "target": 9,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-64:70:02:d3:22:8c",
+      "source": 3,
+      "quality": "1.020, 1.000",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:0c:2a:01-64:70:02:d3:22:8b",
+      "source": 3,
+      "quality": "1.015",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:0c:2a:01-02:ba:1e:8c:7a:01",
+      "source": 1,
+      "quality": "1.020, 1.000",
+      "target": 0,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:04:4f:01-64:70:02:d3:24:18",
+      "source": 7,
+      "quality": "TT",
+      "target": 8,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:8c:7a:01-64:70:02:e2:97:d0",
+      "source": 0,
+      "quality": "TT",
+      "target": 5,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:04:4f:01-02:ba:14:bc:79:01",
+      "source": 2,
+      "quality": "1.000, 1.000",
+      "target": 7,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:46:8a:01-02:ba:1e:8c:7a:01",
+      "source": 0,
+      "quality": "1.335",
+      "target": 4,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:bc:79:01-64:70:02:d3:22:8b",
+      "source": 3,
+      "quality": "1.108",
+      "target": 2,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:46:8a:01-64:70:02:d3:22:8b",
+      "source": 3,
+      "quality": "1.164",
+      "target": 4,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:8a:01-02:ba:14:bc:79:01",
+      "source": 4,
+      "quality": "1.066, 1.015",
+      "target": 2,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:8c:7a:01-64:70:02:d3:22:8c",
+      "source": 0,
+      "quality": "1.003",
+      "target": 3,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:f2:01-02:ba:14:bc:79:01",
+      "source": 2,
+      "quality": "1.032, 1.000",
+      "target": 10,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:bc:79:01-64:70:02:d3:23:6a",
+      "source": 2,
+      "quality": "TT",
+      "target": 15,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-02:ba:14:46:8a:01",
+      "source": 4,
+      "quality": "1.049, 1.000",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:bc:79:01-64:70:02:d3:22:8c",
+      "source": 3,
+      "quality": "1.003, 1.032",
+      "target": 2,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:0c:2a:01-02:ba:1e:bc:79:01",
+      "source": 2,
+      "quality": "1.062, 1.237",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-02:ba:14:ae:83:01",
+      "source": 17,
+      "quality": "1.000, 1.015",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:ae:83:01-02:ba:14:bc:79:01",
+      "source": 17,
+      "quality": "1.000, 1.049",
+      "target": 2,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-02:ba:14:bc:79:01",
+      "source": 2,
+      "quality": "1.049, 1.000",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:ae:83:01-64:70:02:d3:23:16",
+      "source": 17,
+      "quality": "TT",
+      "target": 19,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:1e:0c:2a:01-02:ba:1e:46:8a:01",
+      "source": 4,
+      "quality": "1.356, 1.020",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:8c:7a:01-02:ba:14:bc:79:01",
+      "source": 2,
+      "quality": "1.000, 1.032",
+      "target": 0,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:8a:01-64:70:02:d3:24:60",
+      "source": 4,
+      "quality": "TT",
+      "target": 24,
+      "type": "client"
+    },
+    {
+      "id": "00:03:0d:1c:a6:5f-02:ba:14:ae:83:01",
+      "source": 17,
+      "quality": "TT",
+      "target": 18,
+      "type": "client"
+    },
+    {
+      "id": "56:93:22:8a:b5:90-64:70:02:d3:22:8b",
+      "source": 3,
+      "quality": "TT",
+      "target": 21,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:ae:83:01-5e:12:0c:a8:3b:59",
+      "source": 17,
+      "quality": "TT",
+      "target": 20,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:46:8a:01-02:ba:14:46:f2:01",
+      "source": 4,
+      "quality": "1.049, 1.000",
+      "target": 10,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:8a:01-02:ba:14:ae:83:01",
+      "source": 4,
+      "quality": "1.015, 1.015",
+      "target": 17,
+      "type": null
+    },
+    {
+      "id": "02:ba:1e:46:8a:01-02:ba:1e:bc:79:01",
+      "source": 2,
+      "quality": "1.281",
+      "target": 4,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:8c:7a:01-02:ff:3b:69:12:11",
+      "source": 0,
+      "quality": "TT",
+      "target": 6,
+      "type": "client"
+    },
+    {
+      "id": "00:0b:6a:37:11:4e-02:ba:14:46:8a:01",
+      "source": 4,
+      "quality": "TT",
+      "target": 23,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:46:f2:01-64:70:02:d3:22:8c",
+      "source": 3,
+      "quality": "1.040, 1.011",
+      "target": 10,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:46:f2:01-64:70:02:d3:19:ca",
+      "source": 10,
+      "quality": "TT",
+      "target": 11,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:46:f2:01-ca:91:64:00:65:3f",
+      "source": 10,
+      "quality": "TT",
+      "target": 12,
+      "type": "client"
+    },
+    {
+      "id": "02:ba:14:ae:83:01-64:70:02:d3:22:8c",
+      "source": 3,
+      "quality": "1.000, 1.003",
+      "target": 17,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:8c:7a:01-02:ba:14:ae:83:01",
+      "source": 17,
+      "quality": "1.000, 1.028",
+      "target": 0,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:0c:2a:01-02:ba:14:8c:7a:01",
+      "source": 0,
+      "quality": "1.000",
+      "target": 1,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:04:4f:01-64:70:02:d3:22:8c",
+      "source": 7,
+      "quality": "1.066",
+      "target": 3,
+      "type": null
+    },
+    {
+      "id": "02:ba:14:bc:79:01-36:9f:bc:7c:48:ca",
+      "source": 2,
+      "quality": "TT",
+      "target": 16,
+      "type": "client"
+    }
+  ]
+}
