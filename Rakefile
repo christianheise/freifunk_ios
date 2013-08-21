@@ -49,6 +49,9 @@ Motion::Project::App.setup do |app|
 end
 
 desc "download latest node json"
-task :update_json do
-  system('wget "http://graph.hamburg.freifunk.net/nodes.json" && mv nodes.json resources/data/nodes.json')
+task :update_json, [:name] do |t, args|
+  require_relative 'app/01_models/region.rb'
+  name    = args[:name].to_sym
+  region  = Region.find name
+  system("wget wget -O resources/data/#{name}.json example.html '#{region.data_url}'")
 end
