@@ -47,21 +47,21 @@ class Node
     !valid?
   end
 
-  def self.download_path
-    "#{App.documents_path}/#{Region.current.key}.json"
+  def self.download_path(key)
+    "#{App.documents_path}/#{key}.json"
   end
 
-  def self.local_path
-    "#{App.resources_path}/data/#{Region.current.key}.json"
+  def self.local_path(key)
+    "#{App.resources_path}/data/#{key}.json"
   end
 
-  def self.file_path
-    File.exists?(download_path) ? download_path : local_path
+  def self.file_path(key)
+    File.exists?(download_path(key)) ? download_path(key) : local_path(key)
   end
 
-  def self.all
+  def self.all(region = Region.current)
     @nodes ||= begin
-      content = File.open(file_path) { |file| file.read }
+      content = File.open(file_path(region.key)) { |file| file.read }
       BW::JSON.parse(content)[:nodes].map do |it|
         node_id = it[:id]
         name    = it[:name]
@@ -89,25 +89,25 @@ class Node
     @nodes = nil
   end
 
-  def self.download(&block)
-    BW::HTTP.get(Region.current.data_url) do |response|
+  def self.download(region = Region.current, &block)
+    BW::HTTP.get(region.data_url) do |response|
       if state = response.ok?
-        response.body.writeToFile(download_path, atomically: true)
+        response.body.writeToFile(download_path(region.key), atomically: true)
         reset
       end
       block.call(state)
     end
   end
 
-  def self.last_update
-    File.mtime(file_path).strftime('%d.%m.%Y %H:%M')
+  def self.last_update(region = Region.current)
+    File.mtime(file_path(region.key)).strftime('%d.%m.%Y %H:%M')
   end
 
-  def self.check_state(&block)
-    BubbleWrap::HTTP.head(Region.current.data_url) do |response|
+  def self.check_state(region = Region.current, &block)
+    BubbleWrap::HTTP.head(region.data_url) do |response|
       if state = !!response.headers
         remote  = NSDate.dateWithNaturalLanguageString(response.headers["Last-Modified"])
-        local   = File.mtime(file_path)
+        local   = File.mtime(file_path(region.key))
         state   = remote > local
       end
       block.call(state)
