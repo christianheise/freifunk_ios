@@ -1,15 +1,15 @@
 class ListController < UITableViewController
-  attr_accessor :nodes
+  attr_accessor :repo, :nodes
 
   def init
     (super || self).tap do |it|
       it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image:UIImage.imageNamed('list.png'), tag:1)
-      it.nodes = Node.sorted
+      init_repo
     end
   end
 
   def reload
-    self.nodes = Node.sorted
+    init_repo
     tableView.reloadData
   end
 
@@ -70,13 +70,13 @@ class ListController < UITableViewController
   end
 
   def searchBarSearchButtonClicked(searchBar)
-    self.nodes = Node.find(searchBar.text)
+    self.nodes = repo.find(searchBar.text)
     tableView.reloadData
     searchBar.resignFirstResponder
   end
 
   def searchBarCancelButtonClicked(searchBar)
-    self.nodes = Node.sorted
+    self.nodes = repo.sorted
     tableView.reloadData
     tableView.scrollToRowAtIndexPath(NSIndexPath.indexPathForRow(0, inSection:0), atScrollPosition: UITableViewScrollPositionTop, animated: true)
     searchBar.resignFirstResponder
@@ -84,13 +84,22 @@ class ListController < UITableViewController
 
   private
 
+  def region
+    UIApplication.sharedApplication.delegate.region
+  end
+
   def search_and_reload(bar)
     text = bar.text
     if text && text.size > 1
-      self.nodes = Node.find(text)
+      self.nodes = repo.find(text)
     else
-      self.nodes = Node.sorted
+      self.nodes = repo.sorted
     end
     tableView.reloadData
+  end
+
+  def init_repo
+    self.repo = NodeRepository.new FileLoader.new(region).load
+    self.nodes = repo.sorted
   end
 end

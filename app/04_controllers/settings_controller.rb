@@ -1,11 +1,15 @@
 class SettingsController < UITableViewController
+  attr_accessor :loader
+
   def init
     (super || self).tap do |it|
       it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image:UIImage.imageNamed('settings.png'), tag:2)
+      init_loader
     end
   end
 
   def reload
+    init_loader
     tableView.reloadData
   end
 
@@ -65,15 +69,15 @@ class SettingsController < UITableViewController
     when 0
       cell.textLabel.text = "Coding: @phoet"
     when 1
-      text = "Freifunk #{Region.current.name} #{indexPath.row == 0 ? 'auf Twitter' : 'Seite'}" 
+      text = "Freifunk #{region.name} #{indexPath.row == 0 ? 'auf Twitter' : 'Seite'}" 
       cell.textLabel.text = text
     when 2
       cell.textLabel.text       = "Knoten aktualisieren"
-      cell.detailTextLabel.text = "zuletzt aktualisiert #{Node.last_update}"
+      cell.detailTextLabel.text = "zuletzt aktualisiert #{loader.last_update}"
     when 3
-      region = Region.all[indexPath.row]
-      cell.textLabel.text = region.name
-      if region == Region.current
+      r = Region.all[indexPath.row]
+      cell.textLabel.text = r.name
+      if region == r
         cell.accessoryType  = UITableViewCellAccessoryCheckmark
         cell.selectionStyle = UITableViewCellSelectionStyleBlue
       else
@@ -93,9 +97,9 @@ class SettingsController < UITableViewController
       open_url("http://twitter.com/phoet")
     when 1
       if indexPath.row == 0
-        open_url("http://twitter.com/#{Region.current.twitter}")
+        open_url("http://twitter.com/#{region.twitter}")
       else
-        open_url(Region.current.homepage)
+        open_url(region.homepage)
       end
     when 2
       if indexPath.row == 0
@@ -103,7 +107,7 @@ class SettingsController < UITableViewController
         current_cell.accessoryView = spinner
         spinner.startAnimating
 
-        Node.download do |state|
+        loader.download do |state|
           spinner.stopAnimating
           if state
             reload_controllers
@@ -113,7 +117,7 @@ class SettingsController < UITableViewController
         end
       end
     when 3
-      Region.current = Region.all[indexPath.row]
+      self.region = Region.all[indexPath.row]
       reload_controllers
     when 4
       open_url("https://www.github.com/phoet/freifunk_ios/")
@@ -123,7 +127,6 @@ class SettingsController < UITableViewController
   protected
 
   def reload_controllers
-    Node.reset
     tabBarController.viewControllers.each do |controller|
       controller.reload if controller.respond_to? :reload
     end
@@ -139,5 +142,17 @@ class SettingsController < UITableViewController
   def open_url(url)
     url = NSURL.URLWithString(url)
     UIApplication.sharedApplication.openURL(url)
+  end
+
+  def region
+    UIApplication.sharedApplication.delegate.region
+  end
+
+  def region=(region)
+    UIApplication.sharedApplication.delegate.region = region
+  end
+
+  def init_loader
+    self.loader = FileLoader.new(region)
   end
 end

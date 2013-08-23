@@ -17,6 +17,19 @@ class AppDelegate
     true
   end
 
+  def region
+    if key = App::Persistence['region']
+      Region.find(key.to_sym) || Region::ALL.first
+    else
+      Region::ALL.first
+    end
+  end
+  
+  def region=(region)
+    App::Persistence['region'] = region.key.to_s
+    region
+  end
+
   private
 
   def tabs

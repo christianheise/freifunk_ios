@@ -14,17 +14,4 @@ class Region < Struct.new(:key, :name, :zoom, :location, :data_url, :twitter, :h
   def self.find(key)
     all.detect { |region| region.key == key }
   end
-
-  def self.current
-    if key = App::Persistence['region']
-      find(key.to_sym) || ALL.first
-    else
-      ALL.first
-    end
-  end
-  
-  def self.current=(region)
-    App::Persistence['region'] = region.key.to_s
-    region
-  end
 end

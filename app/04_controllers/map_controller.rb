@@ -1,6 +1,8 @@
 class MapController < UIViewController
   include MapKit
 
+  attr_accessor :repo
+
   SPAN    = [3.1, 3.1]
   NEAR_IN = 14
 
@@ -13,6 +15,7 @@ class MapController < UIViewController
   end
 
   def reload
+    init_repo
     filter_map(self)
     init_map
   end
@@ -30,6 +33,7 @@ class MapController < UIViewController
   end
 
   def viewDidLoad
+    init_repo
     init_map
   end
 
@@ -75,18 +79,18 @@ class MapController < UIViewController
     @map.removeAnnotations(@map.annotations.reject { |a| a.is_a? MKUserLocation })
     case @control.selectedSegmentIndex
     when 0
-      @map.addAnnotations(Node.all)
+      @map.addAnnotations(repo.all)
     when 1
-      @map.addAnnotations(Node.online)
+      @map.addAnnotations(repo.online)
     when 2
-      @map.addAnnotations(Node.offline)
+      @map.addAnnotations(repo.offline)
     end
   end
 
   def init_map
-    @map.region = CoordinateRegion.new(Region.current.location, SPAN)
-    @map.set_zoom_level(Region.current.zoom)
-    @map.addAnnotations(Node.all)
+    @map.region = CoordinateRegion.new(region.location, SPAN)
+    @map.set_zoom_level(region.zoom)
+    @map.addAnnotations(repo.all)
   end
 
   def add_controls
@@ -137,5 +141,13 @@ class MapController < UIViewController
       spinner.initWithActivityIndicatorStyle(UIActivityIndicatorViewStyleGray)
       spinner.frame = CGRectMake(1, 1, 30, 30)
     end
+  end
+
+  def region
+    UIApplication.sharedApplication.delegate.region
+  end
+
+  def init_repo
+    self.repo = NodeRepository.new FileLoader.new(region).load
   end
 end
