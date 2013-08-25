@@ -1,12 +1,12 @@
 describe FileLoader do
   it "reads nodes from file" do
-    nodes = FileLoader.new(Region::ALL.first).load
+    nodes = loader.load
     nodes.size.should.satisfy { |result| result > 100 }
     nodes.first.should.be.is_a? Node
   end
 
   it "has valid content" do
-    node = FileLoader.new(Region::ALL.first).load.first
+    node = loader.load.first
     node.tap do |it|
       it.node_id.should.eql         "66:70:02:b5:d9:26"
       it.name.should.eql            "brachvogel05"
@@ -20,5 +20,16 @@ describe FileLoader do
       it.gateway?.should.eql        false
       it.coordinate.should.be.instance_of? CLLocationCoordinate2D
     end
+  end
+
+  it "downloads a new file" do
+    loader.download do |state|
+      @state = state
+    end
+    wait_max(1) { @state.should.eql true }
+  end
+
+  def loader
+    FileLoader.new(Region::ALL.first)
   end
 end
