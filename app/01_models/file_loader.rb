@@ -9,7 +9,6 @@ class FileLoader
     BW::HTTP.get(region.data_url) do |response|
       if state = response.ok?
         response.body.writeToFile(download_path, atomically: true)
-        reset
       end
       block.call(state)
     end
