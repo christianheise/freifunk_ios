@@ -51,7 +51,14 @@ end
 desc "download latest node json"
 task :update_json, [:name] do |t, args|
   require_relative 'app/01_models/region.rb'
-  name    = args[:name].to_sym
-  region  = Region.find name
-  system("wget wget -O resources/data/#{name}.json example.html '#{region.data_url}'")
+  if name = args[:name]
+    regions = [Region.find(name.to_sym)]
+  else
+    regions = Region.all
+  end
+  regions.each do |region| 
+    system("wget -O tmp.json '#{region.data_url}'")
+    system("cat tmp.json | python -mjson.tool > resources/data/#{region.key}.json")
+    system("rm tmp.json")
+  end
 end
