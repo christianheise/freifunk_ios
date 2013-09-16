@@ -24,7 +24,7 @@ class AppDelegate
       Region::ALL.first
     end
   end
-  
+
   def region=(region)
     App::Persistence['region'] = region.key.to_s
     region
