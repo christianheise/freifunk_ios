@@ -15,18 +15,18 @@ Motion::Project::App.setup do |app|
 
   app.codesign_certificate    = 'iPhone Distribution: Peter Schroeder'
   app.identifier              = 'de.nofail.freifunk'
- 
+
   app.pods do
     pod 'NUI'
   end
 
+  app.testflight.sdk                    = 'vendor/TestFlightSDK'
   app.info_plist['testflight_apitoken'] = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
 
   app.development do
     app.version               = "#{VERSION} (build #{%x(git describe --tags).chomp})"
     app.provisioning_profile  = "#{ENV['HOME']}/Dropbox/ios_certs/ad_hoc_distribution_freifunk.mobileprovision"
 
-    app.testflight.sdk                = 'vendor/TestFlightSDK'
     app.testflight.api_token          = ENV['TESTFLIGHT_API_TOKEN']
     app.testflight.team_token         = ENV['TESTFLIGHT_TEAM_TOKEN_FREIFUNK']
     app.testflight.app_token          = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
@@ -34,8 +34,6 @@ Motion::Project::App.setup do |app|
     app.testflight.identify_testers   = true
     app.testflight.distribution_lists = ['freifunk']
 
-    # REM (ps) this needs to be set for testflight
-    # TODO (ps) open an issue at https://github.com/HipByte/motion-testflight/
     app.entitlements['get-task-allow'] = false
 
     app.info_plist['nui_style_path'] = "#{Dir.pwd}/resources/style.nss"
@@ -56,7 +54,7 @@ task :update_json, [:name] do |t, args|
   else
     regions = Region.all
   end
-  regions.each do |region| 
+  regions.each do |region|
     system("wget -O tmp.json '#{region.data_url}'")
     system("cat tmp.json | python -mjson.tool > resources/data/#{region.key}.json")
     system("rm tmp.json")
