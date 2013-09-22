@@ -1,2 +1,2 @@
 language: objective-c
-before_install: ruby --version
+before_install: "ruby --version && pod install"
