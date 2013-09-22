@@ -1,4 +1,4 @@
-@primaryFontName: Helvetica;
+@primaryFontName: Swiss911BT-ExtraCompressed;
 @primaryFontNameBold: Helvetica-Bold;
 @primaryFontColor: #3E3D43;
 @secondaryFontColor: #838385;
@@ -33,6 +33,10 @@ Button {
     padding: 12;
     exclude-views: UIAlertButton;
     exclude-subviews: UITableViewCell,UITextField;
+}
+Button:LocateButton {
+    background-color: #FFFFFF;
+    height: 24;
 }
 LargeButton {
     background-color: #00ADEF;
@@ -86,6 +90,10 @@ SegmentedControl {
     font-size: 12;
     font-color: #FFFFFF;
     text-shadow-color: clear;
+}
+SegmentedControl:State {
+    height: 24;
+    font-size: 18;
 }
 Switch {
     on-tint-color: @primaryBackgroundColor;

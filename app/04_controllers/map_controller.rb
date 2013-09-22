@@ -28,7 +28,7 @@ class MapController < UIViewController
 
     self.view = UIView.alloc.initWithFrame(tabBarController.view.bounds)
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
-    self.view.addSubview @map
+    self.view.addSubview(@map)
     add_controls
   end
 
@@ -95,29 +95,25 @@ class MapController < UIViewController
 
   def add_controls
     @control = UISegmentedControl.alloc.tap do |it|
+      it.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
       it.initWithItems(FILTER_ITEMS)
       it.segmentedControlStyle = UISegmentedControlStyleBar
       it.selectedSegmentIndex  = 0
       it.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
+      it.nuiClass = 'SegmentedControl:State'
     end
+    view.addSubview(@control)
 
     @button = UIButton.buttonWithType(UIButtonTypeCustom).tap do |it|
       image = UIImage.imageNamed("location.png")
       it.setImage(image, forState: UIControlStateNormal)
       it.setImage(image, forState: UIControlStateHighlighted)
       it.setImage(image, forState: UIControlStateSelected)
+      it.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin
       it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
       it.nuiClass = 'Button:LocateButton'
     end
-
-    Motion::Layout.new do |layout|
-      layout.view self.view
-      layout.subviews 'state' => @control, 'action' => @button
-      layout.metrics    "margin" => 10, "height" => 32
-      layout.horizontal "|-margin-[action(==height)]-[state]-margin-|"
-      layout.vertical   "|-margin-[state(==height)]"
-      layout.vertical   "|-margin-[action(==height)]"
-    end
+    view.addSubview(@button)
   end
 
   def switch_to_user_location(sender = nil)
