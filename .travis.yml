@@ -1,2 +1,3 @@
 language: objective-c
-before_install: "ruby --version && pod install"
+before_install: "ruby --version && which pod"
+script: ./bin/travis
