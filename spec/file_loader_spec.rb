@@ -26,8 +26,9 @@ describe FileLoader do
     @state = nil
     loader.download do |state|
       @state = state
+      resume
     end
-    wait_max(1) { @state.should.not.eql nil }
+    wait_max(2.0) { @state.should == true }
   end
 
   def loader
