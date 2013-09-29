@@ -10,15 +10,14 @@ VERSION = "1.0.0"
 Motion::Project::App.setup do |app|
   app.name                    = 'freifunk'
   app.device_family           = [:iphone, :ipad]
-  app.deployment_target       = '5.1'
+  app.deployment_target       = '7.0'
   app.icons                   = Dir['resources/Icon*'].map { |file| File.basename(file) }
 
   app.codesign_certificate    = 'iPhone Distribution: Peter Schroeder'
   app.identifier              = 'de.nofail.freifunk'
 
-  app.pods do
-    pod 'NUI'
-  end
+  app.info_plist['UIStatusBarHidden'] = true
+  app.info_plist['UIViewControllerBasedStatusBarAppearance'] = false
 
   app.testflight.sdk                    = 'vendor/TestFlightSDK'
   app.info_plist['testflight_apitoken'] = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
@@ -35,8 +34,6 @@ Motion::Project::App.setup do |app|
     app.testflight.distribution_lists = ['freifunk']
 
     app.entitlements['get-task-allow'] = false
-
-    app.info_plist['nui_style_path'] = "#{Dir.pwd}/resources/style.nss"
   end
 
   app.release do

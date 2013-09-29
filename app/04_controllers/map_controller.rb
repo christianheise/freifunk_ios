@@ -10,7 +10,7 @@ class MapController < UIViewController
 
   def init
     (super || self).tap do |it|
-      it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image: UIImage.imageNamed('map.png'), tag: 0)
+      it.tabBarItem = UITabBarItem.alloc.initWithTitle("Karte", image: UIImage.imageNamed('location.png'), tag: 0)
     end
   end
 
@@ -21,14 +21,10 @@ class MapController < UIViewController
   end
 
   def loadView
-    @map = MapView.new
-    @map.delegate = self
-    @map.frame    = tabBarController.view.bounds
-    @map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
-
-    self.view = UIView.alloc.initWithFrame(tabBarController.view.bounds)
+    self.view = UIView.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
-    self.view.addSubview @map
+    self.view.addSubview map
+
     add_controls
   end
 
@@ -93,31 +89,35 @@ class MapController < UIViewController
     @map.addAnnotations(repo.all)
   end
 
+  def map
+    @map = MapView.new.tap do |map|
+      map.delegate = self
+      map.frame    = UIScreen.mainScreen.bounds
+      map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
+    end
+  end
+
   def add_controls
-    @control = UISegmentedControl.alloc.tap do |it|
-      it.initWithItems(FILTER_ITEMS)
-      it.segmentedControlStyle = UISegmentedControlStyleBar
-      it.selectedSegmentIndex  = 0
-      it.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
+    @control = UISegmentedControl.alloc.tap do |control|
+      control.initWithItems(FILTER_ITEMS)
+      control.frame = CGRectMake(64, 20, view.frame.size.width - 84, control.frame.size.height)
+      control.autoresizingMask = UIViewAutoresizingFlexibleWidth
+      control.segmentedControlStyle = UISegmentedControlStyleBar
+      control.backgroundColor = UIColor.whiteColor
+      control.selectedSegmentIndex  = 0
+      control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
+    view.addSubview @control
 
-    @button = UIButton.buttonWithType(UIButtonTypeCustom).tap do |it|
-      image = UIImage.imageNamed("location.png")
-      it.setImage(image, forState: UIControlStateNormal)
-      it.setImage(image, forState: UIControlStateHighlighted)
-      it.setImage(image, forState: UIControlStateSelected)
-      it.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
-      it.nuiClass = 'Button:LocateButton'
+    @button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
+      image = UIImage.imageNamed("map.png")
+      button.frame = CGRectMake(24, 24, 24, 24)
+      button.setImage(image, forState: UIControlStateNormal)
+      button.setImage(image, forState: UIControlStateHighlighted)
+      button.setImage(image, forState: UIControlStateSelected)
+      button.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
     end
-
-    Motion::Layout.new do |layout|
-      layout.view self.view
-      layout.subviews 'state' => @control, 'action' => @button
-      layout.metrics    "margin" => 10, "height" => 32
-      layout.horizontal "|-margin-[action(==height)]-[state]-margin-|"
-      layout.vertical   "|-margin-[state(==height)]"
-      layout.vertical   "|-margin-[action(==height)]"
-    end
+    view.addSubview @button
   end
 
   def switch_to_user_location(sender = nil)
@@ -139,7 +139,7 @@ class MapController < UIViewController
   def spinner
     @spinner ||= UIActivityIndicatorView.alloc.tap do |spinner|
       spinner.initWithActivityIndicatorStyle(UIActivityIndicatorViewStyleGray)
-      spinner.frame = CGRectMake(1, 1, 30, 30)
+      spinner.frame = CGRectMake(0, 0, 24, 24)
     end
   end
 

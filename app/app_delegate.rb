@@ -1,17 +1,10 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions: launchOptions)
-    init_testflight
-    init_nui
+    TestFlight.takeOff(NSBundle.mainBundle.objectForInfoDictionaryKey('testflight_apitoken'))
 
-    @tabbar_controller = UITabBarController.alloc.init
-    @tabbar_controller.viewControllers  = tabs
-    @tabbar_controller.selectedIndex    = 0
-
-    @navigation_controller  = UINavigationController.alloc.initWithRootViewController(@tabbar_controller)
     @window = UIWindow.alloc.tap do |window|
       window.initWithFrame(UIScreen.mainScreen.bounds)
-      window.rootViewController = @navigation_controller
-      window.rootViewController.wantsFullScreenLayout = true
+      window.rootViewController = navigation_controller
       window.makeKeyAndVisible
     end
     true
@@ -32,21 +25,25 @@ class AppDelegate
 
   private
 
+  def navigation_controller
+    @navigation_controller ||= UINavigationController.alloc.tap do |controller|
+      controller.initWithRootViewController(tabbar_controller)
+    end
+  end
+
+  def tabbar_controller
+    @tabbar_controller ||= UITabBarController.alloc.tap do |controller|
+      controller.init
+      controller.viewControllers = tabs
+      controller.selectedIndex   = 0
+    end
+  end
+
   def tabs
     [
       MapController.new,
       ListController.new,
       SettingsController.new,
     ]
-  end
-
-  def init_testflight
-    TestFlight.takeOff(NSBundle.mainBundle.objectForInfoDictionaryKey('testflight_apitoken'))
-  end
-
-  def init_nui
-    NUISettings.initWithStylesheet("style")
-    NUISettings.setAutoUpdatePath NSBundle.mainBundle.objectForInfoDictionaryKey('nui_style_path') if App.development?
-    NUIAppearance.init
   end
 end

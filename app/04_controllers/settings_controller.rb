@@ -3,7 +3,7 @@ class SettingsController < UITableViewController
 
   def init
     (super || self).tap do |it|
-      it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image:UIImage.imageNamed('settings.png'), tag:2)
+      it.tabBarItem = UITabBarItem.alloc.initWithTitle("Einstellungen", image:UIImage.imageNamed('settings.png'), tag:2)
       init_loader
     end
   end
@@ -30,7 +30,7 @@ class SettingsController < UITableViewController
 
   def tableView(tableView, titleForHeaderInSection: section)
     return unless section == 0
-    "With ♥ from St.Pauli"
+    "With 💙 from St.Pauli"
   end
 
   def tableView(tableView, heightForHeaderInSection: section)

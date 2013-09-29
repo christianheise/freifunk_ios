@@ -3,7 +3,7 @@ class ListController < UITableViewController
 
   def init
     (super || self).tap do |it|
-      it.tabBarItem = UITabBarItem.alloc.initWithTitle(nil, image:UIImage.imageNamed('list.png'), tag:1)
+      it.tabBarItem = UITabBarItem.alloc.initWithTitle("Liste", image:UIImage.imageNamed('list.png'), tag:1)
       init_repo
     end
   end
