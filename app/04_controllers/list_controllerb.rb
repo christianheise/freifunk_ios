@@ -99,7 +99,7 @@ class ListController < UITableViewController
   end
 
   def init_repo
-    self.repo = NodeRepository.new FileLoader.new(region).load
+    self.repo = NodeRepository.new FileLoader.new(region).load_nodes
     self.nodes = repo.sorted
   end
 end

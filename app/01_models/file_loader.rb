@@ -41,16 +41,35 @@ class FileLoader
     File.exists?(download_path) ? download_path : local_path
   end
 
-  def load
-    content = File.open(file_path) { |file| file.read }
-    BW::JSON.parse(content)[:nodes].map do |it|
-      node_id = it[:id]
-      name    = it[:name]
-      geo     = it[:geo]
-      flags   = it[:flags]
-      macs    = it[:macs]
-      Node.new(node_id, name, geo, flags, macs)
+  def load_nodes
+    load_json do |json|
+      json[:nodes].map do |it|
+        node_id = it[:id]
+        name    = it[:name]
+        geo     = it[:geo]
+        flags   = it[:flags]
+        macs    = it[:macs]
+        Node.new(node_id, name, geo, flags, macs)
+      end
     end
+  end
+
+  def load_links
+    load_json do |json|
+      json[:links].map do |it|
+        link_id = it[:id]
+        quality = it[:quality]
+        source  = it[:source]
+        target  = it[:target]
+        type    = it[:type]
+        Link.new(link_id, quality, source, target, type)
+      end
+    end
+  end
+
+  def load_json
+    content = File.open(file_path) { |file| file.read }
+    yield BW::JSON.parse(content)
   rescue BubbleWrap::JSON::ParserError => e
     puts e
     []

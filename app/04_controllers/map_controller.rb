@@ -1,7 +1,7 @@
 class MapController < UIViewController
   include MapKit
 
-  attr_accessor :repo
+  attr_accessor :repo, :mash_repo
 
   SPAN    = [3.1, 3.1]
   NEAR_IN = 14
@@ -35,23 +35,13 @@ class MapController < UIViewController
 
   def viewWillAppear(animated)
     navigationController.setNavigationBarHidden(true, animated: true)
-
-    coords = Pointer.new(CLLocationCoordinate2D.type, 3)
-    coords[0] = CLLocationCoordinate2DMake(53.562777, 9.965312)
-    coords[1] = CLLocationCoordinate2DMake(53.65, 9.85)
-    coords[2] = CLLocationCoordinate2DMake(53.7, 9.8)
-    polygon = MKPolygon.polygonWithCoordinates(coords, count: 3)
-    polygon.title = "HIIIIIIIIIIIIIIIer"
-    @map.addOverlay polygon
   end
 
   def mapView(mapView, viewForOverlay: overlay)
-    puts overlay
-    if overlay.is_a?(MKPolygon)
-      view = MKPolygonView.alloc.initWithOverlay(overlay)
-      view.lineWidth = 1
+    if overlay.is_a?(MKPolyline)
+      view = MKPolylineView.alloc.initWithOverlay(overlay)
+      view.lineWidth = 5
       view.strokeColor = UIColor.blueColor
-      view.fillColor = UIColor.blueColor.colorWithAlphaComponent(0.5)
       view
     end
   end
@@ -106,6 +96,14 @@ class MapController < UIViewController
     @map.region = CoordinateRegion.new(region.location, SPAN)
     @map.set_zoom_level(region.zoom)
     @map.addAnnotations(repo.all)
+
+    mash_repo.all.each do |source, target|
+      coords = Pointer.new(CLLocationCoordinate2D.type, 2)
+      coords[0] = source.coordinate
+      coords[1] = target.coordinate
+      line = MKPolyline.polylineWithCoordinates(coords, count: 2)
+      @map.addOverlay line
+    end
   end
 
   def map
@@ -166,6 +164,8 @@ class MapController < UIViewController
   end
 
   def init_repo
-    self.repo = NodeRepository.new FileLoader.new(region).load
+    loader = FileLoader.new(region)
+    self.repo = NodeRepository.new loader.load_nodes
+    self.mash_repo = MashRepository.new loader.load_links, loader.load_nodes
   end
 end
