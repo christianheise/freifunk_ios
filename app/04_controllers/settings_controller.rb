@@ -28,9 +28,14 @@ class SettingsController < UITableViewController
     5
   end
 
-  def tableView(tableView, titleForHeaderInSection: section)
+  def tableView(tableView, viewForHeaderInSection: section)
     return unless section == 0
-    "With 💙 from St.Pauli"
+    UILabel.alloc.init.tap do |label|
+      label.textAlignment = NSTextAlignmentCenter
+      label.text = "With 💛 from St.Pauli"
+      label.textColor = Color::LIGHT
+      label.sizeToFit
+    end
   end
 
   def tableView(tableView, heightForHeaderInSection: section)
@@ -54,12 +59,15 @@ class SettingsController < UITableViewController
       tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: :link_cell)
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
+        cell.textLabel.textColor = Color::MAIN
+        cell.detailTextLabel.textColor = Color::MAIN
       end
     when 3
       tableView.dequeueReusableCellWithIdentifier(:text_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :text_cell)
         cell.accessoryType  = UITableViewCellAccessoryNone
         cell.selectionStyle = UITableViewCellSelectionStyleNone
+        cell.textLabel.textColor = Color::MAIN
       end
     end
   end

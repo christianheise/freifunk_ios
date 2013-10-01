@@ -5,6 +5,10 @@ class AppDelegate
     @window = UIWindow.alloc.tap do |window|
       window.initWithFrame(UIScreen.mainScreen.bounds)
       window.rootViewController = navigation_controller
+      window.tintColor = Color::MAIN
+      UISearchBar.appearance.tintColor    = Color::LIGHT
+      UISearchBar.appearance.barTintColor = Color::LIGHT
+      UITabBar.appearance.tintColor       = Color::LIGHT
       window.makeKeyAndVisible
     end
     true
@@ -28,6 +32,7 @@ class AppDelegate
   def navigation_controller
     @navigation_controller ||= UINavigationController.alloc.tap do |controller|
       controller.initWithRootViewController(tabbar_controller)
+      controller.navigationBar.setTitleTextAttributes({ UITextAttributeTextColor => Color::LIGHT }, forState: UIControlStateNormal)
     end
   end
 

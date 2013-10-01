@@ -102,7 +102,7 @@ class MapController < UIViewController
       control.initWithItems(FILTER_ITEMS)
       control.frame = CGRectMake(64, 20, view.frame.size.width - 84, control.frame.size.height)
       control.autoresizingMask = UIViewAutoresizingFlexibleWidth
-      control.backgroundColor = UIColor.whiteColor
+      control.backgroundColor = Color::WHITE
       control.selectedSegmentIndex  = 0
       control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end

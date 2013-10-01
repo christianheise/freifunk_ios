@@ -45,6 +45,7 @@ class DetailsController < UITableViewController
         cell.accessoryType  = UITableViewCellAccessoryNone
         cell.selectionStyle = UITableViewCellSelectionStyleNone
       end
+      cell.textLabel.textColor = Color::MAIN
     end
   end
 
