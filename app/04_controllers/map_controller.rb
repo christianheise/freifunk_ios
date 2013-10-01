@@ -35,6 +35,25 @@ class MapController < UIViewController
 
   def viewWillAppear(animated)
     navigationController.setNavigationBarHidden(true, animated: true)
+
+    coords = Pointer.new(CLLocationCoordinate2D.type, 3)
+    coords[0] = CLLocationCoordinate2DMake(53.562777, 9.965312)
+    coords[1] = CLLocationCoordinate2DMake(53.65, 9.85)
+    coords[2] = CLLocationCoordinate2DMake(53.7, 9.8)
+    polygon = MKPolygon.polygonWithCoordinates(coords, count: 3)
+    polygon.title = "HIIIIIIIIIIIIIIIer"
+    @map.addOverlay polygon
+  end
+
+  def mapView(mapView, viewForOverlay: overlay)
+    puts overlay
+    if overlay.is_a?(MKPolygon)
+      view = MKPolygonView.alloc.initWithOverlay(overlay)
+      view.lineWidth = 1
+      view.strokeColor = UIColor.blueColor
+      view.fillColor = UIColor.blueColor.colorWithAlphaComponent(0.5)
+      view
+    end
   end
 
   def mapView(mapView, viewForAnnotation: annotation)
