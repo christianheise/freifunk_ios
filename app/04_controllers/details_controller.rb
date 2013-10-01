@@ -78,10 +78,12 @@ class DetailsController < UITableViewController
   def tableView(tableView, didSelectRowAtIndexPath: indexPath)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
-    tab_bar_controller = navigationController.viewControllers.first
-    tab_bar_controller.selectedIndex = 0
-    tab_bar_controller.viewControllers.first.center node
+    if indexPath.section == 3
+      tab_bar_controller = navigationController.viewControllers.first
+      tab_bar_controller.selectedIndex = 0
+      tab_bar_controller.viewControllers.first.center node
 
-    navigationController.popViewControllerAnimated true
+      navigationController.popViewControllerAnimated true
+    end
   end
 end
