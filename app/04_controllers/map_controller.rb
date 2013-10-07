@@ -104,6 +104,13 @@ class MapController < UIViewController
       control.tintColor             = Color::LIGHT
       control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
+    @control_bg = UILabel.alloc.tap do |label|
+      label.initWithFrame(@control.frame)
+      label.autoresizingMask    = @control.autoresizingMask
+      label.backgroundColor     = Color::WHITE
+      label.layer.cornerRadius  = 5.0
+    end
+    view.addSubview @control_bg # REM (ps) put a label as a background, as setting backgroundColor on the control will have edges!
     view.addSubview @control
 
     @button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
@@ -115,6 +122,12 @@ class MapController < UIViewController
       button.tintColor = Color::LIGHT
       button.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
     end
+    @button_bg = UILabel.alloc.tap do |label|
+      label.initWithFrame(@button.frame)
+      label.backgroundColor     = Color::WHITE
+      label.layer.cornerRadius  = 40
+    end
+    view.addSubview @button_bg # REM (ps) put a label as a background, as setting backgroundColor on the control will have edges!
     view.addSubview @button
   end
 
