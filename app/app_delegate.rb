@@ -5,7 +5,7 @@ class AppDelegate
     @window = UIWindow.alloc.tap do |window|
       window.initWithFrame(UIScreen.mainScreen.bounds)
       window.rootViewController = navigation_controller
-      window.tintColor = Color::MAIN
+      window.tintColor = Color::LIGHT
       UISearchBar.appearance.tintColor    = Color::LIGHT
       UISearchBar.appearance.barTintColor = Color::LIGHT
       UITabBar.appearance.tintColor       = Color::LIGHT

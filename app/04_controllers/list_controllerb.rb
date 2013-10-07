@@ -37,7 +37,6 @@ class ListController < UITableViewController
     tableView.dequeueReusableCellWithIdentifier(:list_cell) || UITableViewCell.alloc.tap do |cell|
       cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :list_cell)
       cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
-      cell.textLabel.textColor = Color::MAIN
     end
   end
 

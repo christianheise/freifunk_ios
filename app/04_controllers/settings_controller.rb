@@ -59,15 +59,12 @@ class SettingsController < UITableViewController
       tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: :link_cell)
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
-        cell.textLabel.textColor = Color::MAIN
-        cell.detailTextLabel.textColor = Color::MAIN
       end
     when 3
       tableView.dequeueReusableCellWithIdentifier(:text_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :text_cell)
         cell.accessoryType  = UITableViewCellAccessoryNone
         cell.selectionStyle = UITableViewCellSelectionStyleNone
-        cell.textLabel.textColor = Color::MAIN
       end
     end
   end

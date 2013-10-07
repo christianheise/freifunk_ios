@@ -98,10 +98,10 @@ class MapController < UIViewController
   def add_controls
     @control = UISegmentedControl.alloc.tap do |control|
       control.initWithItems(FILTER_ITEMS)
-      control.frame = CGRectMake(64, 20, view.frame.size.width - 84, control.frame.size.height)
-      control.autoresizingMask = UIViewAutoresizingFlexibleWidth
-      control.backgroundColor = Color::WHITE
+      control.frame                 = CGRectMake(64, 20, view.frame.size.width - 84, control.frame.size.height)
+      control.autoresizingMask      = UIViewAutoresizingFlexibleWidth
       control.selectedSegmentIndex  = 1
+      control.tintColor             = Color::LIGHT
       control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
     view.addSubview @control
@@ -112,6 +112,7 @@ class MapController < UIViewController
       button.setImage(image, forState: UIControlStateNormal)
       button.setImage(image, forState: UIControlStateHighlighted)
       button.setImage(image, forState: UIControlStateSelected)
+      button.tintColor = Color::LIGHT
       button.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
     end
     view.addSubview @button
