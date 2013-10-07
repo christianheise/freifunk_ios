@@ -14,12 +14,6 @@ class MapController < UIViewController
     end
   end
 
-  def reload
-    init_repo
-    filter_map(self)
-    init_map
-  end
-
   def loadView
     self.view = UIView.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
@@ -29,8 +23,7 @@ class MapController < UIViewController
   end
 
   def viewDidLoad
-    init_repo
-    init_map
+    reload
   end
 
   def viewWillAppear(animated)
@@ -63,6 +56,12 @@ class MapController < UIViewController
     @map.selectAnnotation(node, animated: true)
   end
 
+  def reload
+    init_repo
+    init_map
+    filter_map
+  end
+
   protected
 
   def show_details(sender)
@@ -71,7 +70,7 @@ class MapController < UIViewController
     navigationController.pushViewController(controller, animated: true)
   end
 
-  def filter_map(sender)
+  def filter_map(sender = nil)
     @map.removeAnnotations(@map.annotations.reject { |a| a.is_a? MKUserLocation })
     case @control.selectedSegmentIndex
     when 0
@@ -86,7 +85,6 @@ class MapController < UIViewController
   def init_map
     @map.region = CoordinateRegion.new(region.location, SPAN)
     @map.set_zoom_level(region.zoom)
-    @map.addAnnotations(repo.all)
   end
 
   def map
@@ -103,7 +101,7 @@ class MapController < UIViewController
       control.frame = CGRectMake(64, 20, view.frame.size.width - 84, control.frame.size.height)
       control.autoresizingMask = UIViewAutoresizingFlexibleWidth
       control.backgroundColor = Color::WHITE
-      control.selectedSegmentIndex  = 0
+      control.selectedSegmentIndex  = 1
       control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
     view.addSubview @control
