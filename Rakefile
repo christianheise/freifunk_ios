@@ -19,11 +19,11 @@ Motion::Project::App.setup do |app|
   app.info_plist['UIStatusBarHidden'] = true
   app.info_plist['UIViewControllerBasedStatusBarAppearance'] = false
 
-  app.testflight.sdk                    = 'vendor/TestFlightSDK'
+  app.testflight.sdk = 'vendor/TestFlightSDK'
   app.info_plist['testflight_apitoken'] = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
 
   app.development do
-    app.version               = "#{VERSION} (build #{%x(git describe --tags).chomp})"
+    app.version               = "build #{%x(git describe --tags).chomp}"
     app.provisioning_profile  = "#{ENV['HOME']}/Dropbox/ios_certs/ad_hoc_distribution_freifunk.mobileprovision"
 
     app.testflight.api_token          = ENV['TESTFLIGHT_API_TOKEN']
