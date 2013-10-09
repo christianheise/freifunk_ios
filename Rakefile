@@ -5,7 +5,7 @@ require 'bundler'
 Bundler.require :default
 require 'bubble-wrap/location'
 
-VERSION = "1.0.0"
+VERSION = "2.0.0"
 
 Motion::Project::App.setup do |app|
   app.name                    = 'freifunk'
