@@ -23,7 +23,9 @@ Motion::Project::App.setup do |app|
   app.info_plist['testflight_apitoken'] = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
 
   app.development do
-    app.version               = "build #{%x(git describe --tags).chomp}"
+    app.version                                   = "build #{%x(git describe --tags).chomp}"
+    app.info_plist['CFBundleShortVersionString']  = VERSION
+
     app.provisioning_profile  = "#{ENV['HOME']}/Dropbox/ios_certs/ad_hoc_distribution_freifunk.mobileprovision"
 
     app.testflight.api_token          = ENV['TESTFLIGHT_API_TOKEN']
