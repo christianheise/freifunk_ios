@@ -1,12 +1,12 @@
 class MapController < UIViewController
   include MapKit
 
-  attr_accessor :repo
+  attr_accessor :repo, :mash_repo
 
   SPAN    = [3.1, 3.1]
   NEAR_IN = 14
 
-  FILTER_ITEMS = ["Alle", "Online", "Offline"]
+  FILTER_ITEMS = ["Alle", "Online", "Offline", "Mash"]
 
   def init
     (super || self).tap do |it|
@@ -28,6 +28,15 @@ class MapController < UIViewController
 
   def viewWillAppear(animated)
     navigationController.setNavigationBarHidden(true, animated: true)
+  end
+
+  def mapView(mapView, viewForOverlay: overlay)
+    if overlay.is_a?(MKPolyline)
+      view = MKPolylineView.alloc.initWithOverlay(overlay)
+      view.lineWidth = 5
+      view.strokeColor = UIColor.blueColor
+      view
+    end
   end
 
   def mapView(mapView, viewForAnnotation: annotation)
@@ -72,6 +81,7 @@ class MapController < UIViewController
 
   def filter_map(sender = nil)
     @map.removeAnnotations(@map.annotations.reject { |a| a.is_a? MKUserLocation })
+    @map.removeOverlays(@map.overlays)
     case @control.selectedSegmentIndex
     when 0
       @map.addAnnotations(repo.all)
@@ -79,6 +89,16 @@ class MapController < UIViewController
       @map.addAnnotations(repo.online)
     when 2
       @map.addAnnotations(repo.offline)
+    when 3
+      connections = mash_repo.connections(repo.all)
+      @map.addAnnotations(connections.flatten.uniq)
+      connections.each do |source, target|
+        coords = Pointer.new(CLLocationCoordinate2D.type, 2)
+        coords[0] = source.coordinate
+        coords[1] = target.coordinate
+        line = MKPolyline.polylineWithCoordinates(coords, count: 2)
+        @map.addOverlay(line)
+      end
     end
   end
 
@@ -159,6 +179,8 @@ class MapController < UIViewController
   end
 
   def init_repo
-    self.repo = NodeRepository.new FileLoader.new(region).load
+    loader          = FileLoader.new(region)
+    self.repo       = NodeRepository.new loader.load_nodes
+    self.mash_repo  = MashRepository.new loader.load_links
   end
 end
