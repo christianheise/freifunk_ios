@@ -59,6 +59,16 @@ class MapController < UIViewController
     view
   end
 
+  def mapView(mapView, rendererForOverlay: overlay)
+    return unless overlay.is_a? MKPolyline
+
+    MKPolylineRenderer.alloc.tap do |renderer|
+      renderer.initWithPolyline(overlay)
+      renderer.strokeColor = Color::LIGHT
+      renderer.lineWidth   = 4
+    end
+  end
+
   def center(node)
     @map.region = CoordinateRegion.new(node.coordinate, SPAN)
     @map.set_zoom_level(NEAR_IN)
