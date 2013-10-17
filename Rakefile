@@ -4,6 +4,7 @@ require 'motion/project/template/ios'
 require 'bundler'
 Bundler.require :default
 require 'bubble-wrap/location'
+require 'bubble-wrap/reactor'
 
 VERSION = "2.0.0"
 
