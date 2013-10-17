@@ -1,6 +1,10 @@
 class AppDelegate
+  attr_reader :file_loader, :node_repo, :mash_repo
+
   def application(application, didFinishLaunchingWithOptions: launchOptions)
     TestFlight.takeOff(NSBundle.mainBundle.objectForInfoDictionaryKey('testflight_apitoken'))
+
+    reload
 
     @window = UIWindow.alloc.tap do |window|
       window.initWithFrame(UIScreen.mainScreen.bounds)
@@ -24,7 +28,14 @@ class AppDelegate
 
   def region=(region)
     App::Persistence['region'] = region.key.to_s
+    reload
     region
+  end
+
+  def reload
+    @file_loader  = FileLoader.new(region)
+    @node_repo    = NodeRepository.new(@file_loader.load_nodes)
+    @mash_repo    = MashRepository.new(@file_loader.load_links)
   end
 
   private

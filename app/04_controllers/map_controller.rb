@@ -1,8 +1,6 @@
 class MapController < UIViewController
   include MapKit
 
-  attr_accessor :repo, :mash_repo
-
   SPAN    = [3.1, 3.1]
   NEAR_IN = 14
 
@@ -76,7 +74,6 @@ class MapController < UIViewController
   end
 
   def reload
-    init_repo
     init_map
     filter_map
   end
@@ -94,13 +91,13 @@ class MapController < UIViewController
     @map.removeOverlays(@map.overlays)
     case @control.selectedSegmentIndex
     when 0
-      @map.addAnnotations(repo.all)
+      @map.addAnnotations(delegate.node_repo.all)
     when 1
-      @map.addAnnotations(repo.online)
+      @map.addAnnotations(delegate.node_repo.online)
     when 2
-      @map.addAnnotations(repo.offline)
+      @map.addAnnotations(delegate.node_repo.offline)
     when 3
-      connections = mash_repo.connections(repo.all)
+      connections = delegate.mash_repo.connections(delegate.node_repo.all)
       @map.addAnnotations(connections.flatten.uniq)
       connections.each do |source, target|
         coords = Pointer.new(CLLocationCoordinate2D.type, 2)
@@ -113,8 +110,8 @@ class MapController < UIViewController
   end
 
   def init_map
-    @map.region = CoordinateRegion.new(region.location, SPAN)
-    @map.set_zoom_level(region.zoom)
+    @map.region = CoordinateRegion.new(delegate.region.location, SPAN)
+    @map.set_zoom_level(delegate.region.zoom)
   end
 
   def map
@@ -184,13 +181,7 @@ class MapController < UIViewController
     end
   end
 
-  def region
-    UIApplication.sharedApplication.delegate.region
-  end
-
-  def init_repo
-    loader          = FileLoader.new(region)
-    self.repo       = NodeRepository.new loader.load_nodes
-    self.mash_repo  = MashRepository.new loader.load_links
+  def delegate
+    UIApplication.sharedApplication.delegate
   end
 end

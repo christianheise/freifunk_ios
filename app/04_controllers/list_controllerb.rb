@@ -1,19 +1,15 @@
 class ListController < UITableViewController
-  attr_accessor :repo, :nodes
+  attr_accessor :nodes
 
   def init
     (super || self).tap do |it|
       it.tabBarItem = UITabBarItem.alloc.initWithTitle("Liste", image:UIImage.imageNamed('list.png'), tag:1)
-      init_repo
     end
   end
 
-  def reload
-    init_repo
-    tableView.reloadData
-  end
-
   def loadView
+    init_nodes
+
     self.tableView = UITableView.alloc.tap do |tableView|
       tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
@@ -70,36 +66,40 @@ class ListController < UITableViewController
   end
 
   def searchBarSearchButtonClicked(searchBar)
-    self.nodes = repo.find(searchBar.text)
+    self.nodes = delegate.node_repo.find(searchBar.text)
     tableView.reloadData
     searchBar.resignFirstResponder
   end
 
   def searchBarCancelButtonClicked(searchBar)
-    self.nodes = repo.sorted
+    self.nodes = delegate.node_repo.sorted
     tableView.reloadData
     tableView.scrollToRowAtIndexPath(NSIndexPath.indexPathForRow(0, inSection:0), atScrollPosition: UITableViewScrollPositionTop, animated: true)
     searchBar.resignFirstResponder
   end
 
+  def reload
+    init_nodes
+    tableView.reloadData
+  end
+
   private
 
-  def region
-    UIApplication.sharedApplication.delegate.region
+  def delegate
+    UIApplication.sharedApplication.delegate
+  end
+
+  def init_nodes
+    self.nodes = delegate.node_repo.sorted
   end
 
   def search_and_reload(bar)
     text = bar.text
     if text && text.size > 1
-      self.nodes = repo.find(text)
+      self.nodes = delegate.node_repo.find(text)
     else
-      self.nodes = repo.sorted
+      self.nodes = delegate.node_repo.sorted
     end
     tableView.reloadData
-  end
-
-  def init_repo
-    self.repo = NodeRepository.new FileLoader.new(region).load_nodes
-    self.nodes = repo.sorted
   end
 end
