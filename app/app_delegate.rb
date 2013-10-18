@@ -15,35 +15,7 @@ class AppDelegate
       UITabBar.appearance.tintColor       = Color::LIGHT
       window.makeKeyAndVisible
     end
-    timer if loading
     true
-  end
-
-  def timer
-    @timer ||= EM.add_periodic_timer 5.0 do
-      puts "loading new data"
-      file_loader.download do |state|
-        if state
-          reload
-        else
-          App.alert("Fehler beim laden...")
-        end
-      end
-    end
-  end
-
-  def loading
-    App::Persistence['loading'] == 'TRUE'
-  end
-
-  def loading=(on)
-    App::Persistence['loading'] = on ? 'TRUE' : 'FALSE'
-    if on
-      timer
-    else
-      EM.cancel_timer(@timer) if @timer
-      @timer = nil
-    end
   end
 
   def region

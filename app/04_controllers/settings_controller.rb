@@ -21,7 +21,7 @@ class SettingsController < UITableViewController
   end
 
   def numberOfSectionsInTableView(tableView)
-    6
+    5
   end
 
   def tableView(tableView, viewForHeaderInSection: section)
@@ -40,7 +40,7 @@ class SettingsController < UITableViewController
 
   def tableView(tableView, numberOfRowsInSection: section)
     case section
-    when 0, 2, 4, 5
+    when 0, 2, 4
       1
     when 1
       2
@@ -51,7 +51,7 @@ class SettingsController < UITableViewController
 
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
     case indexPath.section
-    when 0, 1, 2, 5
+    when 0, 1, 2, 4
       tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: :link_cell)
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
@@ -61,15 +61,6 @@ class SettingsController < UITableViewController
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :text_cell)
         cell.accessoryType  = UITableViewCellAccessoryNone
         cell.selectionStyle = UITableViewCellSelectionStyleNone
-      end
-    when 4
-      tableView.dequeueReusableCellWithIdentifier(:switch_cell) || UITableViewCell.alloc.tap do |cell|
-        cell.initWithFrame(CGRectZero, reuseIdentifier: :switch_cell)
-        cell.selectionStyle = UITableViewCellSelectionStyleNone
-        switch = UISwitch.alloc.initWithFrame(CGRectZero)
-        cell.accessoryView = switch
-        switch.setOn(delegate.loading, animated: false)
-        switch.addTarget(self, action: 'switch_changed:', forControlEvents: UIControlEventValueChanged)
       end
     end
   end
@@ -95,8 +86,6 @@ class SettingsController < UITableViewController
         cell.selectionStyle = UITableViewCellSelectionStyleGray
       end
     when 4
-      cell.textLabel.text = "Live loading"
-    when 5
       cell.textLabel.text = "Version: #{App.version}"
     end
   end
@@ -137,10 +126,6 @@ class SettingsController < UITableViewController
   end
 
   protected
-
-  def switch_changed(switch)
-    delegate.loading = switch.isOn
-  end
 
   def reload_controllers
     tabBarController.viewControllers.each do |controller|

@@ -3,4 +3,5 @@ class Color
   LIGHT = '#dc0067'.to_color
   EXTRA = '#009ee0'.to_color
   WHITE = UIColor.whiteColor
+  GRAY  = UIColor.grayColor
 end
