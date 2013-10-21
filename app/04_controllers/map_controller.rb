@@ -4,7 +4,7 @@ class MapController < UIViewController
   SPAN    = [3.1, 3.1]
   NEAR_IN = 14
 
-  FILTER_ITEMS = ["Alle", "Online", "Offline", "Mash"]
+  FILTER_ITEMS = ["Alle", "Online", "Offline", "Mesh"]
 
   def init
     (super || self).tap do |it|
@@ -142,7 +142,7 @@ class MapController < UIViewController
     when 2
       @map.addAnnotations(delegate.node_repo.offline)
     when 3
-      connections = delegate.mash_repo.connections(delegate.node_repo.all)
+      connections = delegate.link_repo.connections(delegate.node_repo.all)
       @map.addAnnotations(connections.flatten.uniq)
       connections.each do |source, target|
         coords = Pointer.new(CLLocationCoordinate2D.type, 2)
