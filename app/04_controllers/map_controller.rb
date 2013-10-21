@@ -168,18 +168,36 @@ class MapController < UIViewController
   end
 
   def add_controls
-    @background = UIView.alloc.tap do |label|
-      label.initWithFrame(CGRectMake(15, 15, @map.frame.size.width - 30, 40))
-      label.autoresizingMask    = UIViewAutoresizingFlexibleWidth
-      label.backgroundColor     = Color::WHITE
-      label.layer.cornerRadius  = 5.0
+    margin  = 15
+    padding = 5
+    width   = view.frame.size.width - (2 * margin)
+    height  = 40
+    icon_size = 36
+
+    @background = UIView.alloc.tap do |bg|
+      bg.initWithFrame(CGRectMake(margin, margin, width, height))
+      bg.layer.cornerRadius  = 5.0
+      bg.layer.borderWidth   = 1.0
+      bg.layer.borderColor   = Color::LIGHT.CGColor
+      bg.backgroundColor     = Color::WHITE
+      bg.autoresizingMask    = UIViewAutoresizingFlexibleWidth
     end
     view.addSubview @background
 
+    @location_button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
+      image = UIImage.imageNamed("map.png")
+      button.frame = CGRectMake(5, 3, icon_size, icon_size)
+      button.setImage(image, forState: UIControlStateNormal)
+      button.setImage(image, forState: UIControlStateHighlighted)
+      button.setImage(image, forState: UIControlStateSelected)
+      button.tintColor = Color::GRAY
+      button.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
+    end
+    @background.addSubview @location_button
 
     @loading_button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
       image = UIImage.imageNamed("loopback.png")
-      button.frame = CGRectMake(view.frame.size.width - 20 - 36, 18, 36, 36)
+      button.frame = CGRectMake(width - icon_size - 5, 3, icon_size, icon_size)
       button.setImage(image, forState: UIControlStateNormal)
       button.setImage(image, forState: UIControlStateHighlighted)
       button.setImage(image, forState: UIControlStateSelected)
@@ -187,28 +205,17 @@ class MapController < UIViewController
       button.tintColor        = Color::GRAY
       button.addTarget(self, action: 'toggle_loading:', forControlEvents: UIControlEventTouchUpInside)
     end
-    view.addSubview @loading_button
+    @background.addSubview @loading_button
 
     @control = UISegmentedControl.alloc.tap do |control|
       control.initWithItems(FILTER_ITEMS)
-      control.frame                 = CGRectMake(64, 20, view.frame.size.width - 84 - 36 - 10, control.frame.size.height)
+      control.frame                 = CGRectMake(icon_size + padding, padding, width - (2 * icon_size) - (3 * padding), control.frame.size.height)
       control.autoresizingMask      = UIViewAutoresizingFlexibleWidth
       control.selectedSegmentIndex  = 1
       control.tintColor             = Color::LIGHT
       control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
     end
-    view.addSubview @control
-
-    @location_button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
-      image = UIImage.imageNamed("map.png")
-      button.frame = CGRectMake(20, 18, 36, 36)
-      button.setImage(image, forState: UIControlStateNormal)
-      button.setImage(image, forState: UIControlStateHighlighted)
-      button.setImage(image, forState: UIControlStateSelected)
-      button.tintColor = Color::LIGHT
-      button.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
-    end
-    view.addSubview @location_button
+    @background.addSubview @control
   end
 
   def switch_to_user_location(sender = nil)
