@@ -72,9 +72,9 @@ class MapController < UIViewController
   end
 
   def center(node)
-    @map.region = CoordinateRegion.new(node.coordinate, SPAN)
-    @map.set_zoom_level(NEAR_IN)
-    @map.selectAnnotation(node, animated: true)
+    map.region = CoordinateRegion.new(node.coordinate, SPAN)
+    map.set_zoom_level(NEAR_IN)
+    map.selectAnnotation(node, animated: true)
   end
 
   def reload
@@ -127,40 +127,40 @@ class MapController < UIViewController
 
   def show_details(sender)
     controller = DetailsController.new
-    controller.node = @map.selectedAnnotations[0]
+    controller.node = map.selectedAnnotations[0]
     navigationController.pushViewController(controller, animated: true)
   end
 
   def filter_map(sender = nil)
-    @map.removeAnnotations(@map.annotations.reject { |a| a.is_a? MKUserLocation })
-    @map.removeOverlays(@map.overlays)
+    map.removeAnnotations(map.annotations.reject { |a| a.is_a? MKUserLocation })
+    map.removeOverlays(map.overlays)
     case @control.selectedSegmentIndex
     when 0
-      @map.addAnnotations(delegate.node_repo.all)
+      map.addAnnotations(delegate.node_repo.all)
     when 1
-      @map.addAnnotations(delegate.node_repo.online)
+      map.addAnnotations(delegate.node_repo.online)
     when 2
-      @map.addAnnotations(delegate.node_repo.offline)
+      map.addAnnotations(delegate.node_repo.offline)
     when 3
       connections = delegate.link_repo.connections(delegate.node_repo.all)
-      @map.addAnnotations(connections.flatten.uniq)
+      map.addAnnotations(connections.flatten.uniq)
       connections.each do |source, target|
         coords = Pointer.new(CLLocationCoordinate2D.type, 2)
         coords[0] = source.coordinate
         coords[1] = target.coordinate
         line = MKPolyline.polylineWithCoordinates(coords, count: 2)
-        @map.addOverlay(line)
+        map.addOverlay(line)
       end
     end
   end
 
   def init_map
-    @map.region = CoordinateRegion.new(delegate.region.location, SPAN)
-    @map.set_zoom_level(delegate.region.zoom)
+    map.region = CoordinateRegion.new(delegate.region.location, SPAN)
+    map.set_zoom_level(delegate.region.zoom)
   end
 
   def map
-    @map = MapView.new.tap do |map|
+    @map ||= MapView.new.tap do |map|
       map.delegate = self
       map.frame    = UIScreen.mainScreen.bounds
       map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
@@ -226,9 +226,9 @@ class MapController < UIViewController
 
     BW::Location.get_once do |result|
       coordinate  = LocationCoordinate.new(result)
-      @map.region = CoordinateRegion.new(coordinate, SPAN)
-      @map.shows_user_location = true
-      @map.set_zoom_level(NEAR_IN)
+      map.region = CoordinateRegion.new(coordinate, SPAN)
+      map.shows_user_location = true
+      map.set_zoom_level(NEAR_IN)
       location_spinner.stopAnimating
       @location_button.enabled = true
     end
