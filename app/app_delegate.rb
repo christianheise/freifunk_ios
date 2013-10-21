@@ -1,5 +1,5 @@
 class AppDelegate
-  attr_reader :file_loader, :node_repo, :mash_repo
+  attr_reader :file_loader, :node_repo, :link_repo
 
   def application(application, didFinishLaunchingWithOptions: launchOptions)
     TestFlight.takeOff(NSBundle.mainBundle.objectForInfoDictionaryKey('testflight_apitoken'))
@@ -35,7 +35,7 @@ class AppDelegate
   def reload
     @file_loader  = FileLoader.new(region)
     @node_repo    = NodeRepository.new(@file_loader.load_nodes)
-    @mash_repo    = MashRepository.new(@file_loader.load_links)
+    @link_repo    = LinkRepository.new(@file_loader.load_links)
   end
 
   private

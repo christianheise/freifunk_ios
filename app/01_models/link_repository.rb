@@ -1,4 +1,4 @@
-class MashRepository
+class LinkRepository
   attr_reader :links
 
   def initialize(links)
