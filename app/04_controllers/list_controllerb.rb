@@ -23,7 +23,7 @@ class ListController < UITableViewController
   end
 
   def viewWillAppear(animated)
-    navigationItem.title = "Nodes"
+    navigationItem.title = "Freifunk Knoten #{delegate.region.name}"
   end
 
   def tableView(tableView, numberOfRowsInSection:section)

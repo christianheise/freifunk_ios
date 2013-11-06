@@ -19,50 +19,36 @@ class SettingsController < UITableViewController
   end
 
   def viewWillAppear(animated)
-    navigationItem.title = "Settings"
+    navigationItem.title = "With 💛 from St.Pauli"
   end
 
   def numberOfSectionsInTableView(tableView)
-    5
-  end
-
-  def tableView(tableView, viewForHeaderInSection: section)
-    return unless section == 0
-    UILabel.alloc.init.tap do |label|
-      label.textAlignment = NSTextAlignmentCenter
-      label.text = "With 💛 from St.Pauli"
-      label.textColor = Color::LIGHT
-      label.sizeToFit
-    end
-  end
-
-  def tableView(tableView, heightForHeaderInSection: section)
-    section == 0 ? 50 : 0
+    3
   end
 
   def tableView(tableView, numberOfRowsInSection: section)
     case section
-    when 0, 2, 4
+    when 0
       1
+    when 2
+      4
     when 1
-      2
-    when 3
       Region.all.size
     end
   end
 
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
     case indexPath.section
-    when 0, 1, 2, 4
-      tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
-        cell.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: :link_cell)
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
-      end
-    when 3
+    when 1
       tableView.dequeueReusableCellWithIdentifier(:text_cell) || UITableViewCell.alloc.tap do |cell|
         cell.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: :text_cell)
         cell.accessoryType  = UITableViewCellAccessoryNone
         cell.selectionStyle = UITableViewCellSelectionStyleNone
+      end
+    else
+      tableView.dequeueReusableCellWithIdentifier(:link_cell) || UITableViewCell.alloc.tap do |cell|
+        cell.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: :link_cell)
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
       end
     end
   end
@@ -70,25 +56,29 @@ class SettingsController < UITableViewController
   def tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
     case indexPath.section
     when 0
-      cell.textLabel.text = "Coding: @phoet"
-    when 1
-      text = "Freifunk #{delegate.region.name} #{indexPath.row == 0 ? 'auf Twitter' : 'Seite'}" 
-      cell.textLabel.text = text
-    when 2
       cell.textLabel.text       = "Knoten aktualisieren"
       cell.detailTextLabel.text = "zuletzt aktualisiert #{delegate.file_loader.last_update}"
-    when 3
-      r = Region.all[indexPath.row]
-      cell.textLabel.text = r.name
-      if delegate.region == r
+    when 1
+      region = Region.all[indexPath.row]
+      cell.textLabel.text = region.name
+      if delegate.region == region
         cell.accessoryType  = UITableViewCellAccessoryCheckmark
         cell.selectionStyle = UITableViewCellSelectionStyleBlue
       else
         cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator
         cell.selectionStyle = UITableViewCellSelectionStyleGray
       end
-    when 4
-      cell.textLabel.text = "Version: #{App.version}"
+    when 2
+      case indexPath.row
+      when 0
+        cell.textLabel.text = "Freifunk #{delegate.region.name} auf Twitter"
+      when 1
+        cell.textLabel.text = "Freifunk #{delegate.region.name} Website"
+      when 2
+        cell.textLabel.text = "Coding: @phoet"
+      when 3
+        cell.textLabel.text = "Version: #{App.version}"
+      end
     end
   end
 
@@ -97,41 +87,44 @@ class SettingsController < UITableViewController
 
     case indexPath.section
     when 0
-      open_url("http://twitter.com/phoet")
-    when 1
-      if indexPath.row == 0
-        open_url("http://twitter.com/#{delegate.region.twitter}")
-      else
-        open_url(delegate.region.homepage)
-      end
-    when 2
-      if indexPath.row == 0
-        current_cell = tableView.cellForRowAtIndexPath(indexPath)
-        current_cell.accessoryView = spinner
-        spinner.startAnimating
+      current_cell = tableView.cellForRowAtIndexPath(indexPath)
+      arrow = current_cell.accessoryView
+      current_cell.accessoryView = spinner
+      spinner.startAnimating
 
-        delegate.file_loader.download do |state|
-          spinner.stopAnimating
-          if state
-            reload_controllers
-          else
-            App.alert("Fehler beim laden...")
-          end
+      delegate.file_loader.download do |state|
+        current_cell.accessoryView = arrow
+        spinner.stopAnimating
+        if state
+          reload_controllers
+        else
+          App.alert("Fehler beim laden...")
         end
       end
-    when 3
+    when 1
       delegate.region = Region.all[indexPath.row]
       reload_controllers
-    when 5
-      open_url("https://www.github.com/phoet/freifunk_ios/")
+    when 2
+      case indexPath.row
+      when 0
+        open_url("http://twitter.com/#{delegate.region.twitter}")
+      when 1
+        open_url(delegate.region.homepage)
+      when 2
+        open_url("http://twitter.com/phoet")
+      when 3
+        open_url("https://www.github.com/phoet/freifunk_ios/")
+      end
     end
   end
 
   protected
 
   def reload_controllers
-    tabBarController.viewControllers.each do |controller|
-      controller.reload if controller.respond_to? :reload
+    tabBarController.viewControllers.each do |navigation_controller|
+      navigation_controller.viewControllers.each do |controller|
+        controller.reload if controller.respond_to? :reload
+      end
     end
   end
 

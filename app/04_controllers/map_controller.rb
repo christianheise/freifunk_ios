@@ -13,29 +13,33 @@ class MapController < UIViewController
   end
 
   def loadView
+    self.edgesForExtendedLayout = UIRectEdgeNone
     self.view = map
-    add_controls
+
+    @track_button = MKUserTrackingBarButtonItem.alloc.initWithMapView(map)
+    self.navigationItem.rightBarButtonItems = [@track_button]
+
+    image = UIImage.imageNamed("loopback.png")
+    @loading_button = UIBarButtonItem.alloc.tap do |button|
+      button.initWithImage(image, style: UIBarButtonItemStylePlain, target: self, action: 'toggle_loading:')
+      button.tintColor = Color::GRAY
+    end
+    self.navigationItem.leftBarButtonItems = [@loading_button]
+
+    @control = UISegmentedControl.alloc.tap do |control|
+      control.initWithItems(FILTER_ITEMS)
+      control.selectedSegmentIndex = 1
+      control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
+    end
+    self.navigationItem.titleView = @control
   end
 
   def viewDidLoad
     reload
   end
 
-  def viewWillAppear(animated)
-    navigationItem.title = "Map"
-  end
-
   def viewDidDisappear(animated)
     disable_loading
-  end
-
-  def mapView(mapView, viewForOverlay: overlay)
-    if overlay.is_a?(MKPolyline)
-      view = MKPolylineView.alloc.initWithOverlay(overlay)
-      view.lineWidth = 5
-      view.strokeColor = UIColor.blueColor
-      view
-    end
   end
 
   def mapView(mapView, viewForAnnotation: annotation)
@@ -88,10 +92,6 @@ class MapController < UIViewController
   end
 
   def trigger_reload
-    @loading_button.enabled = false
-    @loading_button.addSubview(loading_spinner)
-    loading_spinner.startAnimating
-
     delegate.file_loader.download do |state|
       if state
         delegate.reload
@@ -99,8 +99,6 @@ class MapController < UIViewController
       else
         App.alert("Fehler beim laden...")
       end
-      loading_spinner.stopAnimating
-      @loading_button.enabled = true
     end
   end
 
@@ -159,91 +157,8 @@ class MapController < UIViewController
   def map
     @map ||= MapView.new.tap do |map|
       map.delegate = self
-      # map.frame    = CGRectMake(0, 0, 300, 600)
       map.frame = tabBarController.tabBar.frame
-      # map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
       map.sizeToFit
-    end
-  end
-
-  def add_controls
-    margin  = 15
-    padding = 5
-    width   = view.frame.size.width - (2 * margin)
-    height  = 40
-    icon_size = 36
-
-    @background = UIView.alloc.tap do |bg|
-      bg.initWithFrame(CGRectMake(margin, margin, width, height))
-      bg.layer.cornerRadius  = 5.0
-      bg.layer.borderWidth   = 1.0
-      bg.layer.borderColor   = Color::LIGHT.CGColor
-      bg.backgroundColor     = Color::WHITE
-      bg.autoresizingMask    = UIViewAutoresizingFlexibleWidth
-    end
-    view.addSubview @background
-
-    @location_button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
-      image = UIImage.imageNamed("map.png")
-      button.frame = CGRectMake(5, 3, icon_size, icon_size)
-      button.setImage(image, forState: UIControlStateNormal)
-      button.setImage(image, forState: UIControlStateHighlighted)
-      button.setImage(image, forState: UIControlStateSelected)
-      button.tintColor = Color::GRAY
-      button.addTarget(self, action: 'switch_to_user_location:', forControlEvents: UIControlEventTouchUpInside)
-    end
-    @background.addSubview @location_button
-
-    @loading_button = UIButton.buttonWithType(UIButtonTypeSystem).tap do |button|
-      image = UIImage.imageNamed("loopback.png")
-      button.frame = CGRectMake(width - icon_size - 5, 3, icon_size, icon_size)
-      button.setImage(image, forState: UIControlStateNormal)
-      button.setImage(image, forState: UIControlStateHighlighted)
-      button.setImage(image, forState: UIControlStateSelected)
-      button.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin
-      button.tintColor        = Color::GRAY
-      button.addTarget(self, action: 'toggle_loading:', forControlEvents: UIControlEventTouchUpInside)
-    end
-    @background.addSubview @loading_button
-
-    @control = UISegmentedControl.alloc.tap do |control|
-      control.initWithItems(FILTER_ITEMS)
-      control.frame                 = CGRectMake(icon_size + padding, padding, width - (2 * icon_size) - (3 * padding), control.frame.size.height)
-      control.autoresizingMask      = UIViewAutoresizingFlexibleWidth
-      control.selectedSegmentIndex  = 1
-      control.tintColor             = Color::LIGHT
-      control.addTarget(self, action: 'filter_map:', forControlEvents: UIControlEventValueChanged)
-    end
-    @background.addSubview @control
-  end
-
-  def switch_to_user_location(sender = nil)
-    return unless BW::Location.enabled?
-    @location_button.enabled = false
-    @location_button.addSubview(location_spinner)
-    location_spinner.startAnimating
-
-    BW::Location.get_once do |result|
-      coordinate  = LocationCoordinate.new(result)
-      map.region = CoordinateRegion.new(coordinate, SPAN)
-      map.shows_user_location = true
-      map.set_zoom_level(NEAR_IN)
-      location_spinner.stopAnimating
-      @location_button.enabled = true
-    end
-  end
-
-  def location_spinner
-    @location_spinner ||= UIActivityIndicatorView.alloc.tap do |spinner|
-      spinner.initWithActivityIndicatorStyle(UIActivityIndicatorViewStyleGray)
-      spinner.frame = CGRectMake(0, 0, 36, 36)
-    end
-  end
-
-  def loading_spinner
-    @loading_spinner ||= UIActivityIndicatorView.alloc.tap do |spinner|
-      spinner.initWithActivityIndicatorStyle(UIActivityIndicatorViewStyleGray)
-      spinner.frame = CGRectMake(0, 0, 36, 36)
     end
   end
 
