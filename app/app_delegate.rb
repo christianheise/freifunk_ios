@@ -6,15 +6,15 @@ class AppDelegate
 
     reload
 
-    UISearchBar.appearance.tintColor    = Color::LIGHT
-    UITabBar.appearance.tintColor       = Color::LIGHT
+    UISearchBar.appearance.tintColor = Color::LIGHT
+    UITabBar.appearance.tintColor    = Color::LIGHT
+    UINavigationBar.appearance.setTitleTextAttributes(NSForegroundColorAttributeName => Color::LIGHT)
 
     @window = UIWindow.alloc.tap do |window|
       window.initWithFrame(UIScreen.mainScreen.bounds)
-      # window.rootViewController = tabbar_controller
-      window.addSubview(tabbar_controller.view)
-      window.tintColor = Color::LIGHT
-      window.backgroundColor = Color::GRAY
+      window.rootViewController = tabbar_controller
+      window.tintColor        = Color::LIGHT
+      window.backgroundColor  = Color::GRAY
       window.makeKeyAndVisible
     end
     true
