@@ -3,7 +3,7 @@ class DetailsController < UITableViewController
 
   def loadView
     self.tableView = UITableView.alloc.tap do |tableView|
-      tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
+      tableView.initWithFrame(tableView.frame, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
     end
   end
@@ -79,9 +79,11 @@ class DetailsController < UITableViewController
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
     if indexPath.section == 3
-      tab_bar_controller = navigationController.viewControllers.first
-      tab_bar_controller.selectedIndex = 0
-      tab_bar_controller.viewControllers.first.center node
+      if navigationController.tabBarController.selectedIndex == 1
+        navigationController.tabBarController.viewControllers.first.popToRootViewControllerAnimated false
+        navigationController.tabBarController.viewControllers.first.viewControllers.first.center node
+        navigationController.tabBarController.selectedIndex = 0
+      end
 
       navigationController.popViewControllerAnimated true
     end

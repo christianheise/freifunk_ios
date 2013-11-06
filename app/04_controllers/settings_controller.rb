@@ -10,14 +10,16 @@ class SettingsController < UITableViewController
   end
 
   def loadView
+    self.edgesForExtendedLayout = UIRectEdgeNone
+
     self.tableView = UITableView.alloc.tap do |tableView|
+      tableView.initWithFrame(tableView.frame, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
-      tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
     end
   end
 
   def viewWillAppear(animated)
-    navigationController.setNavigationBarHidden(true, animated: true)
+    navigationItem.title = "Settings"
   end
 
   def numberOfSectionsInTableView(tableView)

@@ -8,21 +8,22 @@ class ListController < UITableViewController
   end
 
   def loadView
+    self.edgesForExtendedLayout = UIRectEdgeNone
     init_nodes
 
     self.tableView = UITableView.alloc.tap do |tableView|
-      tableView.initWithFrame(UIScreen.mainScreen.bounds, style: UITableViewStyleGrouped)
+      tableView.initWithFrame(tableView.frame, style: UITableViewStyleGrouped)
       tableView.dataSource = tableView.delegate = self
     end
     self.tableView.tableHeaderView = UISearchBar.alloc.tap do |search_bar|
-      search_bar.initWithFrame(CGRectMake(0, 0, tableView.frame.size.width, 0))
+      search_bar.initWithFrame(CGRectZero)
       search_bar.delegate = self
       search_bar.sizeToFit
     end
   end
 
   def viewWillAppear(animated)
-    navigationController.setNavigationBarHidden(true, animated: true)
+    navigationItem.title = "Nodes"
   end
 
   def tableView(tableView, numberOfRowsInSection:section)

@@ -13,10 +13,7 @@ class MapController < UIViewController
   end
 
   def loadView
-    self.view = UIView.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
-    self.view.addSubview map
-
+    self.view = map
     add_controls
   end
 
@@ -25,7 +22,7 @@ class MapController < UIViewController
   end
 
   def viewWillAppear(animated)
-    navigationController.setNavigationBarHidden(true, animated: true)
+    navigationItem.title = "Map"
   end
 
   def viewDidDisappear(animated)
@@ -162,8 +159,10 @@ class MapController < UIViewController
   def map
     @map ||= MapView.new.tap do |map|
       map.delegate = self
-      map.frame    = UIScreen.mainScreen.bounds
-      map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
+      # map.frame    = CGRectMake(0, 0, 300, 600)
+      map.frame = tabBarController.tabBar.frame
+      # map.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
+      map.sizeToFit
     end
   end
 
