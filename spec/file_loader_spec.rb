@@ -26,9 +26,9 @@ describe FileLoader do
     link = loader.load_links.first
     link.tap do |it|
       it.link_id.should.eql "66:70:02:5e:a9:1a-de:ad:be:ef:22:22"
-      it.quality.should.eql "1.000"
-      it.source.should.eql  149
-      it.target.should.eql  411
+      it.quality.should.eql "1.231"
+      it.source.should.eql  154
+      it.target.should.eql  427
       it.type.should.eql    "vpn"
       it.macs.should.eql    ["66:70:02:5e:a9:1a", "de:ad:be:ef:22:22"]
     end

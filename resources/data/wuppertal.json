@@ -1,0 +1,2208 @@
+{
+    "links": [
+        {
+            "id": "a2:f3:c1:cd:e4:6f-dc624b6ae2a95d23b28dc21fb621b3af",
+            "quality": "TT",
+            "source": 68,
+            "target": 73,
+            "type": "client"
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:1a-d487baebd97fd422334eb49955f82144",
+            "quality": "TT",
+            "source": 17,
+            "target": 18,
+            "type": "client"
+        },
+        {
+            "id": "12:ae:13:0b:e1:ba-4e:b3:80:c0:d7:13",
+            "quality": "1.007, 1.015",
+            "source": 9,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "4e:b3:80:c0:d7:13-6e:0f:da:4f:c4:33",
+            "quality": "1.000, 1.000",
+            "source": 9,
+            "target": 7,
+            "type": null
+        },
+        {
+            "id": "62:66:b3:a1:7b:66-66:70:02:8f:56:fb",
+            "quality": "1.000, 1.049",
+            "source": 83,
+            "target": 55,
+            "type": null
+        },
+        {
+            "id": "42:e4:ee:53:43:0f-be:b3:a2:e8:92:ec",
+            "quality": "1.000, 1.000",
+            "source": 3,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:1a-a6:f3:c1:cd:e4:a4",
+            "quality": "7.968",
+            "source": 26,
+            "target": 17,
+            "type": null
+        },
+        {
+            "id": "96:f6:52:87:72:08-b9d7cfdb6f0629125770d8c70f5a44fc",
+            "quality": "TT",
+            "source": 6,
+            "target": 54,
+            "type": "client"
+        },
+        {
+            "id": "96:c8:38:24:79:33-9a:4e:58:d5:cd:39",
+            "quality": "1.015, 1.000",
+            "source": 8,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "96:c8:38:24:79:33-c2:e0:c8:8a:c1:a9",
+            "quality": "1.015, 1.007",
+            "source": 6,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "5a:ac:6d:4d:85:ca-be:b3:a2:e8:92:ec",
+            "quality": "1.000, 1.000",
+            "source": 4,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-a1cee81c76e548ed95adc3cd3efcce5e",
+            "quality": "TT",
+            "source": 2,
+            "target": 24,
+            "type": "client"
+        },
+        {
+            "id": "62:66:b3:a1:7b:66-6fd485c7336e1d014e70bc9349dbca73",
+            "quality": "TT",
+            "source": 83,
+            "target": 84,
+            "type": "client"
+        },
+        {
+            "id": "36:86:64:ef:cd:bc-c2:e0:c8:8a:c1:a9",
+            "quality": "1.000, 1.000",
+            "source": 6,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "72e66fb72bc778f83c2c6c4a9cd68bcf-a6:f3:c1:cd:ab:02",
+            "quality": "TT",
+            "source": 43,
+            "target": 46,
+            "type": "client"
+        },
+        {
+            "id": "12:ae:13:0b:e1:ba-be:b3:a2:e8:92:ec",
+            "quality": "1.003, 1.015",
+            "source": 2,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:20:ea-62:70:02:b4:ae:38",
+            "quality": "1.000, 1.066",
+            "source": 89,
+            "target": 64,
+            "type": null
+        },
+        {
+            "id": "15f6c60cea4cc9ec2d52f7263ae3b669-52:e6:fc:ac:d4:e8",
+            "quality": "TT",
+            "source": 2,
+            "target": 25,
+            "type": "client"
+        },
+        {
+            "id": "4e:b3:80:c0:d7:13-5a:ac:6d:4d:85:ca",
+            "quality": "1.000, 1.000",
+            "source": 9,
+            "target": 4,
+            "type": null
+        },
+        {
+            "id": "74e2014449ea37769c46eadfb62b20bd-a6:f3:c1:cd:e4:a4",
+            "quality": "TT",
+            "source": 26,
+            "target": 27,
+            "type": "client"
+        },
+        {
+            "id": "36:86:64:ef:cd:bc-d6:30:8a:c7:38:77",
+            "quality": "1.000, 1.000",
+            "source": 5,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "96:c8:38:24:79:33-d6:30:8a:c7:38:77",
+            "quality": "1.015, 1.000",
+            "source": 5,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:a4-d6023a9c565dfdc720ffdec02a6fedef",
+            "quality": "TT",
+            "source": 26,
+            "target": 28,
+            "type": "client"
+        },
+        {
+            "id": "8a3a0c41f25505a02255c54991416726-a6:f3:c1:cd:e4:90",
+            "quality": "TT",
+            "source": 29,
+            "target": 30,
+            "type": "client"
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:90-a6:f3:c1:cd:e4:a4",
+            "quality": "1.554, 1.465",
+            "source": 29,
+            "target": 26,
+            "type": null
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-66:70:02:8f:56:fb",
+            "quality": "1.071",
+            "source": 55,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "12:ae:13:0b:e1:ba-42:e4:ee:53:43:0f",
+            "quality": "1.000, 1.000",
+            "source": 3,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "a6:f3:c1:cd:ab:02-a6:f3:c1:cd:ab:4e",
+            "quality": "4.396, 9.444",
+            "source": 8,
+            "target": 43,
+            "type": null
+        },
+        {
+            "id": "8a28f9af955b59cbb198c81e74f2c40d-a6:f3:c1:cd:e4:9c",
+            "quality": "TT",
+            "source": 9,
+            "target": 88,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:b4:ae:38-66:70:02:8f:56:fb",
+            "quality": "1.071",
+            "source": 55,
+            "target": 64,
+            "type": null
+        },
+        {
+            "id": "6e599410477b195c741c7e689f21f22d-a2:f3:c1:cd:e4:6f",
+            "quality": "TT",
+            "source": 68,
+            "target": 74,
+            "type": "client"
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-62:70:02:44:20:ea",
+            "quality": "1.015, 1.123",
+            "source": 89,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "36:86:64:ef:cd:bc-9a:4e:58:d5:cd:39",
+            "quality": "1.000, 1.000",
+            "source": 8,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "96:f6:52:87:72:08-f1cf4b56897b7b0268d9560263bbf00b",
+            "quality": "TT",
+            "source": 6,
+            "target": 51,
+            "type": "client"
+        },
+        {
+            "id": "08d5ec47ef652919529dba309cb10fc3-52:e6:fc:ac:d4:e8",
+            "quality": "TT",
+            "source": 2,
+            "target": 22,
+            "type": "client"
+        },
+        {
+            "id": "99b2e0892378611ab4e2b2d4b05c2812-a6:f3:c1:cd:e4:64",
+            "quality": "TT",
+            "source": 79,
+            "target": 81,
+            "type": "client"
+        },
+        {
+            "id": "42:e4:ee:53:43:0f-4e:b3:80:c0:d7:13",
+            "quality": "1.000, 1.003",
+            "source": 9,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "40307965d6f61401659d451374f28aa7-fa:d1:11:81:16:20",
+            "quality": "TT",
+            "source": 0,
+            "target": 10,
+            "type": "client"
+        },
+        {
+            "id": "435ba15db85f30ae76a20908b2c00983-a6:f3:c1:cd:e4:64",
+            "quality": "TT",
+            "source": 79,
+            "target": 82,
+            "type": "client"
+        },
+        {
+            "id": "9a6d15fc2166eca4c2acf02cc476d6cf-a6:f3:c1:cd:e4:90",
+            "quality": "TT",
+            "source": 29,
+            "target": 31,
+            "type": "client"
+        },
+        {
+            "id": "96:f6:52:87:72:08-c46b62f754ee438a9cda0ff83653f3f6",
+            "quality": "TT",
+            "source": 6,
+            "target": 52,
+            "type": "client"
+        },
+        {
+            "id": "dbb24a8c4d75d10f414f02888098ad2c-de:5d:4c:f2:c3:ae",
+            "quality": "TT",
+            "source": 11,
+            "target": 12,
+            "type": "client"
+        },
+        {
+            "id": "a2:f3:c1:cd:e4:6f-f192d07d65e2ac812f695d3e240f238d",
+            "quality": "TT",
+            "source": 68,
+            "target": 72,
+            "type": "client"
+        },
+        {
+            "id": "bce1e10c22087d066f22d8c300f0d3b8-fe:1a:67:d3:36:4a",
+            "quality": "TT",
+            "source": 1,
+            "target": 21,
+            "type": "client"
+        },
+        {
+            "id": "9a:4e:58:d5:cd:39-d6:30:8a:c7:38:77",
+            "quality": "1.015, 1.015",
+            "source": 8,
+            "target": 5,
+            "type": null
+        },
+        {
+            "id": "12586d29c650765484355df7874f83e7-72:ea:3a:de:19:aa",
+            "quality": "TT",
+            "source": 7,
+            "target": 62,
+            "type": "client"
+        },
+        {
+            "id": "2363ee672fa53c1d48c6c4818f1161b7-a2:f3:c1:cd:e4:6f",
+            "quality": "TT",
+            "source": 68,
+            "target": 69,
+            "type": "client"
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:64-d7930a0280a8dd8599abec73cceb0dc9",
+            "quality": "TT",
+            "source": 79,
+            "target": 80,
+            "type": "client"
+        },
+        {
+            "id": "a2:81:77:05:0a:f7-c2:e0:c8:8a:c1:a9",
+            "quality": "1.015, 1.000",
+            "source": 6,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "a6:f3:c1:cd:ab:02-d27e80dcedd168534adabae00686e639",
+            "quality": "TT",
+            "source": 43,
+            "target": 44,
+            "type": "client"
+        },
+        {
+            "id": "a2:f3:c1:cd:e4:6f-a6:f3:c1:cd:ab:4e",
+            "quality": "3.035, 2.125",
+            "source": 8,
+            "target": 68,
+            "type": null
+        },
+        {
+            "id": "a2:81:77:05:0a:f7-d6:30:8a:c7:38:77",
+            "quality": "1.000, 1.000",
+            "source": 5,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "7f97031db47c4412ad994cdcc6cb5e0f-a6:f3:c1:cd:ab:4e",
+            "quality": "TT",
+            "source": 8,
+            "target": 77,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:b4:ae:4e-95b737508ecd54d28c0a8d144acaa2bb",
+            "quality": "TT",
+            "source": 14,
+            "target": 16,
+            "type": "client"
+        },
+        {
+            "id": "5c78ca18b3ac2acd0d7e3c8140a7be82-62:70:02:44:21:70",
+            "quality": "TT",
+            "source": 4,
+            "target": 41,
+            "type": "client"
+        },
+        {
+            "id": "a268861992966bdb561d77e6fa68d2a5-a6:f3:c1:96:86:04",
+            "quality": "TT",
+            "source": 3,
+            "target": 36,
+            "type": "client"
+        },
+        {
+            "id": "35115962ec558ce61e38d133990a971e-66:70:02:8f:56:fb",
+            "quality": "TT",
+            "source": 55,
+            "target": 56,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:44:20:ea-a9f03186e678f6e18d26b8a2cbf83978",
+            "quality": "TT",
+            "source": 89,
+            "target": 91,
+            "type": "client"
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-62:70:02:b4:ae:38",
+            "quality": "1.036, 1.053",
+            "source": 64,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "9e32833a11199955bda07da10cf32158-a6:f3:c1:cd:ab:02",
+            "quality": "TT",
+            "source": 43,
+            "target": 45,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:44:21:62-db11df49fc3158f82ace7a0795356ae0",
+            "quality": "TT",
+            "source": 5,
+            "target": 47,
+            "type": "client"
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:64-a6:f3:c1:cd:e4:90",
+            "quality": "1.220, 1.153",
+            "source": 79,
+            "target": 29,
+            "type": null
+        },
+        {
+            "id": "62:66:b3:a1:7b:6c-a6:f3:c1:cd:e4:90",
+            "quality": "4.553, 6.538",
+            "source": 39,
+            "target": 29,
+            "type": null
+        },
+        {
+            "id": "62:70:02:b4:ae:38-f441ece4df8224483417f9edad5f46e8",
+            "quality": "TT",
+            "source": 64,
+            "target": 65,
+            "type": "client"
+        },
+        {
+            "id": "c2:e0:c8:8a:c1:a9-d6:30:8a:c7:38:77",
+            "quality": "1.000, 1.015",
+            "source": 6,
+            "target": 5,
+            "type": null
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-62:66:b3:a1:7b:66",
+            "quality": "1.000, 1.066",
+            "source": 83,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:20:ea-66:70:02:8f:56:fb",
+            "quality": "1.000, 1.085",
+            "source": 89,
+            "target": 55,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:21:62-fa84a449f4940bb8c0af626aff0280e1",
+            "quality": "TT",
+            "source": 5,
+            "target": 50,
+            "type": "client"
+        },
+        {
+            "id": "62:66:b3:a1:7b:66-62:70:02:44:20:ea",
+            "quality": "1.000, 1.007",
+            "source": 89,
+            "target": 83,
+            "type": null
+        },
+        {
+            "id": "0b8d51584c41fd839cd9f1f98eeb2a8f-62:70:02:44:21:70",
+            "quality": "TT",
+            "source": 4,
+            "target": 42,
+            "type": "client"
+        },
+        {
+            "id": "36:86:64:ef:cd:bc-a2:81:77:05:0a:f7",
+            "quality": "1.000, 1.000",
+            "source": 3,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:20:ea-62:70:02:b4:ae:4e",
+            "quality": "3.591, 2.125",
+            "source": 89,
+            "target": 14,
+            "type": null
+        },
+        {
+            "id": "42:e4:ee:53:43:0f-5a:ac:6d:4d:85:ca",
+            "quality": "1.000, 1.000",
+            "source": 4,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "12:ae:13:0b:e1:ba-5a:ac:6d:4d:85:ca",
+            "quality": "1.000, 1.015",
+            "source": 4,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "5a:ac:6d:4d:85:ca-6e:0f:da:4f:c4:33",
+            "quality": "1.000, 1.015",
+            "source": 7,
+            "target": 4,
+            "type": null
+        },
+        {
+            "id": "8efb74fa83d59b534dd6c219880244a1-a6:f3:c1:cd:ab:4e",
+            "quality": "TT",
+            "source": 8,
+            "target": 76,
+            "type": "client"
+        },
+        {
+            "id": "27dd278a8a3936232a8d9d0624469875-a2:f3:c1:cd:e4:6f",
+            "quality": "TT",
+            "source": 68,
+            "target": 70,
+            "type": "client"
+        },
+        {
+            "id": "6e:0f:da:4f:c4:33-be:b3:a2:e8:92:ec",
+            "quality": "1.000, 1.000",
+            "source": 7,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "62:66:b3:a1:7b:66-62:70:02:b4:ae:38",
+            "quality": "1.000, 1.040",
+            "source": 83,
+            "target": 64,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:20:ea-77e334432dbb7ed4b2525dd8cecfffca",
+            "quality": "TT",
+            "source": 89,
+            "target": 90,
+            "type": "client"
+        },
+        {
+            "id": "66:70:02:8f:56:fb-a7a2c31554ac8202e4af8e98c56f86be",
+            "quality": "TT",
+            "source": 55,
+            "target": 57,
+            "type": "client"
+        },
+        {
+            "id": "16:fe:ed:39:93:00-3237cbd8eeef89fb39fa953157355ebd",
+            "quality": "TT",
+            "source": 58,
+            "target": 61,
+            "type": "client"
+        },
+        {
+            "id": "1f50714b06415ab3b695f499d3d815dc-62:70:02:44:21:62",
+            "quality": "TT",
+            "source": 5,
+            "target": 48,
+            "type": "client"
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:1a-a6:f3:c1:cd:e4:9c",
+            "quality": "2.428, 3.642",
+            "source": 9,
+            "target": 17,
+            "type": null
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-62:70:02:44:21:e2",
+            "quality": "1.080",
+            "source": 2,
+            "target": 33,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:21:e2-62:70:02:b4:ae:38",
+            "quality": "1.066, 1.000",
+            "source": 64,
+            "target": 33,
+            "type": null
+        },
+        {
+            "id": "a6:f3:c1:cd:e4:9c-a6:f3:c1:cd:e4:a4",
+            "quality": "2.475, 1.169",
+            "source": 9,
+            "target": 26,
+            "type": null
+        },
+        {
+            "id": "07f9d3543c712526f6ac801a9634225f-16:fe:ed:39:93:00",
+            "quality": "TT",
+            "source": 58,
+            "target": 59,
+            "type": "client"
+        },
+        {
+            "id": "250929996418e71357f616a5bf6ddb07-62:66:b3:a1:7b:66",
+            "quality": "TT",
+            "source": 83,
+            "target": 86,
+            "type": "client"
+        },
+        {
+            "id": "12:ae:13:0b:e1:ba-6e:0f:da:4f:c4:33",
+            "quality": "1.000, 1.000",
+            "source": 7,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "62:66:b3:a1:7b:66-8f643658158f355ea9dbe41024f12cac",
+            "quality": "TT",
+            "source": 83,
+            "target": 85,
+            "type": "client"
+        },
+        {
+            "id": "36:86:64:ef:cd:bc-96:c8:38:24:79:33",
+            "quality": "1.015, 1.000",
+            "source": 3,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "91b18ab440ccc10f17ae6f65535accc3-a2:f3:c1:cd:e4:6f",
+            "quality": "TT",
+            "source": 68,
+            "target": 71,
+            "type": "client"
+        },
+        {
+            "id": "2e8b8c61ead33661a44b443731ba1b14-a6:f3:c1:cd:e4:1a",
+            "quality": "TT",
+            "source": 17,
+            "target": 19,
+            "type": "client"
+        },
+        {
+            "id": "62:66:b3:a1:7b:66-62:70:02:44:21:e2",
+            "quality": "1.032, 1.020",
+            "source": 83,
+            "target": 33,
+            "type": null
+        },
+        {
+            "id": "62:70:02:44:21:e2-d80f6392a08d14837544013af2176acd",
+            "quality": "TT",
+            "source": 33,
+            "target": 34,
+            "type": "client"
+        },
+        {
+            "id": "6a3a26505bbccd1884c1210d82ae856a-fe:1a:67:d3:36:4a",
+            "quality": "TT",
+            "source": 1,
+            "target": 20,
+            "type": "client"
+        },
+        {
+            "id": "42:e4:ee:53:43:0f-6e:0f:da:4f:c4:33",
+            "quality": "1.015, 1.000",
+            "source": 7,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "96:f6:52:87:72:08-ac43de825d4bc5552709f3c4efbddc66",
+            "quality": "TT",
+            "source": 6,
+            "target": 53,
+            "type": "client"
+        },
+        {
+            "id": "07ff1b4c3c6fedf597c6b24b40bc4dd2-a6:f3:c1:96:86:04",
+            "quality": "TT",
+            "source": 3,
+            "target": 38,
+            "type": "client"
+        },
+        {
+            "id": "2dec67f7018155b6904c87a2f8712748-62:66:b3:a1:7b:6c",
+            "quality": "TT",
+            "source": 39,
+            "target": 40,
+            "type": "client"
+        },
+        {
+            "id": "52:e6:fc:ac:d4:e8-d8d29aaac1bcad652b87534ce0eb8ce2",
+            "quality": "TT",
+            "source": 2,
+            "target": 23,
+            "type": "client"
+        },
+        {
+            "id": "de:5d:4c:f2:c3:ae-efbfb89dc61838f3d2ee64ae9e36d2db",
+            "quality": "TT",
+            "source": 11,
+            "target": 13,
+            "type": "client"
+        },
+        {
+            "id": "6ced269509c3da1cdce3038e174b9eb5-72:ea:3a:de:19:aa",
+            "quality": "TT",
+            "source": 7,
+            "target": 63,
+            "type": "client"
+        },
+        {
+            "id": "1896ffb2f12460fd016df0089c18414d-a6:f3:c1:cd:e4:90",
+            "quality": "TT",
+            "source": 29,
+            "target": 32,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:44:21:e2-6908c8a8a48cf624ce07622846de9ee6",
+            "quality": "TT",
+            "source": 33,
+            "target": 35,
+            "type": "client"
+        },
+        {
+            "id": "15ac54800d01ffd89af835dd2fb5ae1f-62:70:02:b4:ae:38",
+            "quality": "TT",
+            "source": 64,
+            "target": 66,
+            "type": "client"
+        },
+        {
+            "id": "4e:b3:80:c0:d7:13-be:b3:a2:e8:92:ec",
+            "quality": "1.015, 1.015",
+            "source": 9,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "62:70:02:b4:ae:4e-f04f07fc136c9bbf31436f4784bcf4c0",
+            "quality": "TT",
+            "source": 14,
+            "target": 15,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:44:20:ea-62:70:02:44:21:e2",
+            "quality": "1.053, 1.075",
+            "source": 89,
+            "target": 33,
+            "type": null
+        },
+        {
+            "id": "9a:4e:58:d5:cd:39-a2:81:77:05:0a:f7",
+            "quality": "1.032, 1.000",
+            "source": 8,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "66:70:02:8f:56:fb-de:5d:4c:f2:c3:ae",
+            "quality": "1.349, 2.361",
+            "source": 55,
+            "target": 11,
+            "type": null
+        },
+        {
+            "id": "a6:f3:c1:cd:ab:4e-ac1781ef6d3f5a560e1e613d9c5ceb35",
+            "quality": "TT",
+            "source": 8,
+            "target": 78,
+            "type": "client"
+        },
+        {
+            "id": "29344b7e99948f99c04475fe8eb41f20-a6:f3:c1:cd:ab:4e",
+            "quality": "TT",
+            "source": 8,
+            "target": 75,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:44:21:62-62aefa32e929c6c9e69a86b7d6ce334e",
+            "quality": "TT",
+            "source": 5,
+            "target": 49,
+            "type": "client"
+        },
+        {
+            "id": "16:fe:ed:39:93:00-62:70:02:44:21:62",
+            "quality": "2.802, 7.727",
+            "source": 58,
+            "target": 5,
+            "type": null
+        },
+        {
+            "id": "175950d5cebccfc76b19140fc747e8f4-a6:f3:c1:96:86:04",
+            "quality": "TT",
+            "source": 3,
+            "target": 37,
+            "type": "client"
+        },
+        {
+            "id": "07fc7cbaf4a996f761cfe75caafd8728-a6:f3:c1:cd:e4:9c",
+            "quality": "TT",
+            "source": 9,
+            "target": 87,
+            "type": "client"
+        },
+        {
+            "id": "96:c8:38:24:79:33-a2:81:77:05:0a:f7",
+            "quality": "1.000, 1.000",
+            "source": 2,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "9a:4e:58:d5:cd:39-c2:e0:c8:8a:c1:a9",
+            "quality": "1.015, 1.000",
+            "source": 8,
+            "target": 6,
+            "type": null
+        },
+        {
+            "id": "62:70:02:b4:ae:38-a353aca0f875bb6bb609baab85eecc8b",
+            "quality": "TT",
+            "source": 64,
+            "target": 67,
+            "type": "client"
+        },
+        {
+            "id": "16:fe:ed:39:93:00-5e4c774538435794f621f734c85db13d",
+            "quality": "TT",
+            "source": 58,
+            "target": 60,
+            "type": "client"
+        }
+    ],
+    "meta": {
+        "timestamp": "2014-01-12T18:55:49"
+    },
+    "nodes": [
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.216522,
+                7.151346
+            ],
+            "id": "fa:d1:11:81:16:20",
+            "macs": "fa:d1:11:81:16:20, 12:ae:13:0b:e1:ba",
+            "name": "ocyanter"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.263294,
+                7.1426475
+            ],
+            "id": "fe:1a:67:d3:36:4a",
+            "macs": "a2:81:77:05:0a:f7, fe:1a:67:d3:36:4a",
+            "name": "node254"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.266782,
+                7.145012
+            ],
+            "id": "52:e6:fc:ac:d4:e8",
+            "macs": "be:b3:a2:e8:92:ec, 96:c8:38:24:79:33, 52:e6:fc:ac:d4:e8",
+            "name": "node84"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.280313,
+                7.235609
+            ],
+            "id": "a6:f3:c1:96:86:04",
+            "macs": "36:86:64:ef:cd:bc, a6:f3:c1:96:86:04, 42:e4:ee:53:43:0f",
+            "name": "dustin1"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.265983,
+                7.221877
+            ],
+            "id": "62:70:02:44:21:70",
+            "macs": "62:70:02:44:21:70, 5a:ac:6d:4d:85:ca",
+            "name": "felix91"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.277147,
+                7.216001
+            ],
+            "id": "62:70:02:44:21:62",
+            "macs": "d6:30:8a:c7:38:77, 62:70:02:44:21:62",
+            "name": "node89"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.250631,
+                7.137926
+            ],
+            "id": "96:f6:52:87:72:08",
+            "macs": "96:f6:52:87:72:08, c2:e0:c8:8a:c1:a9",
+            "name": "node181"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": null,
+            "id": "72:ea:3a:de:19:aa",
+            "macs": "6e:0f:da:4f:c4:33, 72:ea:3a:de:19:aa",
+            "name": "N.N."
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.256113,
+                7.136645
+            ],
+            "id": "a6:f3:c1:cd:ab:4e",
+            "macs": "a6:f3:c1:cd:ab:4e, 9a:4e:58:d5:cd:39",
+            "name": "node123"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": true,
+                "online": true
+            },
+            "geo": [
+                51.256841,
+                7.138184
+            ],
+            "id": "a6:f3:c1:cd:e4:9c",
+            "macs": "4e:b3:80:c0:d7:13, a6:f3:c1:cd:e4:9c",
+            "name": "node121"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "40307965d6f61401659d451374f28aa7",
+            "macs": "40307965d6f61401659d451374f28aa7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "de:5d:4c:f2:c3:ae",
+            "macs": "de:5d:4c:f2:c3:ae",
+            "name": "node147"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "dbb24a8c4d75d10f414f02888098ad2c",
+            "macs": "dbb24a8c4d75d10f414f02888098ad2c",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "efbfb89dc61838f3d2ee64ae9e36d2db",
+            "macs": "efbfb89dc61838f3d2ee64ae9e36d2db",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.266108,
+                7.144063
+            ],
+            "id": "62:70:02:b4:ae:4e",
+            "macs": "62:70:02:b4:ae:4e",
+            "name": "node85"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f04f07fc136c9bbf31436f4784bcf4c0",
+            "macs": "f04f07fc136c9bbf31436f4784bcf4c0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "95b737508ecd54d28c0a8d144acaa2bb",
+            "macs": "95b737508ecd54d28c0a8d144acaa2bb",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.256664,
+                7.137948
+            ],
+            "id": "a6:f3:c1:cd:e4:1a",
+            "macs": "a6:f3:c1:cd:e4:1a",
+            "name": "node132"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "d487baebd97fd422334eb49955f82144",
+            "macs": "d487baebd97fd422334eb49955f82144",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "2e8b8c61ead33661a44b443731ba1b14",
+            "macs": "2e8b8c61ead33661a44b443731ba1b14",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a3a26505bbccd1884c1210d82ae856a",
+            "macs": "6a3a26505bbccd1884c1210d82ae856a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "bce1e10c22087d066f22d8c300f0d3b8",
+            "macs": "bce1e10c22087d066f22d8c300f0d3b8",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "08d5ec47ef652919529dba309cb10fc3",
+            "macs": "08d5ec47ef652919529dba309cb10fc3",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "d8d29aaac1bcad652b87534ce0eb8ce2",
+            "macs": "d8d29aaac1bcad652b87534ce0eb8ce2",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a1cee81c76e548ed95adc3cd3efcce5e",
+            "macs": "a1cee81c76e548ed95adc3cd3efcce5e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "15f6c60cea4cc9ec2d52f7263ae3b669",
+            "macs": "15f6c60cea4cc9ec2d52f7263ae3b669",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.256951,
+                7.138398
+            ],
+            "id": "a6:f3:c1:cd:e4:a4",
+            "macs": "a6:f3:c1:cd:e4:a4",
+            "name": "node127"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "74e2014449ea37769c46eadfb62b20bd",
+            "macs": "74e2014449ea37769c46eadfb62b20bd",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "d6023a9c565dfdc720ffdec02a6fedef",
+            "macs": "d6023a9c565dfdc720ffdec02a6fedef",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.256124,
+                7.139402
+            ],
+            "id": "a6:f3:c1:cd:e4:90",
+            "macs": "a6:f3:c1:cd:e4:90",
+            "name": "node125"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8a3a0c41f25505a02255c54991416726",
+            "macs": "8a3a0c41f25505a02255c54991416726",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "9a6d15fc2166eca4c2acf02cc476d6cf",
+            "macs": "9a6d15fc2166eca4c2acf02cc476d6cf",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1896ffb2f12460fd016df0089c18414d",
+            "macs": "1896ffb2f12460fd016df0089c18414d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.266842,
+                7.145169
+            ],
+            "id": "62:70:02:44:21:e2",
+            "macs": "62:70:02:44:21:e2",
+            "name": "node86"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "d80f6392a08d14837544013af2176acd",
+            "macs": "d80f6392a08d14837544013af2176acd",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6908c8a8a48cf624ce07622846de9ee6",
+            "macs": "6908c8a8a48cf624ce07622846de9ee6",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a268861992966bdb561d77e6fa68d2a5",
+            "macs": "a268861992966bdb561d77e6fa68d2a5",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "175950d5cebccfc76b19140fc747e8f4",
+            "macs": "175950d5cebccfc76b19140fc747e8f4",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "07ff1b4c3c6fedf597c6b24b40bc4dd2",
+            "macs": "07ff1b4c3c6fedf597c6b24b40bc4dd2",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.256513,
+                7.138683
+            ],
+            "id": "62:66:b3:a1:7b:6c",
+            "macs": "62:66:b3:a1:7b:6c",
+            "name": "node246"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "2dec67f7018155b6904c87a2f8712748",
+            "macs": "2dec67f7018155b6904c87a2f8712748",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "5c78ca18b3ac2acd0d7e3c8140a7be82",
+            "macs": "5c78ca18b3ac2acd0d7e3c8140a7be82",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "0b8d51584c41fd839cd9f1f98eeb2a8f",
+            "macs": "0b8d51584c41fd839cd9f1f98eeb2a8f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.256365,
+                7.136908
+            ],
+            "id": "a6:f3:c1:cd:ab:02",
+            "macs": "a6:f3:c1:cd:ab:02",
+            "name": "node107"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "d27e80dcedd168534adabae00686e639",
+            "macs": "d27e80dcedd168534adabae00686e639",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "9e32833a11199955bda07da10cf32158",
+            "macs": "9e32833a11199955bda07da10cf32158",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "72e66fb72bc778f83c2c6c4a9cd68bcf",
+            "macs": "72e66fb72bc778f83c2c6c4a9cd68bcf",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "db11df49fc3158f82ace7a0795356ae0",
+            "macs": "db11df49fc3158f82ace7a0795356ae0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1f50714b06415ab3b695f499d3d815dc",
+            "macs": "1f50714b06415ab3b695f499d3d815dc",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "62aefa32e929c6c9e69a86b7d6ce334e",
+            "macs": "62aefa32e929c6c9e69a86b7d6ce334e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "fa84a449f4940bb8c0af626aff0280e1",
+            "macs": "fa84a449f4940bb8c0af626aff0280e1",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f1cf4b56897b7b0268d9560263bbf00b",
+            "macs": "f1cf4b56897b7b0268d9560263bbf00b",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "c46b62f754ee438a9cda0ff83653f3f6",
+            "macs": "c46b62f754ee438a9cda0ff83653f3f6",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ac43de825d4bc5552709f3c4efbddc66",
+            "macs": "ac43de825d4bc5552709f3c4efbddc66",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "b9d7cfdb6f0629125770d8c70f5a44fc",
+            "macs": "b9d7cfdb6f0629125770d8c70f5a44fc",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "66:70:02:8f:56:fb",
+            "macs": "66:70:02:8f:56:fb",
+            "name": "ffnode4300"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "35115962ec558ce61e38d133990a971e",
+            "macs": "35115962ec558ce61e38d133990a971e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a7a2c31554ac8202e4af8e98c56f86be",
+            "macs": "a7a2c31554ac8202e4af8e98c56f86be",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "16:fe:ed:39:93:00",
+            "macs": "16:fe:ed:39:93:00",
+            "name": "node242"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "07f9d3543c712526f6ac801a9634225f",
+            "macs": "07f9d3543c712526f6ac801a9634225f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "5e4c774538435794f621f734c85db13d",
+            "macs": "5e4c774538435794f621f734c85db13d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "3237cbd8eeef89fb39fa953157355ebd",
+            "macs": "3237cbd8eeef89fb39fa953157355ebd",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "12586d29c650765484355df7874f83e7",
+            "macs": "12586d29c650765484355df7874f83e7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6ced269509c3da1cdce3038e174b9eb5",
+            "macs": "6ced269509c3da1cdce3038e174b9eb5",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.266802,
+                7.144809
+            ],
+            "id": "62:70:02:b4:ae:38",
+            "macs": "62:70:02:b4:ae:38",
+            "name": "node76"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f441ece4df8224483417f9edad5f46e8",
+            "macs": "f441ece4df8224483417f9edad5f46e8",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "15ac54800d01ffd89af835dd2fb5ae1f",
+            "macs": "15ac54800d01ffd89af835dd2fb5ae1f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a353aca0f875bb6bb609baab85eecc8b",
+            "macs": "a353aca0f875bb6bb609baab85eecc8b",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.255455,
+                7.135175
+            ],
+            "id": "a2:f3:c1:cd:e4:6f",
+            "macs": "a2:f3:c1:cd:e4:6f",
+            "name": "node126"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "2363ee672fa53c1d48c6c4818f1161b7",
+            "macs": "2363ee672fa53c1d48c6c4818f1161b7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "27dd278a8a3936232a8d9d0624469875",
+            "macs": "27dd278a8a3936232a8d9d0624469875",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "91b18ab440ccc10f17ae6f65535accc3",
+            "macs": "91b18ab440ccc10f17ae6f65535accc3",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f192d07d65e2ac812f695d3e240f238d",
+            "macs": "f192d07d65e2ac812f695d3e240f238d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "dc624b6ae2a95d23b28dc21fb621b3af",
+            "macs": "dc624b6ae2a95d23b28dc21fb621b3af",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6e599410477b195c741c7e689f21f22d",
+            "macs": "6e599410477b195c741c7e689f21f22d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "29344b7e99948f99c04475fe8eb41f20",
+            "macs": "29344b7e99948f99c04475fe8eb41f20",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8efb74fa83d59b534dd6c219880244a1",
+            "macs": "8efb74fa83d59b534dd6c219880244a1",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "7f97031db47c4412ad994cdcc6cb5e0f",
+            "macs": "7f97031db47c4412ad994cdcc6cb5e0f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ac1781ef6d3f5a560e1e613d9c5ceb35",
+            "macs": "ac1781ef6d3f5a560e1e613d9c5ceb35",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.25622,
+                7.140207
+            ],
+            "id": "a6:f3:c1:cd:e4:64",
+            "macs": "a6:f3:c1:cd:e4:64",
+            "name": "node124"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "d7930a0280a8dd8599abec73cceb0dc9",
+            "macs": "d7930a0280a8dd8599abec73cceb0dc9",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "99b2e0892378611ab4e2b2d4b05c2812",
+            "macs": "99b2e0892378611ab4e2b2d4b05c2812",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "435ba15db85f30ae76a20908b2c00983",
+            "macs": "435ba15db85f30ae76a20908b2c00983",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.266796,
+                7.145038
+            ],
+            "id": "62:66:b3:a1:7b:66",
+            "macs": "62:66:b3:a1:7b:66",
+            "name": "node247"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6fd485c7336e1d014e70bc9349dbca73",
+            "macs": "6fd485c7336e1d014e70bc9349dbca73",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8f643658158f355ea9dbe41024f12cac",
+            "macs": "8f643658158f355ea9dbe41024f12cac",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "250929996418e71357f616a5bf6ddb07",
+            "macs": "250929996418e71357f616a5bf6ddb07",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "07fc7cbaf4a996f761cfe75caafd8728",
+            "macs": "07fc7cbaf4a996f761cfe75caafd8728",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8a28f9af955b59cbb198c81e74f2c40d",
+            "macs": "8a28f9af955b59cbb198c81e74f2c40d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.266693,
+                7.144935
+            ],
+            "id": "62:70:02:44:20:ea",
+            "macs": "62:70:02:44:20:ea",
+            "name": "node87"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "77e334432dbb7ed4b2525dd8cecfffca",
+            "macs": "77e334432dbb7ed4b2525dd8cecfffca",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a9f03186e678f6e18d26b8a2cbf83978",
+            "macs": "a9f03186e678f6e18d26b8a2cbf83978",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "06:26:5a:34:bd:28",
+            "macs": "06:26:5a:34:bd:28",
+            "name": "ffrl_000016_DIR-300"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "06:24:01:23:78:67",
+            "macs": "06:24:01:23:78:67",
+            "name": "kling-300"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.256635,
+                7.137573
+            ],
+            "id": "a0:f3:c1:cd:e4:a8",
+            "macs": "a0:f3:c1:cd:e4:a8",
+            "name": "node106"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.281537,
+                7.205797
+            ],
+            "id": "00:02:6f:2f:03:b0",
+            "macs": "00:02:6f:2f:03:b0",
+            "name": "meshcube1"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "00:90:4b:d6:9c:17",
+            "macs": "00:90:4b:d6:9c:17",
+            "name": "zugvogel"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.256983,
+                7.13665
+            ],
+            "id": "62:70:02:44:2b:4a",
+            "macs": "62:70:02:44:2b:4a",
+            "name": "node88"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.255808,
+                7.135979
+            ],
+            "id": "a6:f3:c1:cd:e4:ce",
+            "macs": "a6:f3:c1:cd:e4:ce",
+            "name": "node129"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.281488,
+                7.205614
+            ],
+            "id": "f2:ec:38:e9:7a:9e",
+            "macs": "f2:ec:38:e9:7a:9e",
+            "name": "10tst43"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "62:66:b3:a1:8a:de",
+            "macs": "62:66:b3:a1:8a:de",
+            "name": "node245"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.27692,
+                7.21706
+            ],
+            "id": "fe:1a:67:af:08:62",
+            "macs": "fe:1a:67:af:08:62",
+            "name": "hugo"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "00:25:9c:4b:36:75",
+            "macs": "00:25:9c:4b:36:75",
+            "name": "veranstaltungen"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.281571,
+                7.205599
+            ],
+            "id": "a6:f3:c1:64:4e:3e",
+            "macs": "a6:f3:c1:64:4e:3e",
+            "name": "kling-841er"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.255927,
+                7.137677
+            ],
+            "id": "a0:f3:c1:cd:ab:a8",
+            "macs": "a0:f3:c1:cd:ab:a8",
+            "name": "node131"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "00:1a:4d:5a:6a:f4",
+            "macs": "00:1a:4d:5a:6a:f4",
+            "name": "heizung"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.266314,
+                7.144517
+            ],
+            "id": "de:5d:4c:f2:c3:a8",
+            "macs": "de:5d:4c:f2:c3:a8",
+            "name": "node162"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.255867,
+                7.136035
+            ],
+            "id": "a6:f3:c1:cd:e4:6c",
+            "macs": "a6:f3:c1:cd:e4:6c",
+            "name": "node128"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.256228,
+                7.137232
+            ],
+            "id": "a0:f3:c1:cd:e4:5a",
+            "macs": "a0:f3:c1:cd:e4:5a",
+            "name": "node130"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "02:82:09:43:27:3a",
+            "macs": "02:82:09:43:27:3a",
+            "name": "KjuBie"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.280288,
+                7.235563
+            ],
+            "id": "72:ea:3a:b2:33:36",
+            "macs": "72:ea:3a:b2:33:36",
+            "name": "dustin2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "06:26:5a:34:bc:29",
+            "macs": "06:26:5a:34:bc:29",
+            "name": "ffrl_000019_DIR-300"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.256376,
+                7.137211
+            ],
+            "id": "a2:f3:c1:cd:e4:77",
+            "macs": "a2:f3:c1:cd:e4:77",
+            "name": "node122"
+        }
+    ]
+}
