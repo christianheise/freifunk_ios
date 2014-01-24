@@ -1,57 +1,162 @@
 {
     "links": [
         {
-            "id": "3a:3b:88:af:57:73-66:66:b3:4d:94:e2",
-            "quality": "1.000, 1.000",
-            "source": 0,
-            "target": 2,
-            "type": null
+            "id": "8c:fa:ba:7d:04:7e-da:5d:4c:d7:c4:43",
+            "quality": "TT",
+            "source": 5,
+            "target": 17,
+            "type": "client"
+        },
+        {
+            "id": "12:fe:ed:40:99:64-8e:fe:f3:28:27:ba",
+            "quality": "TT",
+            "source": 4,
+            "target": 15,
+            "type": "client"
+        },
+        {
+            "id": "46:f0:e6:6e:80:62-66:66:b3:4c:8a:67",
+            "quality": "TT",
+            "source": 6,
+            "target": 18,
+            "type": "client"
         },
         {
             "id": "3a:3b:88:af:57:73-f6:a6:7f:d1:a6:b3",
             "quality": "TT",
+            "source": 8,
+            "target": 9,
+            "type": "client"
+        },
+        {
+            "id": "62:db:f2:00:6a:51-da:5d:4c:d7:c4:43",
+            "quality": "TT",
+            "source": 5,
+            "target": 16,
+            "type": "client"
+        },
+        {
+            "id": "02:bd:7c:3c:43:5a-66:70:02:67:85:32",
+            "quality": "TT",
+            "source": 3,
+            "target": 14,
+            "type": "client"
+        },
+        {
+            "id": "12:fe:ed:7b:81:6d-5a:45:e5:2a:95:15",
+            "quality": "TT",
             "source": 2,
-            "target": 3,
+            "target": 13,
             "type": "client"
         },
         {
-            "id": "66:66:b3:4c:8a:67-da:af:f0:cb:95:32",
+            "id": "12:fe:ed:7b:81:6d-f0:27:65:e0:24:31",
             "quality": "TT",
-            "source": 1,
-            "target": 5,
+            "source": 2,
+            "target": 12,
             "type": "client"
         },
         {
-            "id": "66:66:b3:40:e8:21-da:e2:aa:35:a5:e2",
+            "id": "3a:3b:88:af:57:73-66:70:02:68:85:32",
+            "quality": "1.000, 1.000",
+            "source": 3,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "66:66:b3:40:d3:59-86:3b:7a:ca:68:15",
             "quality": "TT",
-            "source": 6,
-            "target": 7,
+            "source": 0,
+            "target": 10,
             "type": "client"
+        },
+        {
+            "id": "12:fe:ed:40:9f:32-52:e0:5b:94:f8:a0",
+            "quality": "TT",
+            "source": 7,
+            "target": 21,
+            "type": "client"
+        },
+        {
+            "id": "12:fe:ed:41:99:64-3a:3b:88:af:57:73",
+            "quality": "1.000, 1.000",
+            "source": 4,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "12:fe:ed:40:92:c0-12:fe:ed:40:9f:32",
+            "quality": "1.015, 1.028",
+            "source": 7,
+            "target": 1,
+            "type": null
         },
         {
             "id": "3a:3b:88:af:57:73-66:66:b3:4d:8a:66",
             "quality": "1.000, 1.000",
-            "source": 1,
-            "target": 2,
-            "type": null
+            "source": 6,
+            "target": 8,
+            "type": "vpn"
         },
         {
-            "id": "42:26:d3:4e:5e:80-66:66:b3:4c:94:e3",
-            "quality": "TT",
+            "id": "12:fe:ed:41:92:c0-3a:3b:88:af:57:73",
+            "quality": "1.000, 1.000",
+            "source": 1,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "12:fe:ed:41:9f:32-3a:3b:88:af:57:73",
+            "quality": "1.000, 1.000",
+            "source": 7,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "3a:3b:88:af:57:73-66:66:b3:41:d3:58",
+            "quality": "1.000, 1.000",
             "source": 0,
-            "target": 4,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "12:fe:ed:40:92:c0-6e:49:57:b3:2d:43",
+            "quality": "TT",
+            "source": 1,
+            "target": 11,
             "type": "client"
         },
         {
-            "id": "66:66:b3:40:e8:21-66:66:b3:4c:94:e3",
-            "quality": "1.011, 1.099",
-            "source": 6,
-            "target": 0,
-            "type": null
+            "id": "02:e0:ff:02:a1:92-c0:ff:ee:ba:be:42",
+            "quality": "TT",
+            "source": 19,
+            "target": 20,
+            "type": "client"
+        },
+        {
+            "id": "3a:3b:88:af:57:73-c0:ff:ee:ba:be:42",
+            "quality": "1.000, 1.011",
+            "source": 19,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "3a:3b:88:af:57:73-da:5d:4c:d8:c4:42",
+            "quality": "1.000, 1.000",
+            "source": 5,
+            "target": 8,
+            "type": "vpn"
+        },
+        {
+            "id": "12:fe:ed:7c:81:6c-3a:3b:88:af:57:73",
+            "quality": "1.000, 1.000",
+            "source": 2,
+            "target": 8,
+            "type": "vpn"
         }
     ],
     "meta": {
-        "timestamp": "2014-01-10T12:20:29"
+        "timestamp": "2014-01-24T03:49:07"
     },
     "nodes": [
         {
@@ -60,10 +165,97 @@
                 "gateway": false,
                 "online": true
             },
-            "geo": null,
-            "id": "66:66:b3:4c:94:e3",
-            "macs": "66:66:b3:4d:94:e2, 66:66:b3:4c:94:e3, 64:66:b3:4c:94:e2",
-            "name": ""
+            "geo": [
+                51.71724487103152,
+                8.743325471878052
+            ],
+            "id": "66:66:b3:40:d3:59",
+            "macs": "64:66:b3:40:d3:58, 66:66:b3:40:d3:59, 66:66:b3:41:d3:58",
+            "name": "dip"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.70946724370671,
+                8.766864538192749
+            ],
+            "id": "12:fe:ed:40:92:c0",
+            "macs": "10:fe:ed:40:92:c0, 12:fe:ed:40:92:c0, 12:fe:ed:41:92:c0",
+            "name": "arndot"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.757242,
+                8.665161
+            ],
+            "id": "12:fe:ed:7b:81:6d",
+            "macs": "10:fe:ed:7b:81:6c, 12:fe:ed:7b:81:6d, 12:fe:ed:7c:81:6c",
+            "name": "snowball"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.709494,
+                8.763653
+            ],
+            "id": "66:70:02:67:85:32",
+            "macs": "66:70:02:68:85:32, 66:70:02:67:85:32, 64:70:02:67:85:32",
+            "name": "tioan"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.7147,
+                8.76547
+            ],
+            "id": "12:fe:ed:40:99:64",
+            "macs": "12:fe:ed:40:99:64, 10:fe:ed:40:99:64, 12:fe:ed:41:99:64",
+            "name": "loetlampe"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.66915506187785,
+                8.731014132499693
+            ],
+            "id": "da:5d:4c:d7:c4:43",
+            "macs": "d8:5d:4c:d7:c4:42, da:5d:4c:d7:c4:43, da:5d:4c:d8:c4:42",
+            "name": "space"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.73713156380537,
+                8.677359223365784
+            ],
+            "id": "66:66:b3:4c:8a:67",
+            "macs": "66:66:b3:4c:8a:67, 64:66:b3:4c:8a:66, 66:66:b3:4d:8a:66",
+            "name": "pb01"
         },
         {
             "flags": {
@@ -72,20 +264,20 @@
                 "online": true
             },
             "geo": null,
-            "id": "66:66:b3:4c:8a:67",
-            "macs": "66:66:b3:4c:8a:67, 64:66:b3:4c:8a:66, 66:66:b3:4d:8a:66",
-            "name": ""
+            "id": "12:fe:ed:40:9f:32",
+            "macs": "12:fe:ed:40:9f:32, 12:fe:ed:41:9f:32, 10:fe:ed:40:9f:32",
+            "name": "pirat1"
         },
         {
             "flags": {
                 "client": false,
-                "gateway": false,
+                "gateway": true,
                 "online": true
             },
             "geo": null,
             "id": "3a:3b:88:af:57:73",
             "macs": "3a:3b:88:af:57:73",
-            "name": ""
+            "name": "c3pb-gw"
         },
         {
             "flags": {
@@ -105,8 +297,8 @@
                 "online": true
             },
             "geo": null,
-            "id": "42:26:d3:4e:5e:80",
-            "macs": "42:26:d3:4e:5e:80",
+            "id": "86:3b:7a:ca:68:15",
+            "macs": "86:3b:7a:ca:68:15",
             "name": ""
         },
         {
@@ -116,8 +308,85 @@
                 "online": true
             },
             "geo": null,
-            "id": "da:af:f0:cb:95:32",
-            "macs": "da:af:f0:cb:95:32",
+            "id": "6e:49:57:b3:2d:43",
+            "macs": "6e:49:57:b3:2d:43",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f0:27:65:e0:24:31",
+            "macs": "f0:27:65:e0:24:31",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "5a:45:e5:2a:95:15",
+            "macs": "5a:45:e5:2a:95:15",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "02:bd:7c:3c:43:5a",
+            "macs": "02:bd:7c:3c:43:5a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8e:fe:f3:28:27:ba",
+            "macs": "8e:fe:f3:28:27:ba",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "62:db:f2:00:6a:51",
+            "macs": "62:db:f2:00:6a:51",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8c:fa:ba:7d:04:7e",
+            "macs": "8c:fa:ba:7d:04:7e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "46:f0:e6:6e:80:62",
+            "macs": "46:f0:e6:6e:80:62",
             "name": ""
         },
         {
@@ -126,9 +395,23 @@
                 "gateway": false,
                 "online": true
             },
+            "geo": [
+                51.7066,
+                8.75732
+            ],
+            "id": "c0:ff:ee:ba:be:42",
+            "macs": "c0:ff:ee:ba:be:42",
+            "name": "hej"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
             "geo": null,
-            "id": "66:66:b3:40:e8:21",
-            "macs": "64:66:b3:40:e8:20, 66:66:b3:40:e8:21",
+            "id": "02:e0:ff:02:a1:92",
+            "macs": "02:e0:ff:02:a1:92",
             "name": ""
         },
         {
@@ -138,9 +421,48 @@
                 "online": true
             },
             "geo": null,
-            "id": "da:e2:aa:35:a5:e2",
-            "macs": "da:e2:aa:35:a5:e2",
+            "id": "52:e0:5b:94:f8:a0",
+            "macs": "52:e0:5b:94:f8:a0",
             "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "74:e3:3a:e4:44:fc",
+            "macs": "74:e3:3a:e4:44:fc",
+            "name": "ffpb-demo1"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.73747040906799,
+                8.677863478660583
+            ],
+            "id": "64:66:b3:40:e8:20",
+            "macs": "64:66:b3:40:e8:20",
+            "name": "lulu1"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.737543493007216,
+                8.677783012390135
+            ],
+            "id": "64:66:b3:4c:94:e2",
+            "macs": "64:66:b3:4c:94:e2",
+            "name": "lulu2"
         }
     ]
 }
