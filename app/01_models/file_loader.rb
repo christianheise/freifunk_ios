@@ -56,7 +56,7 @@ class FileLoader
 
   def load_links
     load_json do |json|
-      json[:links].map do |it|
+      (json[:links] || []).map do |it|
         link_id = it[:id]
         quality = it[:quality]
         source  = it[:source]
