@@ -2,6 +2,7 @@
 build
 tags
 vendor/pods
+vendor/TestFlightSDK
 app/pixate_code.rb
 app/testflight_launcher.rb
 resources/*.nib
