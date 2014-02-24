@@ -13,7 +13,6 @@ class MapController < UIViewController
   end
 
   def loadView
-    self.edgesForExtendedLayout = UIRectEdgeNone
     self.view = map
 
     @track_button = MKUserTrackingBarButtonItem.alloc.initWithMapView(map)

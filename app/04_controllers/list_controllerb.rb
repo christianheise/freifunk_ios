@@ -8,7 +8,6 @@ class ListController < UITableViewController
   end
 
   def loadView
-    self.edgesForExtendedLayout = UIRectEdgeNone
     init_nodes
 
     self.tableView = UITableView.alloc.tap do |tableView|
