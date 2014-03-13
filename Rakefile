@@ -6,7 +6,7 @@ Bundler.require :default
 require 'bubble-wrap/location'
 require 'bubble-wrap/reactor'
 
-VERSION = "2.2.0"
+VERSION = "2.3.0"
 
 Motion::Project::App.setup do |app|
   app.name                    = 'freifunk'
@@ -16,9 +16,6 @@ Motion::Project::App.setup do |app|
 
   app.codesign_certificate    = 'iPhone Distribution: Peter Schroeder'
   app.identifier              = 'de.nofail.freifunk'
-
-  # app.info_plist['UIStatusBarHidden'] = true
-  # app.info_plist['UIViewControllerBasedStatusBarAppearance'] = true
 
   app.testflight.sdk = 'vendor/TestFlightSDK'
   app.info_plist['testflight_apitoken'] = ENV['TESTFLIGHT_APP_TOKEN_FREIFUNK']
