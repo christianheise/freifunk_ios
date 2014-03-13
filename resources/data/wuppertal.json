@@ -2,7 +2,7 @@
     "links": [
         {
             "id": "2e:f4:03:44:f6:0b-8e:12:1e:5f:7c:32",
-            "quality": "1.003, 1.015",
+            "quality": "1.000, 1.000",
             "source": 7,
             "target": 4,
             "type": null
@@ -44,8 +44,8 @@
         },
         {
             "id": "a6:f3:c1:cd:e4:1a-a6:f3:c1:cd:e4:a4",
-            "quality": "1.378",
-            "source": 36,
+            "quality": "1.491",
+            "source": 37,
             "target": 30,
             "type": null
         },
@@ -58,7 +58,7 @@
         },
         {
             "id": "02:e0:ff:83:3f:65-12:66:11:81:16:20",
-            "quality": "1.000, 1.015",
+            "quality": "1.003, 1.000",
             "source": 11,
             "target": 1,
             "type": null
@@ -72,7 +72,7 @@
         },
         {
             "id": "56:13:ec:f0:e7:90-ea:73:52:98:aa:ba",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.003",
             "source": 13,
             "target": 2,
             "type": null
@@ -107,14 +107,14 @@
         },
         {
             "id": "12:66:11:81:16:20-2e:f4:03:44:f6:0b",
-            "quality": "1.000, 1.015",
+            "quality": "1.000, 1.000",
             "source": 7,
             "target": 1,
             "type": null
         },
         {
             "id": "46:a1:c5:3b:98:44-56:01:d7:03:57:1b",
-            "quality": "1.000, 1.015",
+            "quality": "1.000, 1.000",
             "source": 14,
             "target": 10,
             "type": null
@@ -127,11 +127,18 @@
             "type": "client"
         },
         {
-            "id": "86:30:78:2d:e2:30-e6:2a:15:92:e0:44",
-            "quality": "1.000, 1.000",
-            "source": 14,
-            "target": 13,
-            "type": null
+            "id": "00:02:6f:2f:03:b0-4847c5894e743ff2631e16076e4ce2de",
+            "quality": "TT",
+            "source": 6,
+            "target": 67,
+            "type": "client"
+        },
+        {
+            "id": "32a520878279c01be41d442d03942b8c-fe:1a:67:d3:36:4a",
+            "quality": "TT",
+            "source": 0,
+            "target": 36,
+            "type": "client"
         },
         {
             "id": "02:50:55:5a:d8:a6-ea:73:52:98:aa:ba",
@@ -149,8 +156,8 @@
         },
         {
             "id": "16:fe:ed:39:ad:74-de:5d:4c:f2:c3:ae",
-            "quality": "1.378, 1.448",
-            "source": 71,
+            "quality": "1.148, 1.613",
+            "source": 72,
             "target": 16,
             "type": null
         },
@@ -177,7 +184,7 @@
         },
         {
             "id": "56:13:ec:f0:e7:90-8a:07:6e:33:ef:26",
-            "quality": "1.000, 1.000",
+            "quality": "1.003, 1.015",
             "source": 13,
             "target": 12,
             "type": null
@@ -185,8 +192,8 @@
         {
             "id": "a6:f3:c1:cd:e4:a4-d6023a9c565dfdc720ffdec02a6fedef",
             "quality": "TT",
-            "source": 36,
-            "target": 37,
+            "source": 37,
+            "target": 39,
             "type": "client"
         },
         {
@@ -206,28 +213,21 @@
         {
             "id": "836c994ff8b6acb24cb1958c230ee8ba-a2:f3:c1:cd:e4:a9",
             "quality": "TT",
-            "source": 53,
-            "target": 55,
+            "source": 55,
+            "target": 57,
             "type": "client"
         },
         {
             "id": "8a:07:6e:33:ef:26-ea:73:52:98:aa:ba",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.015",
             "source": 12,
             "target": 2,
             "type": null
         },
         {
-            "id": "62:70:02:8f:56:fb-fa84a449f4940bb8c0af626aff0280e1",
-            "quality": "TT",
-            "source": 9,
-            "target": 83,
-            "type": "client"
-        },
-        {
             "id": "06:23:cd:1f:ea:d2-62:66:b3:73:f1:5c",
-            "quality": "1.191, 1.148",
-            "source": 46,
+            "quality": "1.103, 1.133",
+            "source": 48,
             "target": 19,
             "type": null
         },
@@ -235,7 +235,7 @@
             "id": "271afa264bfaa273b8025a71b005afe3-62:70:02:44:21:e2",
             "quality": "TT",
             "source": 2,
-            "target": 50,
+            "target": 52,
             "type": "client"
         },
         {
@@ -247,7 +247,7 @@
         },
         {
             "id": "46:a1:c5:3b:98:44-92:2f:13:fc:d1:51",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.000",
             "source": 10,
             "target": 0,
             "type": null
@@ -255,8 +255,8 @@
         {
             "id": "a2:f3:c1:cd:e4:77-b1d75fa8d367fee099b729051f866acc",
             "quality": "TT",
-            "source": 42,
-            "target": 44,
+            "source": 44,
+            "target": 46,
             "type": "client"
         },
         {
@@ -275,14 +275,14 @@
         },
         {
             "id": "56:80:21:1b:86:ad-8a:07:6e:33:ef:26",
-            "quality": "1.000, 1.015",
+            "quality": "1.000, 1.028",
             "source": 12,
             "target": 9,
             "type": null
         },
         {
             "id": "62:70:02:8f:56:fb-fe:1a:67:af:08:62",
-            "quality": "1.491, 1.393",
+            "quality": "2.500, 1.795",
             "source": 85,
             "target": 9,
             "type": null
@@ -296,15 +296,15 @@
         },
         {
             "id": "16:fe:ed:39:93:00-62:70:02:8f:56:fb",
-            "quality": "1.416, 1.256",
+            "quality": "1.500, 2.451",
             "source": 9,
-            "target": 73,
+            "target": 74,
             "type": null
         },
         {
             "id": "62:70:02:b4:ae:38-a2:f3:c1:af:67:e7",
-            "quality": "1.000, 1.040",
-            "source": 79,
+            "quality": "1.032, 1.000",
+            "source": 80,
             "target": 8,
             "type": null
         },
@@ -319,21 +319,14 @@
             "id": "969758b0de445a27b14038e1396d10bd-a6:f3:c1:96:86:04",
             "quality": "TT",
             "source": 3,
-            "target": 51,
-            "type": "client"
-        },
-        {
-            "id": "381be2e44ea28289677165f85df104dc-56:e6:fc:ac:d4:e8",
-            "quality": "TT",
-            "source": 5,
-            "target": 60,
+            "target": 53,
             "type": "client"
         },
         {
             "id": "04:be:e1:ba:fe:90-82085136410bae2f0543cbdd81b20eb4",
             "quality": "TT",
             "source": 4,
-            "target": 57,
+            "target": 59,
             "type": "client"
         },
         {
@@ -345,7 +338,7 @@
         },
         {
             "id": "6a:68:2a:37:02:2e-8a:07:6e:33:ef:26",
-            "quality": "1.000, 1.007",
+            "quality": "1.032, 1.000",
             "source": 12,
             "target": 3,
             "type": null
@@ -366,30 +359,30 @@
         },
         {
             "id": "16:fe:ed:39:ad:74-a2:f3:c1:af:67:e7",
-            "quality": "1.118",
+            "quality": "1.015",
             "source": 8,
-            "target": 71,
+            "target": 72,
             "type": null
         },
         {
             "id": "96:7a:00:30:33:d2-9a:27:98:1f:e9:6a",
-            "quality": "1.000, 1.015",
+            "quality": "1.000, 1.000",
             "source": 9,
             "target": 5,
             "type": null
         },
         {
             "id": "a2:f3:c1:cd:e4:77-a6:f3:c1:cd:ab:4e",
-            "quality": "6.538, 18.214",
+            "quality": "28.333, 10.625",
             "source": 10,
-            "target": 42,
+            "target": 44,
             "type": null
         },
         {
             "id": "a2:f3:c1:cd:e4:77-c9f5aeba2113c98fe90b48fd7d3006cd",
             "quality": "TT",
-            "source": 42,
-            "target": 43,
+            "source": 44,
+            "target": 45,
             "type": "client"
         },
         {
@@ -408,7 +401,7 @@
         },
         {
             "id": "62:70:02:44:20:ea-a2:f3:c1:99:48:97",
-            "quality": "1.000, 1.128",
+            "quality": "1.028, 1.000",
             "source": 102,
             "target": 89,
             "type": null
@@ -421,17 +414,10 @@
             "type": null
         },
         {
-            "id": "00:02:6f:2f:03:b0-b893e4d749b44647b8dc0a59e086f517",
-            "quality": "TT",
-            "source": 6,
-            "target": 66,
-            "type": "client"
-        },
-        {
             "id": "62:70:02:44:21:70-94ca124ceb0b6d63766c8a9d04ec0677",
             "quality": "TT",
             "source": 7,
-            "target": 68,
+            "target": 69,
             "type": "client"
         },
         {
@@ -443,9 +429,9 @@
         },
         {
             "id": "62:66:b3:a1:7b:6c-a6:f3:c1:cd:e4:a4",
-            "quality": "1.275, 1.677",
-            "source": 61,
-            "target": 36,
+            "quality": "1.128, 1.554",
+            "source": 62,
+            "target": 37,
             "type": null
         },
         {
@@ -464,7 +450,7 @@
         },
         {
             "id": "02:50:55:5a:d8:a6-2e:f4:03:44:f6:0b",
-            "quality": "1.015, 1.015",
+            "quality": "1.000, 1.000",
             "source": 7,
             "target": 5,
             "type": null
@@ -478,14 +464,14 @@
         },
         {
             "id": "32:5f:83:8f:44:cb-56:80:21:1b:86:ad",
-            "quality": "1.015, 1.015",
+            "quality": "1.000, 1.000",
             "source": 9,
             "target": 8,
             "type": null
         },
         {
             "id": "02:50:55:5a:d8:a6-8e:12:1e:5f:7c:32",
-            "quality": "1.003, 1.011",
+            "quality": "1.000, 1.000",
             "source": 5,
             "target": 4,
             "type": null
@@ -499,7 +485,7 @@
         },
         {
             "id": "6a:68:2a:37:02:2e-ea:73:52:98:aa:ba",
-            "quality": "1.000, 1.003",
+            "quality": "1.000, 1.000",
             "source": 3,
             "target": 2,
             "type": null
@@ -515,12 +501,12 @@
             "id": "de2e7ae92281fb86aebd564e3cfaf3c9-fa:d1:11:81:16:20",
             "quality": "TT",
             "source": 1,
-            "target": 45,
+            "target": 47,
             "type": "client"
         },
         {
             "id": "32:5f:83:8f:44:cb-92:2f:13:fc:d1:51",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.000",
             "source": 8,
             "target": 0,
             "type": null
@@ -534,7 +520,7 @@
         },
         {
             "id": "02:e0:ff:83:3f:65-8a:07:6e:33:ef:26",
-            "quality": "1.015, 1.000",
+            "quality": "1.032, 1.000",
             "source": 12,
             "target": 11,
             "type": null
@@ -549,13 +535,13 @@
         {
             "id": "a2:f3:c1:cd:e4:a9-c75b7f5b945ee17d7cc3f451c07f4ed2",
             "quality": "TT",
-            "source": 53,
-            "target": 54,
+            "source": 55,
+            "target": 56,
             "type": "client"
         },
         {
             "id": "a2:f3:c1:99:48:97-a2:f3:c1:af:67:e7",
-            "quality": "1.011, 1.000",
+            "quality": "1.066, 1.000",
             "source": 89,
             "target": 8,
             "type": null
@@ -569,37 +555,37 @@
         },
         {
             "id": "32:5f:83:8f:44:cb-46:a1:c5:3b:98:44",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.015",
             "source": 10,
             "target": 8,
             "type": null
         },
         {
             "id": "8e:12:1e:5f:7c:32-92:2f:13:fc:d1:51",
-            "quality": "1.015, 1.003",
+            "quality": "1.000, 1.000",
             "source": 4,
             "target": 0,
             "type": null
         },
         {
             "id": "e6:2a:15:92:e0:44-e6:5c:2e:06:36:3a",
-            "quality": "1.015, 1.011",
+            "quality": "1.015, 1.015",
             "source": 13,
             "target": 8,
             "type": null
         },
         {
             "id": "46:a1:c5:3b:98:44-56:13:ec:f0:e7:90",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.000",
             "source": 13,
             "target": 10,
             "type": null
         },
         {
             "id": "16:fe:ed:39:ad:74-a2:f3:c1:99:48:97",
-            "quality": "1.045, 1.071",
+            "quality": "1.103, 1.071",
             "source": 89,
-            "target": 71,
+            "target": 72,
             "type": null
         },
         {
@@ -620,12 +606,12 @@
             "id": "5c78ca18b3ac2acd0d7e3c8140a7be82-62:70:02:44:21:70",
             "quality": "TT",
             "source": 7,
-            "target": 67,
+            "target": 68,
             "type": "client"
         },
         {
             "id": "4a:7c:cd:ab:8d:ad-96:7a:00:30:33:d2",
-            "quality": "1.000, 1.007",
+            "quality": "1.000, 1.015",
             "source": 5,
             "target": 3,
             "type": null
@@ -653,63 +639,56 @@
         },
         {
             "id": "2e:f4:03:44:f6:0b-8a:07:6e:33:ef:26",
-            "quality": "1.015, 1.000",
+            "quality": "1.032, 1.000",
             "source": 12,
             "target": 7,
             "type": null
         },
         {
             "id": "02:e0:ff:83:3f:65-6a:68:2a:37:02:2e",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.015",
             "source": 11,
             "target": 3,
             "type": null
         },
         {
             "id": "02:50:55:5a:d8:a6-92:2f:13:fc:d1:51",
-            "quality": "1.015, 1.015",
+            "quality": "1.024, 1.015",
             "source": 5,
             "target": 0,
             "type": null
         },
         {
             "id": "62:70:02:44:20:ea-62:70:02:b4:ae:38",
-            "quality": "1.053",
-            "source": 79,
-            "target": 102,
+            "quality": "1.108",
+            "source": 102,
+            "target": 80,
             "type": null
         },
         {
             "id": "8a:07:6e:33:ef:26-8e:12:1e:5f:7c:32",
-            "quality": "1.003, 1.000",
+            "quality": "1.015, 1.007",
             "source": 12,
             "target": 4,
             "type": null
         },
         {
-            "id": "12:fe:ed:39:a6:30-a2:f3:c1:af:67:e7",
-            "quality": "1.000",
-            "source": 14,
-            "target": 8,
-            "type": null
-        },
-        {
             "id": "12:fe:ed:39:a6:30-62:70:02:b4:ae:38",
-            "quality": "1.020, 1.062",
+            "quality": "1.036, 1.123",
             "source": 14,
-            "target": 79,
+            "target": 80,
             "type": null
         },
         {
             "id": "122800c7653eb119fab70af70aa61a61-a6:f3:c1:cd:e4:a4",
             "quality": "TT",
-            "source": 36,
-            "target": 38,
+            "source": 37,
+            "target": 40,
             "type": "client"
         },
         {
             "id": "56:80:21:1b:86:ad-6a:68:2a:37:02:2e",
-            "quality": "1.003, 1.015",
+            "quality": "1.000, 1.000",
             "source": 9,
             "target": 3,
             "type": null
@@ -731,20 +710,20 @@
         {
             "id": "40f22d06ed86aa8fa85ba16c12fc07b2-a2:f3:c1:cd:e4:a9",
             "quality": "TT",
-            "source": 53,
-            "target": 56,
+            "source": 55,
+            "target": 58,
             "type": "client"
         },
         {
             "id": "56:e6:fc:ac:d4:e8-9231801ce01860db019321813e853d72",
             "quality": "TT",
             "source": 5,
-            "target": 58,
+            "target": 60,
             "type": "client"
         },
         {
             "id": "2e:f4:03:44:f6:0b-6a:68:2a:37:02:2e",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.000",
             "source": 7,
             "target": 3,
             "type": null
@@ -759,15 +738,29 @@
         {
             "id": "4f3d036629d315dd7bc37530cddacfcf-62:66:b3:73:f1:5c",
             "quality": "TT",
-            "source": 46,
-            "target": 48,
+            "source": 48,
+            "target": 50,
             "type": "client"
+        },
+        {
+            "id": "16:fe:ed:39:ad:74-62:70:02:b4:ae:38",
+            "quality": "1.250",
+            "source": 72,
+            "target": 80,
+            "type": null
+        },
+        {
+            "id": "02:e0:ff:83:3f:65-56:13:ec:f0:e7:90",
+            "quality": "1.000, 1.000",
+            "source": 13,
+            "target": 11,
+            "type": null
         },
         {
             "id": "62:66:b3:73:f1:5c-b122ee8985494bac55f3713cd753a356",
             "quality": "TT",
-            "source": 46,
-            "target": 47,
+            "source": 48,
+            "target": 49,
             "type": "client"
         },
         {
@@ -779,7 +772,7 @@
         },
         {
             "id": "4a:7c:cd:ab:8d:ad-9a:27:98:1f:e9:6a",
-            "quality": "1.000, 1.007",
+            "quality": "1.000, 1.000",
             "source": 9,
             "target": 3,
             "type": null
@@ -795,8 +788,15 @@
             "id": "04:be:e1:ba:fe:70-ce:6b:bd:52:ca:59",
             "quality": "1.000, 1.000",
             "source": 15,
-            "target": 69,
+            "target": 70,
             "type": "vpn"
+        },
+        {
+            "id": "86:30:78:2d:e2:30-e6:2a:15:92:e0:44",
+            "quality": "1.000, 1.000",
+            "source": 14,
+            "target": 13,
+            "type": null
         },
         {
             "id": "a6:f3:c1:cd:e4:6c-b54a6d0e32378c81e11d14e5cb46c5ad",
@@ -808,27 +808,27 @@
         {
             "id": "15ac54800d01ffd89af835dd2fb5ae1f-62:70:02:b4:ae:38",
             "quality": "TT",
-            "source": 79,
-            "target": 80,
+            "source": 80,
+            "target": 81,
             "type": "client"
         },
         {
             "id": "32:5f:83:8f:44:cb-8a:07:6e:33:ef:26",
-            "quality": "1.000, 1.003",
+            "quality": "1.015, 1.000",
             "source": 12,
             "target": 8,
             "type": null
         },
         {
             "id": "16:fe:ed:39:ad:74-62:70:02:44:20:ea",
-            "quality": "1.000, 1.108",
+            "quality": "1.020, 1.036",
             "source": 102,
-            "target": 71,
+            "target": 72,
             "type": null
         },
         {
             "id": "02:e0:ff:83:3f:65-92:2f:13:fc:d1:51",
-            "quality": "1.011, 1.015",
+            "quality": "1.000, 1.000",
             "source": 11,
             "target": 0,
             "type": null
@@ -837,12 +837,12 @@
             "id": "a2:f3:c1:af:67:e7-c5b725e9633148cf669088c241705b60",
             "quality": "TT",
             "source": 8,
-            "target": 78,
+            "target": 79,
             "type": "client"
         },
         {
             "id": "12:66:11:81:16:20-8a:07:6e:33:ef:26",
-            "quality": "1.015, 1.007",
+            "quality": "1.032, 1.000",
             "source": 12,
             "target": 1,
             "type": null
@@ -863,7 +863,7 @@
         },
         {
             "id": "92:2f:13:fc:d1:51-ea:73:52:98:aa:ba",
-            "quality": "1.000, 1.000",
+            "quality": "1.000, 1.003",
             "source": 2,
             "target": 0,
             "type": null
@@ -872,7 +872,7 @@
             "id": "8397c32b32c489967e51c5a1f6703692-a2:f3:c1:af:67:e7",
             "quality": "TT",
             "source": 8,
-            "target": 76,
+            "target": 77,
             "type": "client"
         },
         {
@@ -898,14 +898,14 @@
         },
         {
             "id": "56:01:d7:03:57:1b-ea:73:52:98:aa:ba",
-            "quality": "1.015, 1.015",
+            "quality": "1.000, 1.000",
             "source": 14,
             "target": 2,
             "type": null
         },
         {
             "id": "12:fe:ed:39:a6:30-62:70:02:44:20:ea",
-            "quality": "1.032, 1.000",
+            "quality": "1.007, 1.003",
             "source": 14,
             "target": 102,
             "type": null
@@ -913,41 +913,48 @@
         {
             "id": "62:66:b3:a1:7b:6c-d9a35d0ddeb33b259464a2527480f19a",
             "quality": "TT",
-            "source": 61,
-            "target": 62,
+            "source": 62,
+            "target": 63,
             "type": "client"
         },
         {
             "id": "2e:f4:03:44:f6:0b-92:2f:13:fc:d1:51",
-            "quality": "1.011, 1.015",
+            "quality": "1.000, 1.000",
             "source": 7,
             "target": 0,
             "type": null
         },
         {
             "id": "12:66:11:81:16:20-56:01:d7:03:57:1b",
-            "quality": "1.000, 1.000",
+            "quality": "1.000, 1.015",
             "source": 14,
             "target": 1,
             "type": null
         },
         {
             "id": "32:5f:83:8f:44:cb-6a:68:2a:37:02:2e",
-            "quality": "1.015, 1.015",
+            "quality": "1.000, 1.000",
             "source": 8,
             "target": 3,
             "type": null
         },
         {
             "id": "a6:f3:c1:cd:ab:4e-a6:f3:c1:cd:e4:6c",
-            "quality": "1.301, 1.169",
+            "quality": "1.153, 1.103",
             "source": 10,
             "target": 22,
             "type": null
         },
         {
+            "id": "62:70:02:44:20:ea-62:70:02:b4:ae:4e",
+            "quality": "2.475",
+            "source": 102,
+            "target": 27,
+            "type": null
+        },
+        {
             "id": "02:50:55:5a:d8:a6-12:66:11:81:16:20",
-            "quality": "1.003, 1.015",
+            "quality": "1.000, 1.000",
             "source": 5,
             "target": 1,
             "type": null
@@ -955,13 +962,13 @@
         {
             "id": "04:be:e1:ba:fe:70-a6:0a:50:5b:51:ec",
             "quality": "1.000, 1.000",
-            "source": 69,
+            "source": 70,
             "target": 4,
             "type": "vpn"
         },
         {
             "id": "02:e0:ff:83:3f:65-2e:f4:03:44:f6:0b",
-            "quality": "1.015, 1.015",
+            "quality": "1.000, 1.015",
             "source": 11,
             "target": 7,
             "type": null
@@ -970,40 +977,40 @@
             "id": "08d5ec47ef652919529dba309cb10fc3-56:e6:fc:ac:d4:e8",
             "quality": "TT",
             "source": 5,
-            "target": 59,
+            "target": 61,
             "type": "client"
         },
         {
             "id": "02:50:55:5a:d8:a6-02:e0:ff:83:3f:65",
-            "quality": "1.011, 1.015",
+            "quality": "1.000, 1.000",
             "source": 11,
             "target": 5,
             "type": null
         },
         {
             "id": "62:70:02:b4:ae:38-a2:f3:c1:99:48:97",
-            "quality": "1.066, 1.066",
+            "quality": "1.049, 1.148",
             "source": 89,
-            "target": 79,
+            "target": 80,
             "type": null
         },
         {
             "id": "02:50:55:5a:d8:a6-46:a1:c5:3b:98:44",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.000",
             "source": 10,
             "target": 5,
             "type": null
         },
         {
             "id": "02:50:55:5a:d8:a6-32:5f:83:8f:44:cb",
-            "quality": "1.000, 1.000",
+            "quality": "1.015, 1.000",
             "source": 8,
             "target": 5,
             "type": null
         },
         {
             "id": "56:13:ec:f0:e7:90-8e:12:1e:5f:7c:32",
-            "quality": "1.000, 1.000",
+            "quality": "1.000, 1.011",
             "source": 13,
             "target": 4,
             "type": null
@@ -1045,7 +1052,7 @@
         },
         {
             "id": "32:5f:83:8f:44:cb-56:13:ec:f0:e7:90",
-            "quality": "1.000, 1.000",
+            "quality": "1.007, 1.000",
             "source": 13,
             "target": 8,
             "type": null
@@ -1059,7 +1066,7 @@
         },
         {
             "id": "8a:07:6e:33:ef:26-92:2f:13:fc:d1:51",
-            "quality": "1.015, 1.000",
+            "quality": "1.000, 1.000",
             "source": 12,
             "target": 0,
             "type": null
@@ -1068,7 +1075,7 @@
             "id": "62:70:02:8f:56:fb-8ac58c91cb99c3670aa91ceacd5ef78c",
             "quality": "TT",
             "source": 9,
-            "target": 82,
+            "target": 83,
             "type": "client"
         },
         {
@@ -1081,27 +1088,20 @@
         {
             "id": "16:fe:ed:39:93:00-3237cbd8eeef89fb39fa953157355ebd",
             "quality": "TT",
-            "source": 73,
-            "target": 75,
+            "source": 74,
+            "target": 76,
             "type": "client"
         },
         {
-            "id": "a0:f3:c1:64:4e:3d-e6:ce:b8:a5:13:4f",
-            "quality": "1.015, 1.020",
-            "source": 11,
-            "target": 6,
-            "type": null
-        },
-        {
             "id": "a6:f3:c1:cd:e4:1a-a6:f3:c1:cd:e4:9c",
-            "quality": "1.197, 1.118",
+            "quality": "1.000, 1.328",
             "source": 13,
             "target": 30,
             "type": null
         },
         {
             "id": "12:66:11:81:16:20-32:5f:83:8f:44:cb",
-            "quality": "1.007, 1.000",
+            "quality": "1.000, 1.000",
             "source": 8,
             "target": 1,
             "type": null
@@ -1109,8 +1109,8 @@
         {
             "id": "4ce53236435582ed73199c8b1f4f8360-62:66:b3:a1:7b:6c",
             "quality": "TT",
-            "source": 61,
-            "target": 65,
+            "source": 62,
+            "target": 66,
             "type": "client"
         },
         {
@@ -1122,14 +1122,14 @@
         },
         {
             "id": "a6:f3:c1:cd:e4:9c-a6:f3:c1:cd:e4:a4",
-            "quality": "1.118, 1.000",
+            "quality": "1.085, 1.000",
             "source": 13,
-            "target": 36,
+            "target": 37,
             "type": null
         },
         {
             "id": "02:e0:ff:83:3f:65-56:01:d7:03:57:1b",
-            "quality": "1.000, 1.000",
+            "quality": "1.000, 1.003",
             "source": 14,
             "target": 11,
             "type": null
@@ -1144,8 +1144,8 @@
         {
             "id": "16:fe:ed:39:ad:74-e4c49279427708ded2a6ceb0ff07bdb2",
             "quality": "TT",
-            "source": 71,
-            "target": 72,
+            "source": 72,
+            "target": 73,
             "type": "client"
         },
         {
@@ -1164,7 +1164,7 @@
         },
         {
             "id": "12:66:11:81:16:20-8e:12:1e:5f:7c:32",
-            "quality": "1.003, 1.003",
+            "quality": "1.000, 1.000",
             "source": 4,
             "target": 1,
             "type": null
@@ -1178,14 +1178,14 @@
         },
         {
             "id": "06:23:cd:1f:ea:d2-a6:f3:c1:96:86:04",
-            "quality": "1.123, 1.032",
+            "quality": "1.015, 1.000",
             "source": 3,
             "target": 19,
             "type": null
         },
         {
             "id": "32:5f:83:8f:44:cb-ea:73:52:98:aa:ba",
-            "quality": "1.000, 1.000",
+            "quality": "1.000, 1.011",
             "source": 8,
             "target": 2,
             "type": null
@@ -1199,14 +1199,14 @@
         },
         {
             "id": "62:66:b3:73:f1:5c-72:ea:3a:b2:33:36",
-            "quality": "1.000, 1.036",
-            "source": 46,
-            "target": 39,
+            "quality": "1.000, 1.032",
+            "source": 48,
+            "target": 41,
             "type": null
         },
         {
             "id": "12:66:11:81:16:20-56:80:21:1b:86:ad",
-            "quality": "1.011, 1.000",
+            "quality": "1.000, 1.000",
             "source": 9,
             "target": 1,
             "type": null
@@ -1220,7 +1220,7 @@
         },
         {
             "id": "56:01:d7:03:57:1b-92:2f:13:fc:d1:51",
-            "quality": "1.000, 1.000",
+            "quality": "1.011, 1.000",
             "source": 14,
             "target": 0,
             "type": null
@@ -1234,7 +1234,7 @@
         },
         {
             "id": "56:80:21:1b:86:ad-8e:12:1e:5f:7c:32",
-            "quality": "1.000, 1.000",
+            "quality": "1.003, 1.000",
             "source": 9,
             "target": 4,
             "type": null
@@ -1250,28 +1250,28 @@
             "id": "07ff1b4c3c6fedf597c6b24b40bc4dd2-a6:f3:c1:96:86:04",
             "quality": "TT",
             "source": 3,
-            "target": 52,
+            "target": 54,
             "type": "client"
         },
         {
             "id": "12:66:11:81:16:20-6a:68:2a:37:02:2e",
-            "quality": "1.000, 1.000",
+            "quality": "1.003, 1.000",
             "source": 3,
             "target": 1,
             "type": null
         },
         {
             "id": "56:01:d7:03:57:1b-6a:68:2a:37:02:2e",
-            "quality": "1.000, 1.000",
+            "quality": "1.000, 1.003",
             "source": 14,
             "target": 3,
             "type": null
         },
         {
-            "id": "62:66:b3:a1:7b:6c-bdd0c9a62970529db76eec6a53fdb846",
+            "id": "2bd0da7774e53c47fbd3a131e0949c80-a6:f3:c1:cd:e4:a4",
             "quality": "TT",
-            "source": 61,
-            "target": 64,
+            "source": 37,
+            "target": 38,
             "type": "client"
         },
         {
@@ -1284,13 +1284,13 @@
         {
             "id": "72:ea:3a:b2:33:36-e66da542bd23a910f233431059e353f4",
             "quality": "TT",
-            "source": 39,
-            "target": 41,
+            "source": 41,
+            "target": 43,
             "type": "client"
         },
         {
             "id": "46:a1:c5:3b:98:44-ea:73:52:98:aa:ba",
-            "quality": "1.015, 1.000",
+            "quality": "1.000, 1.015",
             "source": 10,
             "target": 2,
             "type": null
@@ -1304,8 +1304,8 @@
         },
         {
             "id": "06:23:cd:1f:ea:d2-72:ea:3a:b2:33:36",
-            "quality": "1.153, 1.000",
-            "source": 39,
+            "quality": "1.020, 1.066",
+            "source": 41,
             "target": 19,
             "type": null
         },
@@ -1319,55 +1319,55 @@
         {
             "id": "62:66:b3:a1:7b:6c-e026efcd24188bcd744b1db71cd053ed",
             "quality": "TT",
-            "source": 61,
-            "target": 63,
+            "source": 62,
+            "target": 64,
             "type": "client"
         },
         {
             "id": "62:70:02:44:21:e2-6908c8a8a48cf624ce07622846de9ee6",
             "quality": "TT",
             "source": 2,
-            "target": 49,
+            "target": 51,
             "type": "client"
         },
         {
             "id": "a1cee81c76e548ed95adc3cd3efcce5e-a2:f3:c1:af:67:e7",
             "quality": "TT",
             "source": 8,
-            "target": 77,
+            "target": 78,
             "type": "client"
         },
         {
             "id": "12:fe:ed:39:a6:30-16:fe:ed:39:ad:74",
-            "quality": "1.020, 1.089",
+            "quality": "1.118, 1.000",
             "source": 14,
-            "target": 71,
+            "target": 72,
             "type": null
         },
         {
             "id": "62:70:02:44:20:ea-a2:f3:c1:af:67:e7",
-            "quality": "1.040",
+            "quality": "1.000",
             "source": 8,
             "target": 102,
             "type": null
         },
         {
             "id": "a2:f3:c1:cd:e4:a9-a6:f3:c1:cd:e4:1a",
-            "quality": "1.071, 1.574",
-            "source": 53,
+            "quality": "1.045, 1.432",
+            "source": 55,
             "target": 30,
             "type": null
         },
         {
-            "id": "02:e0:ff:83:3f:65-56:13:ec:f0:e7:90",
-            "quality": "1.000, 1.015",
-            "source": 13,
-            "target": 11,
-            "type": null
+            "id": "62:66:b3:a1:7b:6c-bdd0c9a62970529db76eec6a53fdb846",
+            "quality": "TT",
+            "source": 62,
+            "target": 65,
+            "type": "client"
         },
         {
             "id": "12:66:11:81:16:20-92:2f:13:fc:d1:51",
-            "quality": "1.015, 1.003",
+            "quality": "1.000, 1.000",
             "source": 1,
             "target": 0,
             "type": null
@@ -1394,15 +1394,22 @@
             "type": "vpn"
         },
         {
+            "id": "0e:b2:1e:0a:11:13-a0:f3:c1:64:4e:3d",
+            "quality": "1.000, 1.000",
+            "source": 11,
+            "target": 6,
+            "type": null
+        },
+        {
             "id": "a2:f3:c1:cd:e4:5b-a2:f3:c1:cd:e4:77",
-            "quality": "1.711, 1.220",
+            "quality": "1.711, 1.197",
             "source": 96,
-            "target": 42,
+            "target": 44,
             "type": null
         },
         {
             "id": "02:e0:ff:83:3f:65-8e:12:1e:5f:7c:32",
-            "quality": "1.003, 1.015",
+            "quality": "1.000, 1.000",
             "source": 11,
             "target": 4,
             "type": null
@@ -1410,8 +1417,8 @@
         {
             "id": "62:70:02:b4:ae:38-a353aca0f875bb6bb609baab85eecc8b",
             "quality": "TT",
-            "source": 79,
-            "target": 81,
+            "source": 80,
+            "target": 82,
             "type": "client"
         },
         {
@@ -1423,7 +1430,7 @@
         },
         {
             "id": "12:fe:ed:39:a6:30-a2:f3:c1:99:48:97",
-            "quality": "1.000, 1.032",
+            "quality": "1.032, 1.036",
             "source": 14,
             "target": 89,
             "type": null
@@ -1458,16 +1465,16 @@
         },
         {
             "id": "62:70:02:b4:ae:4e-a2:f3:c1:99:48:97",
-            "quality": "1.700, 3.863",
-            "source": 89,
-            "target": 27,
+            "quality": "2.073",
+            "source": 27,
+            "target": 89,
             "type": null
         },
         {
             "id": "72:ea:3a:b2:33:36-a6ebd669c5f0a6b1eedc258e933d5ea6",
             "quality": "TT",
-            "source": 39,
-            "target": 40,
+            "source": 41,
+            "target": 42,
             "type": "client"
         },
         {
@@ -1480,13 +1487,13 @@
         {
             "id": "16:fe:ed:39:93:00-5e4c774538435794f621f734c85db13d",
             "quality": "TT",
-            "source": 73,
-            "target": 74,
+            "source": 74,
+            "target": 75,
             "type": "client"
         }
     ],
     "meta": {
-        "timestamp": "2014-03-14T00:41:41"
+        "timestamp": "2014-03-14T00:53:54"
     },
     "nodes": [
         {
@@ -1578,7 +1585,7 @@
                 7.205795
             ],
             "id": "00:02:6f:2f:03:b0",
-            "macs": "00:02:6f:2f:03:b0, e6:ce:b8:a5:13:4f",
+            "macs": "00:02:6f:2f:03:b0, 0e:b2:1e:0a:11:13",
             "name": "meshcube1"
         },
         {
@@ -1938,6 +1945,17 @@
         },
         {
             "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "32a520878279c01be41d442d03942b8c",
+            "macs": "32a520878279c01be41d442d03942b8c",
+            "name": ""
+        },
+        {
+            "flags": {
                 "client": false,
                 "gateway": false,
                 "online": true
@@ -1949,6 +1967,17 @@
             "id": "a6:f3:c1:cd:e4:a4",
             "macs": "a6:f3:c1:cd:e4:a4",
             "name": "node127"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "2bd0da7774e53c47fbd3a131e0949c80",
+            "macs": "2bd0da7774e53c47fbd3a131e0949c80",
+            "name": ""
         },
         {
             "flags": {
@@ -2217,17 +2246,6 @@
         },
         {
             "flags": {
-                "client": true,
-                "gateway": false,
-                "online": true
-            },
-            "geo": null,
-            "id": "381be2e44ea28289677165f85df104dc",
-            "macs": "381be2e44ea28289677165f85df104dc",
-            "name": ""
-        },
-        {
-            "flags": {
                 "client": false,
                 "gateway": false,
                 "online": true
@@ -2291,8 +2309,8 @@
                 "online": true
             },
             "geo": null,
-            "id": "b893e4d749b44647b8dc0a59e086f517",
-            "macs": "b893e4d749b44647b8dc0a59e086f517",
+            "id": "4847c5894e743ff2631e16076e4ce2de",
+            "macs": "4847c5894e743ff2631e16076e4ce2de",
             "name": ""
         },
         {
@@ -2475,17 +2493,6 @@
             "geo": null,
             "id": "8ac58c91cb99c3670aa91ceacd5ef78c",
             "macs": "8ac58c91cb99c3670aa91ceacd5ef78c",
-            "name": ""
-        },
-        {
-            "flags": {
-                "client": true,
-                "gateway": false,
-                "online": true
-            },
-            "geo": null,
-            "id": "fa84a449f4940bb8c0af626aff0280e1",
-            "macs": "fa84a449f4940bb8c0af626aff0280e1",
             "name": ""
         },
         {

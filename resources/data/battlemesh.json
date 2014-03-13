@@ -1,0 +1,1284 @@
+{
+    "links": [
+        {
+            "id": "6e:70:02:d3:23:fd-e6:f2:c8:1f:b8:02",
+            "quality": "TT",
+            "source": 15,
+            "target": 16,
+            "type": "client"
+        },
+        {
+            "id": "66:70:02:d3:23:1d-c6:2e:bc:84:cd:88",
+            "quality": "TT",
+            "source": 0,
+            "target": 14,
+            "type": "client"
+        },
+        {
+            "id": "76:70:02:d3:24:19-78:d6:f0:b7:25:39",
+            "quality": "TT",
+            "source": 10,
+            "target": 41,
+            "type": "client"
+        },
+        {
+            "id": "1a:46:83:04:d5:ff-66:70:02:b5:e4:4a",
+            "quality": "TT",
+            "source": 3,
+            "target": 20,
+            "type": "client"
+        },
+        {
+            "id": "42:3f:d2:2f:19:81-64:70:02:b5:ea:d6",
+            "quality": "TT",
+            "source": 6,
+            "target": 31,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:ee:c4-66:70:02:d3:19:cc",
+            "quality": "1.011, 1.003",
+            "source": 46,
+            "target": 7,
+            "type": null
+        },
+        {
+            "id": "66:dc:07:70:2f:08-f6:1a:67:ee:cf:8c",
+            "quality": "TT",
+            "source": 32,
+            "target": 33,
+            "type": "client"
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-76:9d:35:f2:73:25",
+            "quality": "1.000, 1.000",
+            "source": 21,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-c2:57:ce:39:d2:46",
+            "quality": "1.015, 1.003",
+            "source": 4,
+            "target": 21,
+            "type": null
+        },
+        {
+            "id": "88:1f:a1:99:c5:2b-f8:1a:67:71:e0:34",
+            "quality": "TT",
+            "source": 34,
+            "target": 35,
+            "type": "client"
+        },
+        {
+            "id": "66:70:02:b5:e4:4a-66:70:02:d3:19:cc",
+            "quality": "1.000, 1.015",
+            "source": 7,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "02:ba:0a:8c:7a:01-f2:1a:67:05:56:28",
+            "quality": "1.363, 1.593",
+            "source": 9,
+            "target": 27,
+            "type": null
+        },
+        {
+            "id": "66:70:02:d3:23:1d-80:96:b1:fb:39:82",
+            "quality": "TT",
+            "source": 0,
+            "target": 13,
+            "type": "client"
+        },
+        {
+            "id": "00:0e:35:9f:dc:c5-66:70:02:b5:e4:4a",
+            "quality": "TT",
+            "source": 3,
+            "target": 19,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:ee:c4-66:70:02:b5:e4:4a",
+            "quality": "1.036, 1.049",
+            "source": 46,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "66:70:02:d3:23:1d-f2:d1:11:3a:b9:54",
+            "quality": "1.401, 1.015",
+            "source": 25,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "00:16:8a:01:fe:41-64:70:02:b5:ea:d6",
+            "quality": "1.000, 1.000",
+            "source": 6,
+            "target": 4,
+            "type": null
+        },
+        {
+            "id": "76:70:02:d3:24:19-78:6c:1c:bd:95:1d",
+            "quality": "TT",
+            "source": 10,
+            "target": 40,
+            "type": "client"
+        },
+        {
+            "id": "6e:70:02:b5:ea:69-6e:70:02:b5:ea:d7",
+            "quality": "1.003, 1.250",
+            "source": 6,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "00:16:8a:01:fe:41-f8:1a:67:71:e0:34",
+            "quality": "1.000, 1.015",
+            "source": 34,
+            "target": 4,
+            "type": null
+        },
+        {
+            "id": "66:70:02:d3:23:1d-76:70:02:d3:23:6b",
+            "quality": "1.363, 1.256",
+            "source": 8,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "52:6f:fc:e9:00:77-f2:d1:11:3a:b9:54",
+            "quality": "TT",
+            "source": 25,
+            "target": 26,
+            "type": "client"
+        },
+        {
+            "id": "be:e5:f0:cc:27:b0-f8:1a:67:fb:7c:e0",
+            "quality": "TT",
+            "source": 48,
+            "target": 49,
+            "type": "client"
+        },
+        {
+            "id": "16:32:b1:18:19:c0-64:70:02:b5:ea:68",
+            "quality": "TT",
+            "source": 2,
+            "target": 18,
+            "type": "client"
+        },
+        {
+            "id": "00:16:8a:01:fe:41-be:6a:3a:9e:29:51",
+            "quality": "TT",
+            "source": 4,
+            "target": 23,
+            "type": "client"
+        },
+        {
+            "id": "76:70:02:d3:24:19-cc:af:78:db:23:0d",
+            "quality": "TT",
+            "source": 10,
+            "target": 42,
+            "type": "client"
+        },
+        {
+            "id": "6e:70:02:d3:23:17-6e:70:02:d3:23:fd",
+            "quality": "1.036, 1.007",
+            "source": 1,
+            "target": 15,
+            "type": null
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-b2:02:1d:d6:c0:bc",
+            "quality": "1.000, 1.000",
+            "source": 10,
+            "target": 21,
+            "type": null
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-f6:ce:b1:20:61:28",
+            "quality": "1.015, 1.000",
+            "source": 8,
+            "target": 21,
+            "type": null
+        },
+        {
+            "id": "6a:0e:a4:f3:47:47-76:70:02:d3:23:6b",
+            "quality": "TT",
+            "source": 8,
+            "target": 38,
+            "type": "client"
+        },
+        {
+            "id": "02:ba:ff:8c:7a:01-64:70:02:e2:97:d0",
+            "quality": "TT",
+            "source": 9,
+            "target": 39,
+            "type": "client"
+        },
+        {
+            "id": "66:66:b3:4f:fa:52-66:70:02:d3:23:1e",
+            "quality": "1.000, 1.020",
+            "source": 5,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "1a:44:96:ab:b7:e8-6a:70:02:d3:19:cb",
+            "quality": "TT",
+            "source": 7,
+            "target": 37,
+            "type": "client"
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-6a:11:bf:d7:1d:ba",
+            "quality": "TT",
+            "source": 21,
+            "target": 22,
+            "type": "client"
+        },
+        {
+            "id": "1c:b0:94:4d:68:84-76:70:02:d3:24:19",
+            "quality": "TT",
+            "source": 10,
+            "target": 43,
+            "type": "client"
+        },
+        {
+            "id": "00:11:41:32:56:79-66:70:02:d3:23:1d",
+            "quality": "TT",
+            "source": 0,
+            "target": 12,
+            "type": "client"
+        },
+        {
+            "id": "02:ba:0a:8c:7a:01-f6:1a:67:ee:cf:8c",
+            "quality": "3.072, 2.428",
+            "source": 9,
+            "target": 32,
+            "type": null
+        },
+        {
+            "id": "66:70:02:b5:ea:72-a6:b2:1d:d7:e2:d0",
+            "quality": "TT",
+            "source": 50,
+            "target": 52,
+            "type": "client"
+        },
+        {
+            "id": "6e:66:b3:4f:fa:51-86:31:97:60:38:0f",
+            "quality": "TT",
+            "source": 5,
+            "target": 24,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:ea:68-64:70:02:b5:ea:d6",
+            "quality": "1.000",
+            "source": 6,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "02:ba:0a:8c:7a:01-76:70:02:d3:23:6b",
+            "quality": "1.321",
+            "source": 9,
+            "target": 8,
+            "type": null
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-66:09:bb:da:aa:5d",
+            "quality": "1.000, 1.015",
+            "source": 21,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "66:70:02:b5:e4:4a-f8:1a:67:fb:7c:e0",
+            "quality": "1.040, 1.508",
+            "source": 48,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "76:70:02:d3:23:6b-f2:1a:67:05:56:28",
+            "quality": "1.007, 1.294",
+            "source": 8,
+            "target": 27,
+            "type": null
+        },
+        {
+            "id": "64:70:02:b5:ea:68-f8:1a:67:71:e0:34",
+            "quality": "1.000, 1.000",
+            "source": 34,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "2e:6b:8f:4a:a5:53-8a:4e:c2:0e:eb:67",
+            "quality": "1.000, 1.015",
+            "source": 29,
+            "target": 21,
+            "type": null
+        },
+        {
+            "id": "00:16:8a:01:fe:41-64:70:02:b5:ea:68",
+            "quality": "1.000, 1.000",
+            "source": 4,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "66:70:02:d3:23:1d-f2:1a:67:05:56:28",
+            "quality": "1.517, 1.053",
+            "source": 27,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:4f:ee:c4-ee:11:e3:03:86:c1",
+            "quality": "TT",
+            "source": 46,
+            "target": 47,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:ea:d6-f8:1a:67:71:e0:34",
+            "quality": "1.000, 1.000",
+            "source": 34,
+            "target": 6,
+            "type": null
+        },
+        {
+            "id": "6e:70:02:d3:23:17-72:24:72:cd:84:5f",
+            "quality": "TT",
+            "source": 1,
+            "target": 17,
+            "type": "client"
+        },
+        {
+            "id": "76:70:02:d3:24:19-92:c7:98:8e:99:3f",
+            "quality": "TT",
+            "source": 10,
+            "target": 45,
+            "type": "client"
+        },
+        {
+            "id": "6a:22:fa:88:03:4e-f8:1a:67:71:e0:34",
+            "quality": "TT",
+            "source": 34,
+            "target": 36,
+            "type": "client"
+        },
+        {
+            "id": "66:70:02:b5:e4:4a-66:70:02:b5:ea:72",
+            "quality": "1.000, 1.000",
+            "source": 50,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "66:70:02:d3:23:1d-a4:ee:57:41:ac:8a",
+            "quality": "TT",
+            "source": 0,
+            "target": 11,
+            "type": "client"
+        },
+        {
+            "id": "12:b2:57:a0:1a:ff-8a:4e:c2:0e:eb:67",
+            "quality": "TT",
+            "source": 29,
+            "target": 30,
+            "type": "client"
+        },
+        {
+            "id": "40:b0:fa:80:6b:98-66:70:02:b5:ea:72",
+            "quality": "TT",
+            "source": 50,
+            "target": 51,
+            "type": "client"
+        },
+        {
+            "id": "76:70:02:d3:24:19-c4:88:e5:50:14:ec",
+            "quality": "TT",
+            "source": 10,
+            "target": 44,
+            "type": "client"
+        },
+        {
+            "id": "f2:1a:67:05:56:28-fe:af:2d:83:a5:c4",
+            "quality": "TT",
+            "source": 27,
+            "target": 28,
+            "type": "client"
+        }
+    ],
+    "meta": {
+        "timestamp": "2013-11-30T14:59:28"
+    },
+    "nodes": [
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "66:70:02:d3:23:1d",
+            "macs": "66:70:02:d3:23:1e, 66:70:02:d3:23:1d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6e:70:02:d3:23:17",
+            "macs": "6e:70:02:d3:23:17, 66:09:bb:da:aa:5d",
+            "name": "altmark"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "64:70:02:b5:ea:68",
+            "macs": "64:70:02:b5:ea:68, 6e:70:02:b5:ea:69",
+            "name": "ci-cafe"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "66:70:02:b5:e4:4a",
+            "macs": "76:9d:35:f2:73:25, 66:70:02:b5:e4:4a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "00:16:8a:01:fe:41",
+            "macs": "c2:57:ce:39:d2:46, 00:16:8a:01:fe:41",
+            "name": "conne-island"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6e:66:b3:4f:fa:51",
+            "macs": "6e:66:b3:4f:fa:51, 66:66:b3:4f:fa:52",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "64:70:02:b5:ea:d6",
+            "macs": "64:70:02:b5:ea:d6, 6e:70:02:b5:ea:d7",
+            "name": "ci-freisitz"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:70:02:d3:19:cb",
+            "macs": "66:70:02:d3:19:cc, 6a:70:02:d3:19:cb",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "76:70:02:d3:23:6b",
+            "macs": "76:70:02:d3:23:6b, f6:ce:b1:20:61:28",
+            "name": "Battlemesh20"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:e2:97:d0",
+            "macs": "02:ba:0a:8c:7a:01, 64:70:02:e2:97:d0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "76:70:02:d3:24:19",
+            "macs": "b2:02:1d:d6:c0:bc, 76:70:02:d3:24:19",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a4:ee:57:41:ac:8a",
+            "macs": "a4:ee:57:41:ac:8a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "00:11:41:32:56:79",
+            "macs": "00:11:41:32:56:79",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "80:96:b1:fb:39:82",
+            "macs": "80:96:b1:fb:39:82",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "c6:2e:bc:84:cd:88",
+            "macs": "c6:2e:bc:84:cd:88",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6e:70:02:d3:23:fd",
+            "macs": "6e:70:02:d3:23:fd",
+            "name": "altmark2"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "e6:f2:c8:1f:b8:02",
+            "macs": "e6:f2:c8:1f:b8:02",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "72:24:72:cd:84:5f",
+            "macs": "72:24:72:cd:84:5f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "16:32:b1:18:19:c0",
+            "macs": "16:32:b1:18:19:c0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "00:0e:35:9f:dc:c5",
+            "macs": "00:0e:35:9f:dc:c5",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1a:46:83:04:d5:ff",
+            "macs": "1a:46:83:04:d5:ff",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "2e:6b:8f:4a:a5:53",
+            "macs": "2e:6b:8f:4a:a5:53",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:11:bf:d7:1d:ba",
+            "macs": "6a:11:bf:d7:1d:ba",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "be:6a:3a:9e:29:51",
+            "macs": "be:6a:3a:9e:29:51",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "86:31:97:60:38:0f",
+            "macs": "86:31:97:60:38:0f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f2:d1:11:3a:b9:54",
+            "macs": "f2:d1:11:3a:b9:54",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "52:6f:fc:e9:00:77",
+            "macs": "52:6f:fc:e9:00:77",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f2:1a:67:05:56:28",
+            "macs": "f2:1a:67:05:56:28",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "fe:af:2d:83:a5:c4",
+            "macs": "fe:af:2d:83:a5:c4",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8a:4e:c2:0e:eb:67",
+            "macs": "8a:4e:c2:0e:eb:67",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "12:b2:57:a0:1a:ff",
+            "macs": "12:b2:57:a0:1a:ff",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "42:3f:d2:2f:19:81",
+            "macs": "42:3f:d2:2f:19:81",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f6:1a:67:ee:cf:8c",
+            "macs": "f6:1a:67:ee:cf:8c",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "66:dc:07:70:2f:08",
+            "macs": "66:dc:07:70:2f:08",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "f8:1a:67:71:e0:34",
+            "macs": "f8:1a:67:71:e0:34",
+            "name": "ci-saal"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "88:1f:a1:99:c5:2b",
+            "macs": "88:1f:a1:99:c5:2b",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:22:fa:88:03:4e",
+            "macs": "6a:22:fa:88:03:4e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1a:44:96:ab:b7:e8",
+            "macs": "1a:44:96:ab:b7:e8",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:0e:a4:f3:47:47",
+            "macs": "6a:0e:a4:f3:47:47",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "02:ba:ff:8c:7a:01",
+            "macs": "02:ba:ff:8c:7a:01",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "78:6c:1c:bd:95:1d",
+            "macs": "78:6c:1c:bd:95:1d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "78:d6:f0:b7:25:39",
+            "macs": "78:d6:f0:b7:25:39",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "cc:af:78:db:23:0d",
+            "macs": "cc:af:78:db:23:0d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1c:b0:94:4d:68:84",
+            "macs": "1c:b0:94:4d:68:84",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "c4:88:e5:50:14:ec",
+            "macs": "c4:88:e5:50:14:ec",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "92:c7:98:8e:99:3f",
+            "macs": "92:c7:98:8e:99:3f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:66:b3:4f:ee:c4",
+            "macs": "64:66:b3:4f:ee:c4",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ee:11:e3:03:86:c1",
+            "macs": "ee:11:e3:03:86:c1",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f8:1a:67:fb:7c:e0",
+            "macs": "f8:1a:67:fb:7c:e0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "be:e5:f0:cc:27:b0",
+            "macs": "be:e5:f0:cc:27:b0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "66:70:02:b5:ea:72",
+            "macs": "66:70:02:b5:ea:72",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "40:b0:fa:80:6b:98",
+            "macs": "40:b0:fa:80:6b:98",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a6:b2:1d:d7:e2:d0",
+            "macs": "a6:b2:1d:d7:e2:d0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6e:70:02:b5:ea:c1",
+            "macs": "6e:70:02:b5:ea:c1",
+            "name": "radioblau"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "a0:f3:c1:39:7c:ff",
+            "macs": "a0:f3:c1:39:7c:ff",
+            "name": "823d"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "64:70:02:d3:22:8b",
+            "macs": "64:70:02:d3:22:8b",
+            "name": "Battlemesh"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "82:f6:52:7f:c1:57",
+            "macs": "82:f6:52:7f:c1:57",
+            "name": "234-87"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:04:4f:01",
+            "macs": "02:ba:14:04:4f:01",
+            "name": "044f"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:bc:79:01",
+            "macs": "02:ba:14:bc:79:01",
+            "name": "bc79"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:46:8a:01",
+            "macs": "02:ba:14:46:8a:01",
+            "name": "468a"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.33,
+                12.33
+            ],
+            "id": "02:ba:14:8c:7a:01",
+            "macs": "02:ba:14:8c:7a:01",
+            "name": "8c7a"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "b2:e0:bb:55:72:0d",
+            "macs": "b2:e0:bb:55:72:0d",
+            "name": "freifunk-vlan12"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "ce:6c:af:8b:51:83",
+            "macs": "ce:6c:af:8b:51:83",
+            "name": "leipzig-vpn7"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "a0:f3:c1:39:7c:f0",
+            "macs": "a0:f3:c1:39:7c:f0",
+            "name": "ufo"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:ae:83:01",
+            "macs": "02:ba:14:ae:83:01",
+            "name": "ae83"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "ea:1a:67:ee:cf:8c",
+            "macs": "ea:1a:67:ee:cf:8c",
+            "name": "67-35"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.33033678,
+                12.33095705
+            ],
+            "id": "76:70:02:b5:ea:71",
+            "macs": "76:70:02:b5:ea:71",
+            "name": "sublab3"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6a:70:02:d3:23:1d",
+            "macs": "6a:70:02:d3:23:1d",
+            "name": "234-76"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:46:f2:01",
+            "macs": "02:ba:14:46:f2:01",
+            "name": "46f2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "06:27:22:52:ad:3c",
+            "macs": "06:27:22:52:ad:3c",
+            "name": "1000grad2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "62:70:02:30:98:a8",
+            "macs": "62:70:02:30:98:a8",
+            "name": "234-81"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "96:f6:52:7f:fb:f4",
+            "macs": "96:f6:52:7f:fb:f4",
+            "name": "234-89"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "6a:70:02:b5:e4:49",
+            "macs": "6a:70:02:b5:e4:49",
+            "name": "sublab2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "9e:f6:52:7f:c5:a9",
+            "macs": "9e:f6:52:7f:c5:a9",
+            "name": "234-84"
+        }
+    ]
+}
