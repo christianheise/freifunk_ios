@@ -1,0 +1,1989 @@
+{
+    "links": [
+        {
+            "id": "10:fe:ed:e6:2b:56-dc:9f:db:64:13:8c",
+            "quality": "1.000, 1.032",
+            "source": 7,
+            "target": 25,
+            "type": null
+        },
+        {
+            "id": "10:fe:ed:e6:2b:56-62:70:02:d3:24:70",
+            "quality": "1.000, 1.015",
+            "source": 11,
+            "target": 7,
+            "type": null
+        },
+        {
+            "id": "26:06:c8:78:63:53-72:07:2f:df:a5:cf",
+            "quality": "1.000, 1.015",
+            "source": 69,
+            "target": 36,
+            "type": null
+        },
+        {
+            "id": "52:64:50:97:07:76-72:07:2f:df:a5:cf",
+            "quality": "1.000, 1.000",
+            "source": 69,
+            "target": 5,
+            "type": null
+        },
+        {
+            "id": "00:07:ab:6c:e0:5c-6e:70:02:d3:23:fd",
+            "quality": "TT",
+            "source": 1,
+            "target": 29,
+            "type": "client"
+        },
+        {
+            "id": "0a:27:22:52:ad:3c-e2:0c:b3:e4:8b:a7",
+            "quality": "TT",
+            "source": 19,
+            "target": 77,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:fa:ba-72:15:d0:56:d4:ec",
+            "quality": "TT",
+            "source": 9,
+            "target": 56,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:fa:52-64:70:02:e2:97:d2",
+            "quality": "1.028, 1.000",
+            "source": 18,
+            "target": 14,
+            "type": null
+        },
+        {
+            "id": "12:a6:37:bd:fd:2e-1a:fe:ed:eb:86:bc",
+            "quality": "TT",
+            "source": 12,
+            "target": 62,
+            "type": "client"
+        },
+        {
+            "id": "00:16:8a:01:fe:41-64:70:02:b5:ea:d6",
+            "quality": "1.000, 1.000",
+            "source": 4,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-a6:21:b8:9c:e0:e5",
+            "quality": "1.003, 1.000",
+            "source": 69,
+            "target": 8,
+            "type": null
+        },
+        {
+            "id": "64:70:02:e2:97:d1-f2:1a:67:ee:cf:8c",
+            "quality": "1.491, 1.307",
+            "source": 14,
+            "target": 63,
+            "type": null
+        },
+        {
+            "id": "62:70:02:d3:24:6f-64:70:02:d3:24:6e",
+            "quality": "TT",
+            "source": 11,
+            "target": 58,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:ee:c4-72:e4:58:29:d1:8e",
+            "quality": "TT",
+            "source": 73,
+            "target": 74,
+            "type": "client"
+        },
+        {
+            "id": "62:66:b3:fc:f0:d6-64:66:b3:fc:f0:d6",
+            "quality": "TT",
+            "source": 41,
+            "target": 42,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:e4:48-64:70:02:e2:97:cc",
+            "quality": "1.000, 1.000",
+            "source": 16,
+            "target": 39,
+            "type": null
+        },
+        {
+            "id": "64:70:02:b5:ea:d6-f8:1a:67:71:e0:34",
+            "quality": "1.007, 1.011",
+            "source": 46,
+            "target": 4,
+            "type": null
+        },
+        {
+            "id": "00:11:41:32:65:c4-64:70:02:b5:e4:48",
+            "quality": "TT",
+            "source": 16,
+            "target": 72,
+            "type": "client"
+        },
+        {
+            "id": "0a:1b:05:24:0e:cc-72:07:2f:df:a5:cf",
+            "quality": "1.000, 1.015",
+            "source": 20,
+            "target": 69,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:4f:fa:52-dc:9f:db:64:13:8c",
+            "quality": "1.000, 1.085",
+            "source": 18,
+            "target": 25,
+            "type": null
+        },
+        {
+            "id": "5a:8c:06:02:e8:28-f4:ec:38:ca:d5:a2",
+            "quality": "TT",
+            "source": 44,
+            "target": 45,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:ea:70-64:70:02:e2:97:cc",
+            "quality": "1.000, 1.000",
+            "source": 6,
+            "target": 39,
+            "type": null
+        },
+        {
+            "id": "6e:70:02:d3:23:fd-ca:3e:63:a8:81:cf",
+            "quality": "TT",
+            "source": 1,
+            "target": 31,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:5f:9e:77-b0:48:7a:f6:bd:da",
+            "quality": "1.032, 1.000",
+            "source": 53,
+            "target": 22,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:4f:fa:bc-64:70:02:b5:ea:72",
+            "quality": "1.075, 1.164",
+            "source": 9,
+            "target": 6,
+            "type": null
+        },
+        {
+            "id": "96:a6:aa:70:5b:d7-dc:9f:db:64:13:8c",
+            "quality": "TT",
+            "source": 25,
+            "target": 26,
+            "type": "client"
+        },
+        {
+            "id": "32:e0:69:d0:bd:f7-76:70:02:d3:24:19",
+            "quality": "TT",
+            "source": 10,
+            "target": 57,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:d3:19:cc-72:88:ac:2f:82:58",
+            "quality": "TT",
+            "source": 13,
+            "target": 65,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:ee:c4-64:66:b3:4f:fa:bc",
+            "quality": "1.000, 1.032",
+            "source": 73,
+            "target": 9,
+            "type": null
+        },
+        {
+            "id": "10:fe:ed:e6:2b:55-b0:48:7a:f6:bd:da",
+            "quality": "1.024, 1.000",
+            "source": 7,
+            "target": 22,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:5f:9e:77-f8:d1:11:3a:b9:54",
+            "quality": "1.000, 1.045",
+            "source": 53,
+            "target": 32,
+            "type": null
+        },
+        {
+            "id": "62:70:02:d3:24:6f-b0:48:7a:f6:bd:da",
+            "quality": "1.015, 1.049",
+            "source": 11,
+            "target": 22,
+            "type": null
+        },
+        {
+            "id": "1e:cd:7e:d3:9e:f6-6e:70:02:d3:23:6b",
+            "quality": "TT",
+            "source": 0,
+            "target": 27,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:fa:51-64:70:02:e2:97:d1",
+            "quality": "1.508, 1.888",
+            "source": 18,
+            "target": 14,
+            "type": null
+        },
+        {
+            "id": "00:16:8a:01:fe:41-f8:1a:67:71:e0:34",
+            "quality": "1.000, 1.000",
+            "source": 46,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "64:70:02:e2:97:d2-dc:9f:db:64:13:8c",
+            "quality": "1.000, 1.000",
+            "source": 14,
+            "target": 25,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:5f:9e:77-be:0b:4a:dc:de:15",
+            "quality": "TT",
+            "source": 53,
+            "target": 54,
+            "type": "client"
+        },
+        {
+            "id": "10:fe:ed:e6:2b:56-b6:be:ac:32:f1:cc",
+            "quality": "TT",
+            "source": 7,
+            "target": 52,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:ee:c4-64:70:02:d3:19:cc",
+            "quality": "1.000, 1.015",
+            "source": 73,
+            "target": 13,
+            "type": null
+        },
+        {
+            "id": "52:6a:3b:f8:1a:ef-64:70:02:e2:97:d2",
+            "quality": "TT",
+            "source": 14,
+            "target": 66,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:5f:9e:77-64:66:b3:fc:f0:d6",
+            "quality": "1.000",
+            "source": 41,
+            "target": 53,
+            "type": null
+        },
+        {
+            "id": "4e:f6:8b:6e:ab:fe-72:07:2f:df:a5:cf",
+            "quality": "1.000, 1.000",
+            "source": 69,
+            "target": 6,
+            "type": null
+        },
+        {
+            "id": "9a:dc:d1:91:d1:84-f8:1a:67:71:e0:34",
+            "quality": "TT",
+            "source": 46,
+            "target": 47,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:d3:24:6f-f8:d1:11:3a:b9:54",
+            "quality": "1.020, 1.000",
+            "source": 11,
+            "target": 32,
+            "type": null
+        },
+        {
+            "id": "b0:48:7a:f6:bd:da-f8:d1:11:3a:b9:54",
+            "quality": "1.000, 1.032",
+            "source": 32,
+            "target": 22,
+            "type": null
+        },
+        {
+            "id": "64:70:02:d3:23:6a-6e:70:02:d3:23:6b",
+            "quality": "TT",
+            "source": 0,
+            "target": 28,
+            "type": "client"
+        },
+        {
+            "id": "7e:a0:a3:4a:db:e0-f8:d1:11:3a:b9:54",
+            "quality": "TT",
+            "source": 32,
+            "target": 33,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:e2:97:cc-6a:2d:c2:52:cf:a1",
+            "quality": "TT",
+            "source": 39,
+            "target": 40,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:d3:24:6f-6a:ee:22:82:84:e5",
+            "quality": "TT",
+            "source": 11,
+            "target": 61,
+            "type": "client"
+        },
+        {
+            "id": "96:88:a4:ca:13:6f-f2:1a:67:ff:8a:23",
+            "quality": "TT",
+            "source": 8,
+            "target": 55,
+            "type": "client"
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-a2:3e:a0:8b:cc:9c",
+            "quality": "1.000, 1.000",
+            "source": 69,
+            "target": 3,
+            "type": null
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-8a:0b:9f:ed:3c:60",
+            "quality": "TT",
+            "source": 69,
+            "target": 70,
+            "type": "client"
+        },
+        {
+            "id": "64:66:b3:4f:fa:bc-64:70:02:d3:19:cc",
+            "quality": "1.094, 1.138",
+            "source": 13,
+            "target": 9,
+            "type": null
+        },
+        {
+            "id": "10:fe:ed:e6:2b:55-64:66:b3:5f:9e:77",
+            "quality": "1.015, 1.000",
+            "source": 53,
+            "target": 7,
+            "type": null
+        },
+        {
+            "id": "64:70:02:b5:e4:48-6a:1e:3a:57:42:d3",
+            "quality": "TT",
+            "source": 16,
+            "target": 71,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:e4:48-64:70:02:b5:ea:70",
+            "quality": "1.000, 1.015",
+            "source": 16,
+            "target": 6,
+            "type": null
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-8a:63:1b:81:67:31",
+            "quality": "1.000, 1.000",
+            "source": 19,
+            "target": 69,
+            "type": null
+        },
+        {
+            "id": "10:fe:ed:e6:2b:55-62:70:02:d3:24:6f",
+            "quality": "1.020",
+            "source": 11,
+            "target": 7,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:fc:f0:d6-f8:d1:11:3a:b9:54",
+            "quality": "1.108, 1.053",
+            "source": 41,
+            "target": 32,
+            "type": null
+        },
+        {
+            "id": "62:70:02:d3:24:70-64:70:02:e2:97:d2",
+            "quality": "1.066",
+            "source": 11,
+            "target": 14,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:fc:f0:d6-ea:12:34:8b:69:40",
+            "quality": "TT",
+            "source": 41,
+            "target": 43,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:ea:68-64:70:02:b5:ea:d6",
+            "quality": "1.000, 1.000",
+            "source": 4,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "62:70:02:d3:24:6f-a4:ee:57:41:ac:8a",
+            "quality": "TT",
+            "source": 11,
+            "target": 59,
+            "type": "client"
+        },
+        {
+            "id": "36:59:88:1e:db:07-64:70:02:b5:ea:70",
+            "quality": "TT",
+            "source": 6,
+            "target": 49,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:b5:ea:68-ba:16:02:3f:9f:10",
+            "quality": "TT",
+            "source": 2,
+            "target": 34,
+            "type": "client"
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-ca:b1:35:f4:2e:33",
+            "quality": "1.000, 1.000",
+            "source": 69,
+            "target": 11,
+            "type": null
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-f2:70:c0:3f:45:0c",
+            "quality": "1.003, 1.000",
+            "source": 69,
+            "target": 1,
+            "type": null
+        },
+        {
+            "id": "5e:af:8d:17:6d:4d-72:07:2f:df:a5:cf",
+            "quality": "1.000, 1.000",
+            "source": 21,
+            "target": 69,
+            "type": null
+        },
+        {
+            "id": "64:70:02:d3:19:cb-f8:1a:67:fb:7c:df",
+            "quality": "3.035, 6.375",
+            "source": 17,
+            "target": 13,
+            "type": null
+        },
+        {
+            "id": "62:70:02:d3:24:70-dc:9f:db:64:13:8c",
+            "quality": "1.007, 1.015",
+            "source": 11,
+            "target": 25,
+            "type": null
+        },
+        {
+            "id": "64:70:02:b5:ea:68-f8:1a:67:71:e0:34",
+            "quality": "1.000, 1.000",
+            "source": 46,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "62:70:02:b5:ea:69-62:70:02:b5:ea:d7",
+            "quality": "1.053, 1.028",
+            "source": 4,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "00:16:8a:01:fe:41-64:70:02:b5:ea:68",
+            "quality": "1.000, 1.000",
+            "source": 3,
+            "target": 2,
+            "type": null
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-7a:14:ab:97:04:f6",
+            "quality": "1.003, 1.000",
+            "source": 69,
+            "target": 15,
+            "type": null
+        },
+        {
+            "id": "32:ad:2a:63:e8:6d-f2:1a:67:ee:cf:8c",
+            "quality": "TT",
+            "source": 63,
+            "target": 64,
+            "type": "client"
+        },
+        {
+            "id": "62:70:02:d3:24:6f-64:66:b3:5f:9e:77",
+            "quality": "1.066, 1.000",
+            "source": 11,
+            "target": 53,
+            "type": null
+        },
+        {
+            "id": "06:3a:a7:5d:dc:b0-1a:fe:ed:eb:99:3a",
+            "quality": "TT",
+            "source": 20,
+            "target": 78,
+            "type": "client"
+        },
+        {
+            "id": "b0:48:7a:f6:bd:da-b6:48:7a:f6:bd:da",
+            "quality": "TT",
+            "source": 22,
+            "target": 24,
+            "type": "client"
+        },
+        {
+            "id": "22:67:81:a8:b4:a3-64:66:b3:4f:fa:52",
+            "quality": "TT",
+            "source": 18,
+            "target": 76,
+            "type": "client"
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-9e:f8:c3:22:32:9a",
+            "quality": "1.000, 1.000",
+            "source": 69,
+            "target": 12,
+            "type": null
+        },
+        {
+            "id": "62:70:02:d3:24:6f-64:66:b3:fc:f0:d6",
+            "quality": "1.123, 1.186",
+            "source": 11,
+            "target": 41,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:fc:f0:d6-b0:48:7a:f6:bd:da",
+            "quality": "1.148, 1.049",
+            "source": 41,
+            "target": 22,
+            "type": null
+        },
+        {
+            "id": "6e:70:02:e2:97:d3-76:fc:ab:c7:d9:e6",
+            "quality": "TT",
+            "source": 15,
+            "target": 68,
+            "type": "client"
+        },
+        {
+            "id": "62:66:b3:4f:ee:cd-ca:4a:00:8a:9a:4a",
+            "quality": "1.007, 1.011",
+            "source": 21,
+            "target": 5,
+            "type": null
+        },
+        {
+            "id": "64:66:b3:fc:f0:d6-64:70:02:e2:97:d1",
+            "quality": "1.197, 1.159",
+            "source": 14,
+            "target": 41,
+            "type": null
+        },
+        {
+            "id": "64:70:02:d3:23:fc-6e:70:02:d3:23:fd",
+            "quality": "TT",
+            "source": 1,
+            "target": 30,
+            "type": "client"
+        },
+        {
+            "id": "00:26:bb:1d:31:88-10:fe:ed:e6:2b:56",
+            "quality": "TT",
+            "source": 7,
+            "target": 51,
+            "type": "client"
+        },
+        {
+            "id": "2e:53:e0:ea:c0:51-72:07:2f:df:a5:cf",
+            "quality": "1.015, 1.000",
+            "source": 69,
+            "target": 10,
+            "type": null
+        },
+        {
+            "id": "64:70:02:e2:97:d4-6e:70:02:e2:97:d3",
+            "quality": "TT",
+            "source": 15,
+            "target": 67,
+            "type": "client"
+        },
+        {
+            "id": "56:22:7f:bf:f7:41-f8:1a:67:fb:7c:e0",
+            "quality": "TT",
+            "source": 17,
+            "target": 75,
+            "type": "client"
+        },
+        {
+            "id": "00:16:8a:01:fe:41-be:6a:3a:9e:29:51",
+            "quality": "TT",
+            "source": 3,
+            "target": 35,
+            "type": "client"
+        },
+        {
+            "id": "00:25:31:01:66:5f-62:70:02:d3:24:6f",
+            "quality": "TT",
+            "source": 11,
+            "target": 60,
+            "type": "client"
+        },
+        {
+            "id": "10:fe:ed:e6:2b:55-f8:d1:11:3a:b9:54",
+            "quality": "1.020, 1.053",
+            "source": 7,
+            "target": 32,
+            "type": null
+        },
+        {
+            "id": "10:fe:ed:e6:2b:56-16:fe:ed:e6:2b:55",
+            "quality": "TT",
+            "source": 7,
+            "target": 50,
+            "type": "client"
+        },
+        {
+            "id": "06:36:ce:06:38:71-64:70:02:b5:ea:d6",
+            "quality": "TT",
+            "source": 4,
+            "target": 38,
+            "type": "client"
+        },
+        {
+            "id": "1a:ff:9f:ed:2e:1f-ca:4a:00:8a:9a:4a",
+            "quality": "TT",
+            "source": 5,
+            "target": 48,
+            "type": "client"
+        },
+        {
+            "id": "62:58:2b:41:59:33-72:07:2f:df:a5:cf",
+            "quality": "1.015, 1.000",
+            "source": 16,
+            "target": 69,
+            "type": null
+        },
+        {
+            "id": "64:70:02:d3:19:cb-f4:ec:38:ca:d5:a2",
+            "quality": "1.961, 2.965",
+            "source": 13,
+            "target": 44,
+            "type": null
+        },
+        {
+            "id": "72:07:2f:df:a5:cf-f2:51:a7:78:98:2f",
+            "quality": "1.000, 1.000",
+            "source": 69,
+            "target": 0,
+            "type": null
+        },
+        {
+            "id": "26:06:c8:78:63:53-2e:7e:eb:e4:d6:f7",
+            "quality": "TT",
+            "source": 36,
+            "target": 37,
+            "type": "client"
+        },
+        {
+            "id": "64:70:02:e2:97:d1-b0:48:7a:f6:bd:da",
+            "quality": "1.262",
+            "source": 14,
+            "target": 22,
+            "type": null
+        },
+        {
+            "id": "42:6d:44:6f:7a:59-62:66:b3:4f:ee:cd",
+            "quality": "TT",
+            "source": 21,
+            "target": 79,
+            "type": "client"
+        },
+        {
+            "id": "62:66:b3:4f:fa:bb-64:70:02:d3:19:cb",
+            "quality": "1.175, 1.143",
+            "source": 13,
+            "target": 9,
+            "type": null
+        },
+        {
+            "id": "b0:48:7a:f6:bd:da-ca:dd:e5:eb:c9:26",
+            "quality": "TT",
+            "source": 22,
+            "target": 23,
+            "type": "client"
+        }
+    ],
+    "meta": {
+        "timestamp": "2014-03-13T23:41:44"
+    },
+    "nodes": [
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6e:70:02:d3:23:6b",
+            "macs": "f2:51:a7:78:98:2f, 6e:70:02:d3:23:6b",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6e:70:02:d3:23:fd",
+            "macs": "f2:70:c0:3f:45:0c, 6e:70:02:d3:23:fd",
+            "name": "altmark2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "64:70:02:b5:ea:68",
+            "macs": "64:70:02:b5:ea:68, 62:70:02:b5:ea:69",
+            "name": "ci-cafe"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "00:16:8a:01:fe:41",
+            "macs": "00:16:8a:01:fe:41, a2:3e:a0:8b:cc:9c",
+            "name": "ci-vm"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "64:70:02:b5:ea:d6",
+            "macs": "64:70:02:b5:ea:d6, 62:70:02:b5:ea:d7",
+            "name": "ci-freisitz"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ca:4a:00:8a:9a:4a",
+            "macs": "ca:4a:00:8a:9a:4a, 52:64:50:97:07:76",
+            "name": "bytenode2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.33033678,
+                12.33095705
+            ],
+            "id": "64:70:02:b5:ea:70",
+            "macs": "64:70:02:b5:ea:72, 64:70:02:b5:ea:70, 4e:f6:8b:6e:ab:fe",
+            "name": "sublab3"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "10:fe:ed:e6:2b:56",
+            "macs": "10:fe:ed:e6:2b:56, 10:fe:ed:e6:2b:55",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f2:1a:67:ff:8a:23",
+            "macs": "f2:1a:67:ff:8a:23, a6:21:b8:9c:e0:e5",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.3304019,
+                12.33073516
+            ],
+            "id": "64:66:b3:4f:fa:ba",
+            "macs": "64:66:b3:4f:fa:bc, 64:66:b3:4f:fa:ba, 62:66:b3:4f:fa:bb",
+            "name": "sublab-h13"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.320574,
+                12.29922513
+            ],
+            "id": "76:70:02:d3:24:19",
+            "macs": "2e:53:e0:ea:c0:51, 76:70:02:d3:24:19",
+            "name": "heizhaus-044f"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "62:70:02:d3:24:6f",
+            "macs": "62:70:02:d3:24:70, 62:70:02:d3:24:6f, ca:b1:35:f4:2e:33",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1a:fe:ed:eb:86:bc",
+            "macs": "1a:fe:ed:eb:86:bc, 9e:f8:c3:22:32:9a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.33027650944,
+                12.33062346117
+            ],
+            "id": "64:70:02:d3:19:cc",
+            "macs": "64:70:02:d3:19:cb, 64:70:02:d3:19:cc",
+            "name": "ww-halle"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:e2:97:d2",
+            "macs": "64:70:02:e2:97:d2, 64:70:02:e2:97:d1",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.3318,
+                12.3346
+            ],
+            "id": "6e:70:02:e2:97:d3",
+            "macs": "7a:14:ab:97:04:f6, 6e:70:02:e2:97:d3",
+            "name": "schaubuehne3"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:b5:e4:48",
+            "macs": "64:70:02:b5:e4:48, 62:58:2b:41:59:33",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.33069543326,
+                12.329537
+            ],
+            "id": "f8:1a:67:fb:7c:e0",
+            "macs": "f8:1a:67:fb:7c:e0, f8:1a:67:fb:7c:df",
+            "name": "jahrtausendfeld"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:66:b3:4f:fa:52",
+            "macs": "64:66:b3:4f:fa:52, 64:66:b3:4f:fa:51",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "0a:27:22:52:ad:3c",
+            "macs": "8a:63:1b:81:67:31, 0a:27:22:52:ad:3c",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1a:fe:ed:eb:99:3a",
+            "macs": "1a:fe:ed:eb:99:3a, 0a:1b:05:24:0e:cc",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "62:66:b3:4f:ee:cd",
+            "macs": "62:66:b3:4f:ee:cd, 5e:af:8d:17:6d:4d",
+            "name": "bytenode1"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "b0:48:7a:f6:bd:da",
+            "macs": "b0:48:7a:f6:bd:da",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ca:dd:e5:eb:c9:26",
+            "macs": "ca:dd:e5:eb:c9:26",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "b6:48:7a:f6:bd:da",
+            "macs": "b6:48:7a:f6:bd:da",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "dc:9f:db:64:13:8c",
+            "macs": "dc:9f:db:64:13:8c",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "96:a6:aa:70:5b:d7",
+            "macs": "96:a6:aa:70:5b:d7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1e:cd:7e:d3:9e:f6",
+            "macs": "1e:cd:7e:d3:9e:f6",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:d3:23:6a",
+            "macs": "64:70:02:d3:23:6a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "00:07:ab:6c:e0:5c",
+            "macs": "00:07:ab:6c:e0:5c",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:d3:23:fc",
+            "macs": "64:70:02:d3:23:fc",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ca:3e:63:a8:81:cf",
+            "macs": "ca:3e:63:a8:81:cf",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f8:d1:11:3a:b9:54",
+            "macs": "f8:d1:11:3a:b9:54",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "7e:a0:a3:4a:db:e0",
+            "macs": "7e:a0:a3:4a:db:e0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ba:16:02:3f:9f:10",
+            "macs": "ba:16:02:3f:9f:10",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "be:6a:3a:9e:29:51",
+            "macs": "be:6a:3a:9e:29:51",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "26:06:c8:78:63:53",
+            "macs": "26:06:c8:78:63:53",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "2e:7e:eb:e4:d6:f7",
+            "macs": "2e:7e:eb:e4:d6:f7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "06:36:ce:06:38:71",
+            "macs": "06:36:ce:06:38:71",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.3314891,
+                12.334481
+            ],
+            "id": "64:70:02:e2:97:cc",
+            "macs": "64:70:02:e2:97:cc",
+            "name": "schaubuehne2"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:2d:c2:52:cf:a1",
+            "macs": "6a:2d:c2:52:cf:a1",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:66:b3:fc:f0:d6",
+            "macs": "64:66:b3:fc:f0:d6",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "62:66:b3:fc:f0:d6",
+            "macs": "62:66:b3:fc:f0:d6",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "ea:12:34:8b:69:40",
+            "macs": "ea:12:34:8b:69:40",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330291,
+                12.3318502
+            ],
+            "id": "f4:ec:38:ca:d5:a2",
+            "macs": "f4:ec:38:ca:d5:a2",
+            "name": "ww-naroma"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "5a:8c:06:02:e8:28",
+            "macs": "5a:8c:06:02:e8:28",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "f8:1a:67:71:e0:34",
+            "macs": "f8:1a:67:71:e0:34",
+            "name": "ci-saal"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "9a:dc:d1:91:d1:84",
+            "macs": "9a:dc:d1:91:d1:84",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "1a:ff:9f:ed:2e:1f",
+            "macs": "1a:ff:9f:ed:2e:1f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "36:59:88:1e:db:07",
+            "macs": "36:59:88:1e:db:07",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "16:fe:ed:e6:2b:55",
+            "macs": "16:fe:ed:e6:2b:55",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "00:26:bb:1d:31:88",
+            "macs": "00:26:bb:1d:31:88",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "b6:be:ac:32:f1:cc",
+            "macs": "b6:be:ac:32:f1:cc",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:66:b3:5f:9e:77",
+            "macs": "66:66:b3:5f:9e:77, 64:66:b3:5f:9e:77",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "be:0b:4a:dc:de:15",
+            "macs": "be:0b:4a:dc:de:15",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "96:88:a4:ca:13:6f",
+            "macs": "96:88:a4:ca:13:6f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "72:15:d0:56:d4:ec",
+            "macs": "72:15:d0:56:d4:ec",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "32:e0:69:d0:bd:f7",
+            "macs": "32:e0:69:d0:bd:f7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:d3:24:6e",
+            "macs": "64:70:02:d3:24:6e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "a4:ee:57:41:ac:8a",
+            "macs": "a4:ee:57:41:ac:8a",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "00:25:31:01:66:5f",
+            "macs": "00:25:31:01:66:5f",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:ee:22:82:84:e5",
+            "macs": "6a:ee:22:82:84:e5",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "12:a6:37:bd:fd:2e",
+            "macs": "12:a6:37:bd:fd:2e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "f2:1a:67:ee:cf:8c",
+            "macs": "f2:1a:67:ee:cf:8c",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "32:ad:2a:63:e8:6d",
+            "macs": "32:ad:2a:63:e8:6d",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "72:88:ac:2f:82:58",
+            "macs": "72:88:ac:2f:82:58",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "52:6a:3b:f8:1a:ef",
+            "macs": "52:6a:3b:f8:1a:ef",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "64:70:02:e2:97:d4",
+            "macs": "64:70:02:e2:97:d4",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "76:fc:ab:c7:d9:e6",
+            "macs": "76:fc:ab:c7:d9:e6",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "72:07:2f:df:a5:cf",
+            "macs": "72:07:2f:df:a5:cf",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "8a:0b:9f:ed:3c:60",
+            "macs": "8a:0b:9f:ed:3c:60",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "6a:1e:3a:57:42:d3",
+            "macs": "6a:1e:3a:57:42:d3",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "00:11:41:32:65:c4",
+            "macs": "00:11:41:32:65:c4",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": true
+            },
+            "geo": [
+                51.33028650944,
+                12.33062446117
+            ],
+            "id": "64:66:b3:4f:ee:c4",
+            "macs": "64:66:b3:4f:ee:c2, 64:66:b3:4f:ee:c4",
+            "name": "westwerkk"
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "72:e4:58:29:d1:8e",
+            "macs": "72:e4:58:29:d1:8e",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "56:22:7f:bf:f7:41",
+            "macs": "56:22:7f:bf:f7:41",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "22:67:81:a8:b4:a3",
+            "macs": "22:67:81:a8:b4:a3",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "e2:0c:b3:e4:8b:a7",
+            "macs": "e2:0c:b3:e4:8b:a7",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "06:3a:a7:5d:dc:b0",
+            "macs": "06:3a:a7:5d:dc:b0",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": true,
+                "gateway": false,
+                "online": true
+            },
+            "geo": null,
+            "id": "42:6d:44:6f:7a:59",
+            "macs": "42:6d:44:6f:7a:59",
+            "name": ""
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6e:70:02:b5:ea:c1",
+            "macs": "6e:70:02:b5:ea:c1",
+            "name": "radioblau"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "a0:f3:c1:39:7c:ff",
+            "macs": "a0:f3:c1:39:7c:ff",
+            "name": "823d"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "64:70:02:d3:22:8b",
+            "macs": "64:70:02:d3:22:8b",
+            "name": "Battlemesh"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "62:70:02:30:98:a8",
+            "macs": "62:70:02:30:98:a8",
+            "name": "234-81"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6e:66:b3:4f:fa:51",
+            "macs": "6e:66:b3:4f:fa:51",
+            "name": "67-43"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "82:f6:52:7f:c1:57",
+            "macs": "82:f6:52:7f:c1:57",
+            "name": "234-87"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "62:70:02:b5:e4:4a",
+            "macs": "62:70:02:b5:e4:4a",
+            "name": "sublab2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.33,
+                12.33
+            ],
+            "id": "02:ba:0a:8c:7a:01",
+            "macs": "02:ba:0a:8c:7a:01",
+            "name": "8c7a"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6e:70:02:5d:a9:2f",
+            "macs": "6e:70:02:5d:a9:2f",
+            "name": "23457"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "f6:1a:67:ee:cf:8c",
+            "macs": "f6:1a:67:ee:cf:8c",
+            "name": "67-35"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6e:70:02:d3:23:17",
+            "macs": "6e:70:02:d3:23:17",
+            "name": "altmark"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:04:4f:01",
+            "macs": "02:ba:14:04:4f:01",
+            "name": "044f"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:bc:79:01",
+            "macs": "02:ba:14:bc:79:01",
+            "name": "bc79"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:46:8a:01",
+            "macs": "02:ba:14:46:8a:01",
+            "name": "468a"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.33,
+                12.33
+            ],
+            "id": "02:ba:14:8c:7a:01",
+            "macs": "02:ba:14:8c:7a:01",
+            "name": "8c7a"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "2e:6b:8f:4a:a5:53",
+            "macs": "2e:6b:8f:4a:a5:53",
+            "name": "leipzig-vpn7"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.330350194,
+                12.330745
+            ],
+            "id": "b2:e0:bb:55:72:0d",
+            "macs": "b2:e0:bb:55:72:0d",
+            "name": "freifunk-vlan12"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "a0:f3:c1:39:7c:f0",
+            "macs": "a0:f3:c1:39:7c:f0",
+            "name": "ufo"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:ae:83:01",
+            "macs": "02:ba:14:ae:83:01",
+            "name": "ae83"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "ea:1a:67:ee:cf:8c",
+            "macs": "ea:1a:67:ee:cf:8c",
+            "name": "67-35"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "76:70:02:d3:23:6b",
+            "macs": "76:70:02:d3:23:6b",
+            "name": "Battlemesh20"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "6a:70:02:d3:23:1d",
+            "macs": "6a:70:02:d3:23:1d",
+            "name": "234-76"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": [
+                51.3,
+                12.3
+            ],
+            "id": "02:ba:14:46:f2:01",
+            "macs": "02:ba:14:46:f2:01",
+            "name": "46f2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "06:27:22:52:ad:3c",
+            "macs": "06:27:22:52:ad:3c",
+            "name": "1000grad2"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "9a:f6:52:7f:c5:aa",
+            "macs": "9a:f6:52:7f:c5:aa",
+            "name": "23486"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "96:f6:52:7f:fb:f4",
+            "macs": "96:f6:52:7f:fb:f4",
+            "name": "234-89"
+        },
+        {
+            "flags": {
+                "client": false,
+                "gateway": false,
+                "online": false
+            },
+            "geo": null,
+            "id": "9e:f6:52:7f:c5:a9",
+            "macs": "9e:f6:52:7f:c5:a9",
+            "name": "234-84"
+        }
+    ]
+}
